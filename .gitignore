@@ -68,3 +68,7 @@ bower_components
 node_modules
 
 _algolia_api_key
+/assets/css/main.map
+/assets/css/main.css
+/assets/js/bundle.js
+/sw.js
