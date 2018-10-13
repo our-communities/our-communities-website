@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Kernow DAT
-url: https://kernowdat.co.uk
+link: https://kernowdat.co.uk
+summary: A community meetup for digital creatives.
 ---
 Kernow DAT Community

@@ -1,0 +1,30 @@
+<div class="post-card" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <a href="{{ community.url | relative_url }}">
+    {% if community.featured-img %}
+      <figure class="post-card__thumb">
+        <img
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{community.featured-img}}_placehold.jpg",
+          data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{community.featured-img}}_thumb.jpg, {{ site.url }}{{ site.baseurl }}/assets/img/posts/{{community.featured-img}}_thumb@2x.jpg 2x"
+          class="lazyload blur"
+          alt="{{community.name}}"
+        />
+        <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{community.featured-img}}_thumb.jpg" alt="{{ community.name }}"></noscript>
+      </figure>
+    {% else %}
+      <figure class="post-card__thumb">
+        <div class="dark-bg"></div>
+      </figure>
+    {% endif %}
+  </a>
+  <a class="post-card__inner" href="{{ community.url | relative_url }}">
+    <div class="post-card__header">
+      <h2>{{ community.name | strip_html | truncate: 50 }}</h2>
+      {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
+    </div>
+    {% if community.summary %}
+      <p>{{ community.summary | strip_html | truncatewords:20 }}</p>
+    {% else %}
+      <p>{{ community.content | strip_html | truncatewords: 20 }}</p>
+    {% endif %}
+  </a>
+</div>

@@ -65,4 +65,5 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  - communities
+  communities:
+    output: true

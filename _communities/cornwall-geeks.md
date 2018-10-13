@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Cornwall Geeks
-url: https://kernowdat.co.uk
+link: https://kernowdat.co.uk
+summary: A casual meetup for geeks around the county.
 ---
 Cornwall Geeks Community

@@ -1,13 +1,9 @@
 ---
-layout: page
+layout: community-feed
 title: Communities
 permalink: /communities/
 ---
 
-<div>
-
 {% for community in site.communities %}
-  <h2>{{ community.name }}</h2>
+  {% include community-card.html %}
 {% endfor %}
-
-</div>
