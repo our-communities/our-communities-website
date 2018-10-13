@@ -33,13 +33,13 @@ const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 
 const src = {
-  css: '_sass/jekyll-sleek.scss',
+  css: '_sass/main.scss',
   js: '_js/scripts.js',
-}
+};
 const dist = {
   css: '_site/assets/css',
   js: '_site/assets/js',
-}
+};
 
 function handleErrors() {
   var args = Array.prototype.slice.call(arguments);

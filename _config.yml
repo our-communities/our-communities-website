@@ -67,3 +67,5 @@ plugins:
 collections:
   communities:
     output: true
+  resources:
+    output: true

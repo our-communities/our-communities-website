@@ -1,5 +1,5 @@
 ---
-layout: community-feed
+layout: content-feed
 title: Communities
 permalink: /communities/
 ---
