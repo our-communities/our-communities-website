@@ -18,9 +18,9 @@ social:
 # THEME SETTINGS
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
-  - {name: 'Communities', link: '/communities/'}
-  - {name: 'Calendar', link: '/calendar/'}
-  - {name: 'Resources', link: '/resources/'}
+  - {name: 'Communities', link: '/communities/', description: 'Find out which communities are a part of this group', featured-img: 'shane-rounce-205187'}
+  - {name: 'Calendar', link: '/calendar/', description: 'Get a list of upcoming events', featured-img: 'emile-perron-190221'}
+  - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
   Modern Jekyll theme focused on speed performance &amp; SEO best practices

@@ -31,11 +31,12 @@ layout: compress
         <div class="container">
           <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
 
-            {% for post in site.posts %}
-              {% include card.html %}
+            {% for item in site.navigation %}
+              {% if item.name != 'Home' %}
+                {% include card.html %}
+              {% endif %}
             {% endfor %}
 
-            <!-- {% include pagination.html %} -->
           </div>
         </div>
       </section>
