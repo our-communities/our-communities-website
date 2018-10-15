@@ -35,6 +35,8 @@ const imagemin = require('gulp-imagemin');
 const request = require('request');
 var fs = require('fs');
 
+const runSequence = require('run-sequence');
+
 
 const src = {
   css: '_sass/main.scss',
@@ -57,7 +59,7 @@ function handleErrors() {
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -79,6 +81,15 @@ gulp.task('browser-sync', ['sass', 'js', 'sw', 'jekyll-build'], function() {
             baseDir: '_site'
         }
     });
+});
+
+gulp.task('build-site', function(cb) {
+  runSequence(
+    'clean',
+    ['sass', 'js', 'sw'],
+    'markdown',
+    'jekyll-build',
+    cb);
 });
 
 // SASS
