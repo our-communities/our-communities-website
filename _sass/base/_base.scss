@@ -38,3 +38,10 @@ img::selection {
 figure {
   margin: 0;
 }
+
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+  width: 100%;
+}

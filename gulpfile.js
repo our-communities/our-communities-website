@@ -141,6 +141,10 @@ gulp.task('watch', function() {
   gulp.watch(src.js, ['js']);
 });
 
+gulp.task('watch:js', function() {
+  gulp.watch(src.js, ['js']);
+});
+
 gulp.task('default', ['browser-sync', 'watch']);
 
 // Minify HTML
