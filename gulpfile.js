@@ -180,17 +180,18 @@ gulp.task('markdown', function() {
 
           var logger = fs.createWriteStream(`_events/${fileTitle}.md`);
 
-          logger.write(`title: ${evt.title}`);
-          logger.write(`start: ${evt.start}`);
-          logger.write(`end: ${evt.end}`);
-          logger.write(`organiserid: ${evt.organiserID}`);
-          logger.write(`ticketurl: ${evt.ticketURL}`);
-          logger.write(`venue: ${evt.venue}`);
-          logger.write(`georgaphic: ${evt.geographic}`);
-          logger.write(`lat: ${evt.lat}`);
-          logger.write(`long: ${evt.long}`);
-          logger.write(`---`);
-          logger.write(`${evt.description}`);
+          logger.write(`---\n`);
+          logger.write(`title: ${evt.title}\n`);
+          logger.write(`start: ${evt.start}\n`);
+          logger.write(`end: ${evt.end}\n`);
+          logger.write(`organiserid: ${evt.organiserID}\n`);
+          logger.write(`ticketurl: ${evt.ticketURL}\n`);
+          logger.write(`venue: ${evt.venue}\n`);
+          logger.write(`georgaphic: ${evt.geographic}\n`);
+          logger.write(`lat: ${evt.lat}\n`);
+          logger.write(`long: ${evt.long}\n`);
+          logger.write(`---\n`);
+          logger.write(`${evt.description}\n`);
           logger.end();
         });
     });
