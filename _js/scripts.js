@@ -159,7 +159,8 @@ let app = {
 };
 
 function loadCommunityEvents(){
-  fetch('https://our-communities-api.herokuapp.com/getData')
+  // fetch('https://our-communities-api.herokuapp.com/getData')
+  fetch('http://127.0.0.1:8080/getData')
   .then(response => response.json())
   .then(data => {
     app.events = data.events;
@@ -171,12 +172,17 @@ function loadCommunityEvents(){
     let communityID = $( 'body' ).data( 'communityid' );
     let theseEvents = [];
 
+    console.log(communityID);
+
+
     app.events.forEach(evt => {
+      console.log(evt.organiserID.toString());
       if (evt.organiserID.toString() === communityID.toString()){
         theseEvents.push(evt);
       }
     });
     theseEvents.sort(sortByDate);
+    console.log(theseEvents);
     return theseEvents;
   })
   .then(matches => {
