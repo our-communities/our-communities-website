@@ -9,7 +9,7 @@ Gemfile.lock
 npm-debug.log
 *.js.map
 maps
-_events
+_events/*.md
 
 # OS Generated files #
 ######################
@@ -45,7 +45,7 @@ _site/
 /tmp/
 
 # Used by dotenv library to load environment variables.
-# .env
+.env
 
 ## Specific to RubyMotion:
 .dat*
