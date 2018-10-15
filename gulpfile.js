@@ -181,6 +181,7 @@ gulp.task('markdown', function() {
           var logger = fs.createWriteStream(`_events/${fileTitle}.md`);
 
           logger.write(`---\n`);
+          logger.write(`layout: page\n`);
           logger.write(`title: ${evt.title}\n`);
           logger.write(`start: ${evt.start}\n`);
           logger.write(`end: ${evt.end}\n`);

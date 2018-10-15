@@ -69,3 +69,5 @@ collections:
     output: true
   resources:
     output: true
+  events:
+    output: true
