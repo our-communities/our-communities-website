@@ -48,7 +48,7 @@ const dist = {
 };
 
 var isProduction = false;
-if (gutil.env.CONTEXT === 'production'){
+if (gutil.env.NODE_ENV === 'production'){
   isProduction = true;
 }
 console.log('-----IS PRODUCTION----' + isProduction);
