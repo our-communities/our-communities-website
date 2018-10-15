@@ -32,6 +32,10 @@ const $ = require('gulp-load-plugins')();
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 
+const request = require('request');
+var fs = require('fs');
+
+
 const src = {
   css: '_sass/main.scss',
   js: '_js/scripts.js',
@@ -110,7 +114,7 @@ gulp.task('js', function() {
     .pipe(size())
     .pipe(gulp.dest(dist.js))
     .pipe(browserSync.reload({stream: true}))
-    .pipe(gulp.dest('assets/js'))
+    .pipe(gulp.dest('assets/js'));
 });
 
 gulp.task('critical', function (cb) {
@@ -148,14 +152,58 @@ gulp.task('dev', function() {
 
 gulp.task('default', ['browser-sync', 'watch']);
 
+
+gulp.task('markdown', function() {
+  console.log('building markdown');
+  return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
+        let events = JSON.parse(body);
+
+        var dirPath = '_events';
+        try { var files = fs.readdirSync(dirPath); }
+        catch(e) { return; }
+        if (files.length > 0){
+          for (let i = 0; i < files.length; i++) {
+            var filePath = dirPath + '/' + files[i];
+            if (fs.statSync(filePath).isFile()){
+              fs.unlinkSync(filePath);
+            }
+            else{
+              rmDir(filePath);
+            }
+          }
+        }
+
+        events.forEach(evt => {
+          var fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
+          fileTitle += '-';
+          fileTitle += evt.id.toLowerCase();
+
+          var logger = fs.createWriteStream(`_events/${fileTitle}.md`);
+
+          logger.write(`title: ${evt.title}`);
+          logger.write(`start: ${evt.start}`);
+          logger.write(`end: ${evt.end}`);
+          logger.write(`organiserid: ${evt.organiserID}`);
+          logger.write(`ticketurl: ${evt.ticketURL}`);
+          logger.write(`venue: ${evt.venue}`);
+          logger.write(`georgaphic: ${evt.geographic}`);
+          logger.write(`lat: ${evt.lat}`);
+          logger.write(`long: ${evt.long}`);
+          logger.write(`---`);
+          logger.write(`${evt.description}`);
+          logger.end();
+        });
+    });
+});
+
 // Minify HTML
 gulp.task('html', function() {
     gulp.src('./_site/index.html')
       .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest('./_site'))
+      .pipe(gulp.dest('./_site'));
     gulp.src('./_site/*/*html')
       .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest('./_site/./'))
+      .pipe(gulp.dest('./_site/./'));
 });
 
 gulp.task('sw', function() {
@@ -215,6 +263,9 @@ gulp.task('clean', function () {
     return gulp.src('_site', {read: false})
       .pipe(clean());
 });
+
+
+gulp.task('deploy', ['markdown']);
 
 gulp.task('serve', function() {
   browserSync({
