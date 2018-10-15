@@ -34,7 +34,7 @@ const imagemin = require('gulp-imagemin');
 
 const request = require('request');
 var fs = require('fs');
-
+var gutil = require('gulp-util');
 const runSequence = require('run-sequence');
 
 
@@ -46,6 +46,12 @@ const dist = {
   css: '_site/assets/css',
   js: '_site/assets/js',
 };
+
+var isProduction = false;
+if (gutil.env.CONTEXT === 'production'){
+  isProduction = true;
+}
+console.log('-----IS PRODUCTION----' + isProduction);
 
 function handleErrors() {
   var args = Array.prototype.slice.call(arguments);
@@ -169,7 +175,13 @@ gulp.task('markdown', function() {
   return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
         let events = JSON.parse(body);
 
-        var dirPath = '_events';
+        var dirPath = '';
+        if(isProduction){
+          dirPath = 'opt/build/repo/_events';
+        } else {
+          dirPath = '_events';
+        }
+        '_events';
         try { var files = fs.readdirSync(dirPath); }
         catch(e) { return; }
         if (files.length > 0){
