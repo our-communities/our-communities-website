@@ -177,7 +177,7 @@ gulp.task('markdown', function() {
 
         var dirPath = '';
         if(isProduction){
-          dirPath = 'opt/build/repo/_events';
+          dirPath = '/opt/build/repo/_events';
         } else {
           dirPath = '_events';
         }
