@@ -201,7 +201,7 @@ gulp.task('markdown', function() {
           fileTitle += '-';
           fileTitle += evt.id.toLowerCase();
 
-          var logger = fs.createWriteStream(`_events/${fileTitle}.md`);
+          var logger = fs.createWriteStream(`${dirPath}/${fileTitle}.md`);
 
           logger.write(`---\n`);
           logger.write(`layout: page\n`);
