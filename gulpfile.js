@@ -175,15 +175,18 @@ gulp.task('markdown', function() {
   return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
         let events = JSON.parse(body);
 
-        var dirPath = '';
+        let dirPath = '';
         if(isProduction){
           dirPath = '/opt/build/repo/_events';
         } else {
           dirPath = '_events';
         }
-        '_events';
-        try { var files = fs.readdirSync(dirPath); }
-        catch(e) { return; }
+
+        try {
+          var files = fs.readdirSync(dirPath);
+        } catch(e) {
+          return;
+        }
         if (files.length > 0){
           for (let i = 0; i < files.length; i++) {
             var filePath = dirPath + '/' + files[i];

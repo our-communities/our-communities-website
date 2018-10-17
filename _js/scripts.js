@@ -9,16 +9,6 @@ require( 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js' );
 $( document ).ready( function() {
     toggleMobileNav();
     ShowHideNav();
-
-    if($('#community-page').length) {
-      console.log('Community Page');
-      loadCommunityEvents();
-    } else if ($('#Calendar').length) {
-      loadAllEvents();
-    } else {
-      console.log('Not Community Page');
-    }
-
 } );
 
 $( window ).resize( function() {
@@ -43,7 +33,6 @@ function toggleMobileNav() {
     } );
 
     $( 'body' ).on( 'click', function( e ) {
-
       if ( e.target.classList.contains( 'header__overlay' ) ) {
         hideMobileNav();
       }
@@ -102,7 +91,6 @@ function ShowHideNav() {
 
     $( window ).scroll( function() {
         var wW = 1024;
-
         // if window width is more than 1024px start show/hide nav
         if ( $( window ).width() >= wW ) {
             if ( !$header.hasClass( 'fixed' ) ) {
@@ -147,109 +135,3 @@ function ShowHideNav() {
         }
     } );
 }
-
-/*-------------------------------------------------------------------------*/
-/* POPULATE EVENTS CALENDAR */
-/* -----------------------------------------------------------------------*/
-
-let app = {
-  communities: null,
-  events: null,
-  venues: null
-};
-
-function loadCommunityEvents(){
-  // fetch('https://our-communities-api.herokuapp.com/getData')
-  fetch('http://127.0.0.1:8080/getData')
-  .then(response => response.json())
-  .then(data => {
-    app.events = data.events;
-    app.venues = data.venues;
-    app.communities = data.organisations;
-    return app;
-  })
-  .then(app => {
-    let communityID = $( 'body' ).data( 'communityid' );
-    let theseEvents = [];
-
-    console.log(communityID);
-
-
-    app.events.forEach(evt => {
-      console.log(evt.organiserID.toString());
-      if (evt.organiserID.toString() === communityID.toString()){
-        theseEvents.push(evt);
-      }
-    });
-    theseEvents.sort(sortByDate);
-    console.log(theseEvents);
-    return theseEvents;
-  })
-  .then(matches => {
-  let eventContainer = $('#eventContainer');
-  let html = '';
-
-  matches.forEach(evt => {
-    html += `
-    <div class="post-card">
-      <a class="post-card__inner" href="#">
-        <div class="post-card__header">
-          <h2>${evt.title}</h2>
-          DATE
-        </div>
-      </a>
-    </div>`;
-  });
-  eventContainer.append(html);
-  })
-  .catch(err => {
-    console.warn('Error' + err);
-  });
-}
-
-function loadAllEvents(){
-  fetch('https://our-communities-api.herokuapp.com/getData')
-  .then(response => response.json())
-  .then(data => {
-    app.events = data.events;
-    app.venues = data.venues;
-    app.communities = data.organisations;
-    return app;
-  })
-  .then(app => {
-    let theseEvents = app.events;
-    theseEvents.sort(sortByDate);
-    return theseEvents;
-  })
-  .then(matches => {
-    let eventContainer = $('#eventContainer');
-    let html = '';
-
-    matches.forEach(evt => {
-      html += `
-      <div class="post-card">
-        <a class="post-card__inner" href="#">
-          <div class="post-card__header">
-            <h2>${evt.title}</h2>
-            DATE
-          </div>
-        </a>
-      </div>`;
-  });
-  eventContainer.append(html);
-  })
-  .catch(err => {
-    console.warn('Error' + err);
-  });
-}
-
-
-/**
-* Sorts an array by date, with the oldest first. Use with Array.sort()
-* @param {Event} a Event 1 to compare
-* @param {Event} a Event 2 to compare
-* @return {Integer} The order of items
-*/
-let sortByDate = (a, b) => {
-  return new Date(a.start) - new Date(b.start);
-};
