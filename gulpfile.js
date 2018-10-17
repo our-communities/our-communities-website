@@ -173,6 +173,7 @@ gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('markdown', function() {
   console.log('building markdown');
   return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
+  // return request('http://localhost:8080/getData', function(error, response, body) {
         let events = JSON.parse(body);
 
         let dirPath = '';
@@ -200,21 +201,21 @@ gulp.task('markdown', function() {
         }
 
         events.forEach(evt => {
-          var fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
+          let fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
           fileTitle += '-';
           fileTitle += evt.id.toLowerCase();
 
-          var logger = fs.createWriteStream(`${dirPath}/${fileTitle}.md`);
+          let logger = fs.createWriteStream(`${dirPath}/${fileTitle}.md`);
 
           logger.write(`---\n`);
           logger.write(`layout: page\n`);
           logger.write(`title: ${evt.title}\n`);
-          logger.write(`start: ${evt.start}\n`);
-          logger.write(`end: ${evt.end}\n`);
+          logger.write(`start: '${evt.start}'\n`);
+          logger.write(`end: '${evt.end}'\n`);
           logger.write(`organiserid: ${evt.organiserID}\n`);
           logger.write(`ticketurl: ${evt.ticketURL}\n`);
           logger.write(`venue: ${evt.venue}\n`);
-          logger.write(`georgaphic: ${evt.geographic}\n`);
+          logger.write(`geographic: ${evt.geographic}\n`);
           logger.write(`lat: ${evt.lat}\n`);
           logger.write(`long: ${evt.long}\n`);
           logger.write(`---\n`);
