@@ -89,6 +89,10 @@
 
 .blog {
   background-color: #f9f9f9;
+
+  &.blog--resource {
+    padding-top: 2.25rem;
+  }
 }
 
 .post-list {
@@ -96,9 +100,17 @@
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 auto;
-  width:100%;
+  width: 100%;
+
+  &.resource-list {
+    padding-top: 0;
+  }
 
   @include breakpoint($md) {
     padding-top: 5em;
+
+    &.resource-list {
+      padding-top: 0;
+    }
   }
 }
