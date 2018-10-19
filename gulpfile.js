@@ -176,6 +176,7 @@ gulp.task('markdown', function() {
   // return request('http://localhost:8080/getData', function(error, response, body) {
         let events = JSON.parse(body);
 
+        // Choose the path wisely
         let dirPath = '';
         if(isProduction){
           dirPath = '/opt/build/repo/_events';
@@ -183,6 +184,7 @@ gulp.task('markdown', function() {
           dirPath = '_events';
         }
 
+        // Empty the events directory
         try {
           var files = fs.readdirSync(dirPath);
         } catch(e) {
@@ -200,6 +202,11 @@ gulp.task('markdown', function() {
           }
         }
 
+        // Create a blank file to prevent the dev folder being untracked
+        let logger = fs.createWriteStream(`${dirPath}/file`);
+        logger.end();
+
+        // Generate the markdown for each event
         events.forEach(evt => {
           let fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
           fileTitle += '-';
