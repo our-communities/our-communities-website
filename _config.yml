@@ -39,7 +39,7 @@ service_worker: false
 
 # BUILD SETTINGS
 markdown: kramdown
-highlighter: rouge # or pygments or null
+highlighter: null # or pygments or null
 
 exclude:
   - README.md
