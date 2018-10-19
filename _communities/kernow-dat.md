@@ -4,6 +4,6 @@ name: Kernow DAT
 dataID: hVwi8wFm8qwexGwr7891n34x913
 link: https://kernowdat.co.uk
 summary: A community meetup for digital creatives.
-featured-img: kernow-dat.jpg
+featured-img: kernow-dat
 ---
 Kernow DAT Community
