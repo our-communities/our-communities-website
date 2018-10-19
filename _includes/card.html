@@ -16,7 +16,7 @@
       </figure>
     {% endif %}
   </a>
-  <a class="post-card__inner" href="{{ item.url | relative_url }}">
+  <a class="post-card__inner" href="{{ item.link | relative_url }}">
     <div class="post-card__header">
       <h2>{{ item.name | strip_html | truncate: 50 }}</h2>
     </div>
