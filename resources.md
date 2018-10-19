@@ -3,7 +3,6 @@ layout: content-feed
 title: Resources
 permalink: /resources/
 ---
-
 <section class="blog blog--resource">
   <div class="container">
     {% assign resources_grouped = site.resources | group_by: 'for' %}
