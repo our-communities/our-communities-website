@@ -2,8 +2,14 @@
 layout: community-page
 name: Tech Exeter
 dataID: techexeter
-link: https://techexeter.uk
 summary: A community meetup for techy types in Exeter city.
 featured-img: tech-exeter
+
+twitter: http://www.twitter.com/techexeter/
+facebook: http://www.facebook.com/techexeter
+instagram: https://www.instagram.com/techexeter/
+slack: https://techexeter.uk/slack
+website: https://techexeter.uk
+youtube: https://www.youtube.com/channel/UCmVsMwR292qS-aw46RCc6pQ
 ---
 Tech Exeter community.
