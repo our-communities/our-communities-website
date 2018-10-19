@@ -135,3 +135,25 @@ function ShowHideNav() {
         }
     } );
 }
+
+
+/////////// MAP STUFF
+
+function showMapEmbed(lat, long, venue, geographic) {
+  let html = document.getElementById('map-container');
+  html.innerHTML = `<iframe frameborder="0" allowfullscreen class="map-embed"
+  src="https://maps.google.com/maps?q=${venue},${geographic}&hl=es;z=14&amp;output=embed"></iframe>`;
+}
+
+try {
+  document.getElementById('show-map').addEventListener('click', (e) => {
+    if (e.target.id === 'show-map') {
+      e.preventDefault();
+      console.log('show map');
+      showMapEmbed(e.target.getAttribute('data-lat'),
+                   e.target.getAttribute('data-long'),
+                   e.target.getAttribute('data-venue'),
+                   e.target.getAttribute('data-geographic'));
+    }
+  });
+} catch (e){}

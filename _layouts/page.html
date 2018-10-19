@@ -31,6 +31,16 @@ layout: compress
 
           {{ content }}
 
+          {% if page.collection == 'events' %}
+            <div class="map-container" id="map-container">
+              <a href="" id="show-map" data-lat="{{page.lat}}"
+                                       data-long="{{page.long}}"
+                                       data-venue="{{page.venue}}"
+                                       data-geographic="{{page.geographic}}"
+                                       class="button">Show map</a>
+            </div>
+          {% endif %}
+
         </div>
       </div>
 
