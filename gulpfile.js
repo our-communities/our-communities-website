@@ -247,7 +247,7 @@ gulp.task('sw', function() {
 
 // Images
 gulp.task('img', function() {
-  return gulp.src('_img/posts/*.{png,jpg}')
+  return gulp.src('_img/communities/*.{png,jpg}')
     .pipe($.responsive({
       // For all the images in the folder
       '*': [{
@@ -257,34 +257,36 @@ gulp.task('img', function() {
         // thubmnail
         width: 535,
         rename: { suffix: '_thumb' },
-      }, {
+      },
+      {
         // thumbnail @2x
         width: 535 * 2,
         rename: { suffix: '_thumb@2x' },
-      }, {
-        width: 575,
-        rename: { suffix: '_xs'}
-      }, {
-        width: 767,
-        rename: {suffix: '_sm'}
-      }, {
-        width: 991,
-        rename: { suffix: '_md' }
-      }, {
-        width: 1999,
-        rename: { suffix: '_lg' }
-      }, {
-        // max-width hero
-        width: 1920,
+    // {
+    //     width: 575,
+    //     rename: { suffix: '_xs'}
+    //   }, {
+    //     width: 767,
+    //     rename: {suffix: '_sm'}
+    //   }, {
+    //     width: 991,
+    //     rename: { suffix: '_md' }
+    //   }, {
+    //     width: 1999,
+    //     rename: { suffix: '_lg' }
+    //   }, {
+    //     // max-width hero
+    //     width: 1920,
       }],
-    }, {
-      quality: 70,
+    },
+    {
+      quality: 85,
       progressive: true,
       withMetadata: false,
       errorOnEnlargement: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/img/posts/'));
+    .pipe(gulp.dest('assets/img/communities/'));
 });
 
 
