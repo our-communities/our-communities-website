@@ -3,7 +3,7 @@ layout: content-feed
 title: Calendar
 permalink: /calendar/
 ---
-<section class="blog blog--resource">
+<section class="blog blog--resource blog--calendar">
   <div class="container">
     {% assign sorted-events = site.events | sort: 'start' | group_by_exp: "item", "item.start | date: '%B %Y'" %}
     {% for month in sorted-events %}
