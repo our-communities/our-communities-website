@@ -11,8 +11,6 @@
   border-bottom: 0;
   transition: box-shadow .25s ease;
 
-
-
   &:hover,
   &:focus {
     border-bottom: 0;
@@ -28,7 +26,6 @@
       margin-right: 0;
     }
   }
-
 
   @include breakpoint($xl) {
     width: 31.25%;
