@@ -114,3 +114,11 @@
     }
   }
 }
+
+.page-content__columns {
+  columns: 1 auto;
+
+  @include breakpoint($md) {
+    columns: 2 auto;
+  }
+}

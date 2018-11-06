@@ -101,16 +101,12 @@ gulp.task('build-site', function(cb) {
 // SASS
 gulp.task('sass', function() {
   return gulp.src(src.css)
-    .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed',
       includePaths: ['scss'],
       onError: browserSync.notify
     }).on('error', sass.logError))
-    .pipe(sourcemaps.write({includeContent: false}))
-    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(prefix())
-    .pipe(sourcemaps.write('./'))
     .pipe(rename({ basename: 'main' }))
     .pipe(gulp.dest(dist.css))
     .pipe(browserSync.reload({ stream: true }))

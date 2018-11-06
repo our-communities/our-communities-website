@@ -23,11 +23,9 @@ navigation: # Navigation links
   - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
-  Modern Jekyll theme focused on speed performance &amp; SEO best practices
+  A group of grassroots digital communities with common values, working together to impvrove the tech eco system.
 
 hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
-
-email: your-email@domain.com # email for form submission
 
 twitter_username: jan_czizikow # replace with your_twitter_username or comment to remove link from footer
 github_username:  janczizikow # replace with your_github_username or comment to remove link from footer
