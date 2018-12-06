@@ -205,6 +205,7 @@ gulp.task('markdown', function() {
         // Generate the markdown for each event
         events.forEach(evt => {
           let fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
+          fileTitle = fileTitle.replace(/(\/)/g, '-');
           fileTitle += '-';
           fileTitle += evt.id.toLowerCase();
 
