@@ -1,0 +1,16 @@
+---
+label: Community
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: page
+- type: select
+  name: layout
+  config:
+    source:
+      type: documents
+      section: communities
+    required: true
+  label: Layout
+  description: Which Template
