@@ -1,15 +1,18 @@
 *.gem
 .bundle
-.sass-cache
-_site
-_img/posts/*.jpg
-_img/posts/*.png
+
 Gemfile.lock
 .idea/*
 npm-debug.log
-*.js.map
-maps
-_events/*.md
+
+_site
+
+#Commented out during forestry setup
+#*.js.map
+#maps
+#_img/posts/*.jpg
+#_img/posts/*.png
+#_events/*.md
 
 # OS Generated files #
 ######################
@@ -25,6 +28,7 @@ Thumbs.db
 ########
 .sass-cache/
 *.css.map
+.sass-cache
 
 # Jekyll #
 ##########
