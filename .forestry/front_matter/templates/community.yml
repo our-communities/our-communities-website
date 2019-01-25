@@ -4,13 +4,47 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  default: page
-- type: select
-  name: layout
-  config:
-    source:
-      type: documents
-      section: communities
-    required: true
+  default: community-page
   label: Layout
-  description: Which Template
+  name: layout
+  hidden: true
+- type: text
+  name: community_name
+  label: Community Name
+  description: The full name of the community
+  config:
+    required: true
+- type: text
+  name: data_id
+  label: Data ID
+  description: The meetup id or eventbrite key
+  config:
+    required: true
+- type: textarea
+  label: Summary
+  name: summary
+  description: A brief description of the community.
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: text
+  name: featured_image
+  label: Featured Image
+- type: text
+  name: twitter
+  label: Twitter
+  description: Twitter url
+- type: text
+  name: facebook
+  label: Facebook
+- type: text
+  name: slack
+  label: Slack
+- type: text
+  name: website
+  label: Website
+- type: text
+  name: youtube
+  label: YouTube
