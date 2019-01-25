@@ -29,8 +29,13 @@ layout: compress
       <div class="container">
         <div class="page-content">
 
+          {% include event-info.html %}
+
+          <hr />
+
           {{ content }}
 
+          <hr />
           {% if page.collection == 'events' %}
             <div class="map-container" id="map-container">
               <a href="" id="show-map" data-lat="{{page.lat}}"

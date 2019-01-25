@@ -43,3 +43,22 @@
     white-space: nowrap;
   }
 }
+
+
+.event-org-logo {
+  max-height: 10em;
+  width: 10em;
+}
+
+.event-org-logo-container {
+    text-align: center;
+
+    @media screen and (min-width: $md) {
+      text-align: right;
+    }
+}
+
+.logo {
+  margin-top: 9px;
+  max-height: 34px;
+}
