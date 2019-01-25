@@ -1,21 +1,12 @@
-# Sleek
+# Out Communities Website
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-sleek.svg)](https://badge.fury.io/rb/jekyll-sleek) [![Build Status](https://travis-ci.org/janczizikow/sleek.svg?branch=master)](https://travis-ci.org/janczizikow/sleek) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/janczizikow/sleek)
 
-A modern [Jekyll](https://jekyllrb.com/) theme focused on speed performance & SEO best practices.
-
-![Sleek Jekyll Theme](./sleek.jpg)
+The Our Communities website, based upon a modern [Jekyll](https://jekyllrb.com/) theme focused on speed performance & SEO best practices.
 
 ## Features
 
-* Compatible with [Github Pages](https://pages.github.com/)
-* Minimal, responsive and speed performance optimized
-* SEO friendly, with help of [Jekyll SEO Plugin](https://github.com/jekyll/jekyll-seo-tag)
-* Easy [Google Tag Manager](https://tagmanager.google.com/) Integration
-* Support for [Disqus](https://disqus.com/) comments
-* Form submissions with [Formspree](#formspree)
-
-[Preview Demo](https://janczizikow.github.io/sleek/)
+This project has some lovely features
 
 ## Installation
 
@@ -41,53 +32,12 @@ npm install --global gulp-cli
 
 ### Up & Running
 
-1. [Fork the repo](https://github.com/janczizikow/sleek/fork)
-2. Clone or download the repo into directory of your choice: `git clone https://github.com/your-github-username/sleek.git`
+1. Fork the repo
+2. Clone or download the repo into directory of your choice: `git clone https://github.com/your-github-username/sleek.
 3. Inside the directory run `bundle install` and `npm install`
 4. If you want to use [gulp.js](https://gulpjs.com/) run `gulp` or `npm start`
     * if you don't want to use gulp you can run `bundle exec jekyll serve` instead
 
-#### Installing to existing jekyll project
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-sleek"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-sleek
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-sleek
-
-## File Structure Overview
-
-```bash
-sleek
-├── _includes	               # theme includes
-├── _js	                       # javascript files (by default jquery will be included with the scripts inside)
-├── _layouts                   # theme layouts (see below for details)
-├── _pages                     # pages folder (empty by default)
-├── _posts                     # blog posts
-├── _sass                      # Sass partials
-├── assets
-|  ├── css	               # minified css files
-|  ├── img                     # images and icons used for the template
-|  └── js		               # bundled and minified files from _js folder
-├── _config.yml                # sample configuration
-├── gulpfile.js                # gulp tasks (tasks autorunner)
-├── index.md                   # sample home page (blog page)
-└── package.json               # gulp tasks
-```
 
 ## Usage
 
@@ -152,29 +102,6 @@ Replace `GTM-XXXXXXX` with your Google Tag Manager Container ID.
 **Note** by default GTM tracking snippet will be also included in development environment.
 
 Google Tag Manager was chosen for this project as it's more flexible than Google Analytics, and it can be used to add GA to your site.
-
-### Disqus
-
-To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to `_config.yml`:
-
-```yaml
-disqus:
-  shortname: my_disqus_shortname
-```
-
-### Formspree
-
-To use [Formspree](https://formspree.io/) with your email address, you need to change the following:
-
-Change `your-email@domain.com` email in `_config.yml`
-
-```yaml
-email: your-email@domain.com
-```
-
-You can check if it works by simply submitting the form.
-
-If you have a Formspree Gold Account, you can take advantage of using AJAX to submit form. To do so, uncomment last function in `_js/scripts.js` and run `gulp js`. Now the form will be submitted asynchronously, without leaving the page.
 
 ## Contributing
 
