@@ -220,6 +220,8 @@ gulp.task('markdown', function() {
           logger.write(`start: '${evt.start}'\n`);
           logger.write(`end: '${evt.end}'\n`);
           logger.write(`organiserid: ${evt.organiserID}\n`);
+          logger.write(`organiserName: ${evt.orgName}\n`);
+          logger.write(`organiserAltName: ${evt.orgAltName}\n`);
           logger.write(`ticketurl: ${evt.ticketURL}\n`);
           logger.write(`venue: ${evt.venue}\n`);
           logger.write(`geographic: ${evt.geographic}\n`);

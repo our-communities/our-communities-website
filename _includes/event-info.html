@@ -1,16 +1,20 @@
 <div class="community__info--outer">
   <div class="page-content page-content__columns">
     <div class="column column-75 full-width show-event">
-      <p>Date: 07/02/2019 - 19:00<br>
+      <p>Organised by: {{page.organiserName}}<br>
+         Date: 07/02/2019 - 19:00<br>
          Location: {{page.venue}}, {{page.geographic}}</p>
       <p>
         <a href="{{page.ticketurl}}" class="button" title="Book your place">Tickets</a>
-        <!-- <a class="button share" target="_blank" rel="noopener" href="http://twitter.com/home?status=Check%20out%20this%20event%20by%20%40DigitalPlymouth%20-%20Digital%20Plymouth%20Meetup%20https%3A%2F%2Fcommunity-events-pwa.herokuapp.com%2Fevent%2F53539065787%20%23GatherSW">Share</a> -->
+        <a class="button share" target="_blank" rel="noopener" href="http://twitter.com/home?status=Check%20out%20this%20event%20by%20{{page.organiserName}}%20-%20{{page.title}}%20{{ site.deployedURL }}%20%23{{ site.title }}">Share</a>
       </p>
     </div>
     <div class="column event-org-logo-container">
-      <a href="/organisation/8225401568" title="View organiser">
-        <img src="https://pbs.twimg.com/profile_images/774387221990371328/Vg4RwUIA.jpg" alt="Digital Plymouth logo" class="event-org-logo">
+      <a href="/communities/{{page.organiserAltName}}"
+         title="View organiser">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{page.organiserAltName}}_thumb.jpg"
+             alt="{{page.name}} logo"
+             class="event-org-logo">
       </a>
     </div>
   </div>
