@@ -4,6 +4,8 @@ title: Tech Connect - Save the date - Software Cornwall
 start: '2019-03-14T09:00:00.000Z'
 end: '2019-03-15T17:00:00.000Z'
 organiserid: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
+organiserName: Software Cornwall
+organiserAltName: software-cornwall
 ticketurl: https://www.meetup.com/Cornwall-Digital/events/256977091/
 venue: Heartlands 
 geographic: TR15 3QY

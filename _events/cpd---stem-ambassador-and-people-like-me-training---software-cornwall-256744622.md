@@ -4,6 +4,8 @@ title: CPD - STEM Ambassador and People Like Me training - Software Cornwall
 start: '2019-01-28T16:45:00.000Z'
 end: '2019-01-30T16:00:00.000Z'
 organiserid: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
+organiserName: Software Cornwall
+organiserAltName: software-cornwall
 ticketurl: https://www.meetup.com/Cornwall-Digital/events/256744622/
 venue: Heartlands
 geographic: undefined

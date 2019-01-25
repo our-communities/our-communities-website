@@ -4,6 +4,8 @@ title: Tech Connect - Meetup - Software Cornwall
 start: '2019-02-07T11:00:00.000Z'
 end: '2019-02-07T15:00:00.000Z'
 organiserid: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
+organiserName: Software Cornwall
+organiserAltName: software-cornwall
 ticketurl: https://www.meetup.com/Cornwall-Digital/events/257006600/
 venue: Tremough Innovation Centre
 geographic: Penryn

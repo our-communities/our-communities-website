@@ -4,6 +4,8 @@ title: Fab February Meetup
 start: '2019-02-06T19:00:00.000Z'
 end: '2019-02-06T21:00:00.000Z'
 organiserid: techexeter
+organiserName: Tech Exeter
+organiserAltName: tech-exeter
 ticketurl: https://www.meetup.com/techexeter/events/258090605/
 venue: The Workshop @ The Phoenix
 geographic: Exeter
