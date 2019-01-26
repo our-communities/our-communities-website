@@ -3,7 +3,7 @@
     <div class="column column-75 full-width show-event">
       <p>Organised by: <a href="/communities/{{page.organiserAltName}}"
                           title="{{page.organiserName}} organiser page.">{{page.organiserName}}</a><br>
-         Date: {{page.displayDate}} - {{page.displayTime}}<br>
+         Date: {{page.start | date: '%d %B %Y'" }} // {{page.start | slice: 11, 5}}<br>
          Location: {{page.venue}}, {{page.geographic}}</p>
       <p>
         <a href="{{page.ticketurl}}" class="btn" title="Book your place">Tickets</a>
