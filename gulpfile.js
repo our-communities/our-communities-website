@@ -164,10 +164,7 @@ gulp.task('watch', function() {
   gulp.watch(src.js, ['js']);
 });
 
-gulp.task('dev', function() {
-  gulp.watch(src.js, ['js']);
-  gulp.watch('_sass/**/*.scss', ['sass']);
-});
+gulp.task('dev', ['watch']);
 
 gulp.task('default', ['browser-sync', 'watch']);
 
