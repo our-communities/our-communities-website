@@ -4,7 +4,7 @@ title: Digital Plymouth Meetup
 start: '2019-05-02T19:00:00'
 end: '2019-05-02T22:00:00'
 displayDate: 'undefined'
-displayTime: '20:00'
+displayTime: '19:00'
 organiserid: 8225401568
 organiserName: Digital Plymouth
 organiserAltName: digital-plymouth
