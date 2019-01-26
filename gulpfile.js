@@ -174,8 +174,8 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 gulp.task('markdown', function() {
   console.log('building markdown');
-  // return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
-  return request('http://localhost:8080/getData', function(error, response, body) {
+  return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
+  // return request('http://localhost:8080/getData', function(error, response, body) {
         let events = JSON.parse(body);
 
         // Choose the path wisely
