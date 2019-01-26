@@ -211,10 +211,12 @@ gulp.task('markdown', function() {
           let fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
           fileTitle = fileTitle.replace(/(\/)/g, '-');
           fileTitle = fileTitle.replace(/(\:)/g, '-');
+          fileTitle = fileTitle.replace(/(\#)/g, '');
           fileTitle += '-';
           fileTitle += evt.id.toLowerCase();
 
           evt.title = evt.title.replace(/(\:)/g, '-');
+          evt.title = evt.title.replace(/(\#)/g, '');
 
           let logger = fs.createWriteStream(`${dirPath}/${fileTitle}.md`);
 
