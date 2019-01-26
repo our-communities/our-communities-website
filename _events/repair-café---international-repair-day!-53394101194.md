@@ -3,6 +3,8 @@ layout: page
 title: Repair Café - International Repair Day!
 start: '2019-10-19T10:00:00'
 end: '2019-10-19T14:00:00'
+displayDate: 'undefined'
+displayTime: '11:00'
 organiserid: 11380604458
 organiserName: MESH
 organiserAltName: mesh

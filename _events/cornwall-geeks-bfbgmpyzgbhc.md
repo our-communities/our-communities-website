@@ -3,6 +3,8 @@ layout: page
 title: Cornwall Geeks
 start: '2019-04-25T19:00:00.000Z'
 end: '2019-04-25T21:00:00.000Z'
+displayDate: 'undefined'
+displayTime: '19:00'
 organiserid: niux6i76QBI6Ppi7yxpisuHa8wy
 organiserName: Cornwall Geeks
 organiserAltName: cornwall-geeks

@@ -1,8 +1,9 @@
 <div class="community__info--outer">
   <div class="page-content page-content__columns">
     <div class="column column-75 full-width show-event">
-      <p>Organised by: {{page.organiserName}}<br>
-         Date: 07/02/2019 - 19:00<br>
+      <p>Organised by: <a href="/communities/{{page.organiserAltName}}"
+                          title="{{page.organiserName}} organiser page.">{{page.organiserName}}</a><br>
+         Date: {{page.displayDate}} - {{page.displayTime}}<br>
          Location: {{page.venue}}, {{page.geographic}}</p>
       <p>
         <a href="{{page.ticketurl}}" class="button" title="Book your place">Tickets</a>

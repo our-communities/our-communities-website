@@ -3,6 +3,8 @@ layout: page
 title: Tech Connect - Save the date - Software Cornwall
 start: '2019-03-14T09:00:00.000Z'
 end: '2019-03-15T17:00:00.000Z'
+displayDate: 'undefined'
+displayTime: '09:00'
 organiserid: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
 organiserName: Software Cornwall
 organiserAltName: software-cornwall

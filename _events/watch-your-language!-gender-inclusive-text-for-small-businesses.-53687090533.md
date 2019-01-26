@@ -3,6 +3,8 @@ layout: page
 title: Watch your language! Gender inclusive text for small-businesses.
 start: '2019-03-02T12:30:00'
 end: '2019-03-02T16:30:00'
+displayDate: 'undefined'
+displayTime: '12:30'
 organiserid: 11380604458
 organiserName: MESH
 organiserAltName: mesh

@@ -3,6 +3,8 @@ layout: page
 title: Digital Plymouth Meetup
 start: '2019-11-07T19:00:00'
 end: '2019-11-07T22:00:00'
+displayDate: 'undefined'
+displayTime: '19:00'
 organiserid: 8225401568
 organiserName: Digital Plymouth
 organiserAltName: digital-plymouth

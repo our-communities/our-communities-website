@@ -3,6 +3,8 @@ layout: page
 title: Borrow Don't Buy's Repair Cafe and B-day! 
 start: '2019-02-02T10:00:00'
 end: '2019-02-02T18:00:00'
+displayDate: 'undefined'
+displayTime: '10:00'
 organiserid: 11380604458
 organiserName: MESH
 organiserAltName: mesh

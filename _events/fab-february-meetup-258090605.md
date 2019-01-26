@@ -3,6 +3,8 @@ layout: page
 title: Fab February Meetup
 start: '2019-02-06T19:00:00.000Z'
 end: '2019-02-06T21:00:00.000Z'
+displayDate: 'undefined'
+displayTime: '19:00'
 organiserid: techexeter
 organiserName: Tech Exeter
 organiserAltName: tech-exeter
