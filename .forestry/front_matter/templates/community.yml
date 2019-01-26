@@ -49,4 +49,5 @@ fields:
   name: youtube
   label: YouTube
 pages:
+- _communities/digital-taunton.md
 - _communities/wordpress-exeter.md
