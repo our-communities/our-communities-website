@@ -1,8 +1,8 @@
 ---
 layout: community-page
-name: Algorithmic Art
-dataID: Algorithmic-Art
-summary: Algorithmic Art meetup group based in Cornwall
-featured_image: 'algorithmic-art'
+name: Data Science Cornwall
+dataID: datasciencecornwall
+summary: Data Science meetup based in Cornwall
+featured_image: 'data-science-cornwall'
 date: 2019-01-26 01:44:35 +0000
 ---
