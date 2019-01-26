@@ -69,13 +69,19 @@ gulp.task('jekyll-build', function (done) {
         .on('close', done);
 });
 
+gulp.task('jekyll-build-incremental', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build', '--incremental'], {stdio: 'inherit'})
+        .on('close', done);
+});
+
 gulp.task('deploy', ['jekyll-build'], function () {
     return gulp.src('./_site/**/*')
         .pipe(deploy());
 });
 
 // Rebuild Jekyll & do page reload
-gulp.task('rebuild', ['jekyll-build'], function (done) {
+gulp.task('rebuild', ['jekyll-build-incremental'], function (done) {
     browserSync.reload();
     done();
 });
@@ -154,7 +160,7 @@ gulp.task('critical', function (cb) {
 
 gulp.task('watch', function() {
   gulp.watch('_sass/**/*.scss', ['sass']);
-  gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.md',  'pages_/*.md', '_include/*html'], ['rebuild']);
+  gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_events/*.md', '_communities/*.md',  'pages_/*.md', '_include/*html'], ['rebuild']);
   gulp.watch(src.js, ['js']);
 });
 
@@ -168,8 +174,8 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 gulp.task('markdown', function() {
   console.log('building markdown');
-  return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
-  // return request('http://localhost:8080/getData', function(error, response, body) {
+  // return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
+  return request('http://localhost:8080/getData', function(error, response, body) {
         let events = JSON.parse(body);
 
         // Choose the path wisely
@@ -219,6 +225,8 @@ gulp.task('markdown', function() {
           logger.write(`title: ${evt.title}\n`);
           logger.write(`start: '${evt.start}'\n`);
           logger.write(`end: '${evt.end}'\n`);
+          logger.write(`displayDate: '${evt.displayDate}'\n`);
+          logger.write(`displayTime: '${evt.displayTime}'\n`);
           logger.write(`organiserid: ${evt.organiserID}\n`);
           logger.write(`organiserName: ${evt.orgName}\n`);
           logger.write(`organiserAltName: ${evt.orgAltName}\n`);
