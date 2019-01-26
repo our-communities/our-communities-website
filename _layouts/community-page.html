@@ -19,21 +19,30 @@ layout: compress
 
     {% include header.html %}
 
-    <div class="hero--small">
-      <div class="hero__wrap">
-        <h1 class="hero__title">{{ page.title }}</h1>
-      </div>
-    </div>
-    <main class="site__content">
+    <main class="site__content community">
       <div class="container">
-        <div class="page-content">
+        <div class="page-content page__community page-content__columns">
 
-          {% include community-info.html %}
+          <div class="page--community__columns">
+            <h1>{{ page.title }}</h1>
+          </div>
 
-          <hr />
+          <div class="column event-org-logo-container">
+            <a href="/communities/{{page.organiserAltName}}"
+               title="View organiser">
+              <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{page.featured-img}}_thumb.jpg"
+                   alt="{{page.name}} logo"
+                   class="event-org-logo">
+            </a>
+          </div>
+        </div>
 
+        {% include community-info.html %}
+
+        <hr />
+
+        <div class="page-content page__community wrap">
           {{ content }}
-
         </div>
       </div>
     </main>
