@@ -3,8 +3,6 @@ layout: page
 title: Tech Connect - Meetup - Software Cornwall
 start: '2019-02-07T11:00:00.000Z'
 end: '2019-02-07T15:00:00.000Z'
-displayDate: 'undefined'
-displayTime: '11:00'
 organiserid: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
 organiserName: Software Cornwall
 organiserAltName: software-cornwall

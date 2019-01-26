@@ -3,8 +3,6 @@ layout: page
 title: CoderDojo at The Poly, Falmouth
 start: '2019-02-16T13:30:00.000Z'
 end: '2019-02-16T15:30:00.000Z'
-displayDate: 'undefined'
-displayTime: '13:30'
 organiserid: coderdojocornwall
 organiserName: CoderDojo Cornwall
 organiserAltName: coder-dojo-cornwall

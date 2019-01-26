@@ -3,8 +3,6 @@ layout: page
 title: Sentiment Analysis - Hands-On Tutorial with Python
 start: '2019-01-31T18:30:00.000Z'
 end: '2019-01-31T20:30:00.000Z'
-displayDate: 'undefined'
-displayTime: '18:30'
 organiserid: datasciencecornwall
 organiserName: Data Science Cornwall
 organiserAltName: data-science-cornwall

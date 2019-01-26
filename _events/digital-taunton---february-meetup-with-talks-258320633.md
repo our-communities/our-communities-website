@@ -3,8 +3,6 @@ layout: page
 title: Digital Taunton - February Meetup with Talks
 start: '2019-02-28T19:00:00.000Z'
 end: '2019-02-28T21:30:00.000Z'
-displayDate: 'undefined'
-displayTime: '19:00'
 organiserid: digitaltaunton
 organiserName: Digital Taunton
 organiserAltName: digital-taunton

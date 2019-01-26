@@ -3,8 +3,6 @@ layout: page
 title: Repair Café + BIG LUNCH
 start: '2019-06-01T10:00:00'
 end: '2019-06-01T16:00:00'
-displayDate: 'undefined'
-displayTime: '10:00'
 organiserid: 11380604458
 organiserName: MESH
 organiserAltName: mesh

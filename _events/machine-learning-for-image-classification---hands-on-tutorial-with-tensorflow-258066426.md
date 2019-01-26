@@ -3,8 +3,6 @@ layout: page
 title: Machine Learning for Image Classification - Hands-On Tutorial with Tensorflow
 start: '2019-03-28T18:30:00.000Z'
 end: '2019-03-28T20:30:00.000Z'
-displayDate: 'undefined'
-displayTime: '18:30'
 organiserid: datasciencecornwall
 organiserName: Data Science Cornwall
 organiserAltName: data-science-cornwall

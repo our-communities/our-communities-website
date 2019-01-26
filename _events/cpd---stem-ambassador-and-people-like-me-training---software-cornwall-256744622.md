@@ -3,8 +3,6 @@ layout: page
 title: CPD - STEM Ambassador and People Like Me training - Software Cornwall
 start: '2019-01-28T16:45:00.000Z'
 end: '2019-01-30T16:00:00.000Z'
-displayDate: 'undefined'
-displayTime: '16:45'
 organiserid: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
 organiserName: Software Cornwall
 organiserAltName: software-cornwall

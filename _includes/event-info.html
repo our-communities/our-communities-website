@@ -1,14 +1,10 @@
 <div class="community__info--outer">
   <div class="page-content page-content__columns">
-    <div class="column column-75 full-width show-event">
+    <div class="page--community__columns">
       <p>Organised by: <a href="/communities/{{page.organiserAltName}}"
                           title="{{page.organiserName}} organiser page.">{{page.organiserName}}</a><br>
          Date: {{page.start | date: '%d %B %Y'" }} // {{page.start | slice: 11, 5}}<br>
          Location: {{page.venue}}, {{page.geographic}}</p>
-      <p>
-        <a href="{{page.ticketurl}}" class="btn" title="Book your place">Tickets</a>
-        <a class="btn share" target="_blank" rel="noopener" href="http://twitter.com/home?status=Check%20out%20this%20event%20by%20{{page.organiserName}}%20-%20{{page.title}}%20{{ site.deployedURL }}%20%23{{ site.title }}">Share</a>
-      </p>
     </div>
     <div class="column event-org-logo-container">
       <a href="/communities/{{page.organiserAltName}}"
@@ -19,4 +15,8 @@
       </a>
     </div>
   </div>
+  <p>
+    <a href="{{page.ticketurl}}" class="btn" title="Book your place">Tickets</a>
+    <a class="btn share" target="_blank" rel="noopener" href="http://twitter.com/home?status=Check%20out%20this%20event%20by%20{{page.organiserName}}%20-%20{{page.title}}%20{{ site.deployedURL }}%20%23{{ site.title }}">Share</a>
+  </p>
 </div>

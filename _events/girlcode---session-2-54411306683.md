@@ -3,8 +3,6 @@ layout: page
 title: GirlCode - Session 2
 start: '2019-02-21T15:00:00'
 end: '2019-02-21T16:15:00'
-displayDate: 'undefined'
-displayTime: '15:00'
 organiserid: 7944478778
 organiserName: Women in STEM Plymouth
 organiserAltName: women-in-stem-plymouth

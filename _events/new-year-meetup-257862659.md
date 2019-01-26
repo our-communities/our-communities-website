@@ -3,8 +3,6 @@ layout: page
 title: New Year Meetup
 start: '2019-02-08T18:00:00.000Z'
 end: '2019-02-08T20:00:00.000Z'
-displayDate: 'undefined'
-displayTime: '18:00'
 organiserid: Cornwall-NET-Developers
 organiserName: Cornwall .NET Developers
 organiserAltName: cornwall-dot-net-developers

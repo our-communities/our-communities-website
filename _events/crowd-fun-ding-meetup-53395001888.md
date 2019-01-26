@@ -3,8 +3,6 @@ layout: page
 title: Crowd-FUN-ding Meetup
 start: '2019-05-07T18:00:00'
 end: '2019-05-07T20:00:00'
-displayDate: 'undefined'
-displayTime: '18:00'
 organiserid: 11380604458
 organiserName: MESH
 organiserAltName: mesh

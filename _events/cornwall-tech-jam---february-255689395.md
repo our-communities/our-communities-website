@@ -3,8 +3,6 @@ layout: page
 title: Cornwall Tech Jam - February
 start: '2019-02-09T10:00:00.000Z'
 end: '2019-02-09T14:00:00.000Z'
-displayDate: 'undefined'
-displayTime: '10:00'
 organiserid: JFNoAXzlQ4Is2kHpUouCSLbOEGksUDyh
 organiserName: Cornwall Tech Jam
 organiserAltName: cornwall-tech-jam

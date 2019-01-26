@@ -61,3 +61,18 @@
   margin-top: 9px;
   max-height: 34px;
 }
+
+.site__content.event {
+
+  .page-content {
+    padding-top: 1rem;
+  }
+
+  .page-content__columns {
+    padding: 1rem 0;
+  }
+
+  .event-org-logo {
+    width: auto;
+  }
+}
