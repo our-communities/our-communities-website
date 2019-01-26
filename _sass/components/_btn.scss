@@ -35,10 +35,9 @@ input[type="button"] {
 }
 
 .btn + .btn {
-  margin-top: 2em;
+  margin-top: 1em;
 
-  @include breakpoint(350px) {
-    margin-top: 0;
+  @include breakpoint(450px) {
     margin-left: 2em;
   }
 }
