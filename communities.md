@@ -6,7 +6,8 @@ permalink: /communities/
 <section class="blog">
   <div class="container">
     <div class="post-list">
-      {% for community in site.communities %}
+      {% assign sorted_communities = site.communities | sort:'title' %}
+      {% for community in sorted_communities %}
         {% include community-card.html %}
       {% endfor %}
     </div>
