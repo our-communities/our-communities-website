@@ -25,6 +25,7 @@ layout: compress
 
           <div class="page--community__columns">
             <h1>{{ page.title }}</h1>
+            {{ content }}
           </div>
 
           <div class="column event-org-logo-container">
@@ -37,12 +38,8 @@ layout: compress
           </div>
         </div>
 
-        {% include community-info.html %}
-
-        <hr />
-
-        <div class="page-content page__community wrap">
-          {{ content }}
+        <div class="page-content page-content__infoblock">
+          {% include community-info.html %}
         </div>
       </div>
     </main>
