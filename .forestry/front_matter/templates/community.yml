@@ -48,3 +48,5 @@ fields:
 - type: text
   name: youtube
   label: YouTube
+pages:
+- _communities/wordpress-exeter.md
