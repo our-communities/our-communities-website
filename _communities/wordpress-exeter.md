@@ -10,6 +10,5 @@ slack: ''
 website: ''
 youtube: ''
 date: 2019-01-26 01:37:15 +0000
-published: false
 
 ---
