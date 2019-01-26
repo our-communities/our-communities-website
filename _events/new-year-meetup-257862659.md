@@ -7,7 +7,7 @@ displayDate: 'undefined'
 displayTime: '18:00'
 organiserid: Cornwall-NET-Developers
 organiserName: Cornwall .NET Developers
-organiserAltName: cornwall-net-developers
+organiserAltName: cornwall-dot-net-developers
 ticketurl: https://www.meetup.com/Cornwall-NET-Developers/events/257862659/
 venue: Headforwards, Opie Building
 geographic: Pool
