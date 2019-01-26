@@ -21,7 +21,7 @@ navigation: # Navigation links
   - {name: 'Home', link: '/'}
   - {name: 'Communities', link: '/communities/', description: 'Find out which communities are a part of this group', featured-img: 'shane-rounce-205187'}
   - {name: 'Calendar', link: '/calendar/', description: 'Get a list of upcoming events', featured-img: 'emile-perron-190221'}
-  - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
+  # - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
   A group of grassroots digital communities with common values, working together to impvrove the tech eco system.
@@ -38,7 +38,6 @@ service_worker: false
 
 # BUILD SETTINGS
 markdown: kramdown
-highlighter: null # or pygments or null
 
 exclude:
   - README.md
