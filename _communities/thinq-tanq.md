@@ -10,4 +10,7 @@ facebook: https://www.facebook.com/thethinqtanq/
 instagram: https://www.instagram.com/thinqtanq/
 website: https://thinqtanq.co.uk/
 ---
-Events from the Thinq Tanq community.
+THINQTANQ was the first coworking space in Plymouth.
+
+In the years since it has grown into the best place in the city to innovate,
+create and do business.

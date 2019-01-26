@@ -12,4 +12,7 @@ slack: https://techexeter.uk/slack
 website: https://techexeter.uk
 youtube: https://www.youtube.com/channel/UCmVsMwR292qS-aw46RCc6pQ
 ---
-Tech Exeter community.
+Tech Exeter is a community meetup run for people who work in tech.
+
+This super-friendly group includes engineers, designers, software developers,
+data scientists and many more tech related professions.

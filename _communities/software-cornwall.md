@@ -11,4 +11,5 @@ slack: https://softwarecornwall.slack.com/signup
 website: https://www.softwarecornwall.org/
 youtube: https://www.youtube.com/channel/UCQuYTXIJ3r1GEHPLw--gx7Q
 ---
-Cornwall Digital Meetup Group
+A member community which promotes, develops and supports  Cornwall's
+growing tech industry.

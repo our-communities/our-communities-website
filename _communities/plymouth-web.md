@@ -7,4 +7,6 @@ featured-img: plymouth-web
 
 twitter: https://twitter.com/Plymouth_Web
 ---
-Plymouth Web meetup
+Plymouth Web is an event in Plymouth centered around web design and development.
+Each month we host a meetup in Plymouth which provides a regular opportunity to
+socialise with other like minded professionals and learn about new topics.

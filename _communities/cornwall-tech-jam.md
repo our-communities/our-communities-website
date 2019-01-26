@@ -9,4 +9,6 @@ twitter: https://twitter.com/cornwalltechjam
 facebook: https://www.facebook.com/cornwalltechjam/
 website: https://www.cornwalltechjam.uk/
 ---
-Cornwall tech jam maker events
+For anyone interested in technology, of all ages and abilities. Ask questions
+and learn about programming (Scratch, Python, Minecraft and much more) as well as
+interfacing computers with the physical world.

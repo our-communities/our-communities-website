@@ -8,3 +8,5 @@ date: 2019-01-26 01:44:35 +0000
 
 website: https://www.meetup.com/Cornwall-NET-Developers/
 ---
+Chat about the latest innovations in the framework, new features of the languages
+and everything else .NET related at the furthest west .NET meetup group in mainland England.

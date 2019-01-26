@@ -11,4 +11,7 @@ instagram: https://www.instagram.com/kernowdat/
 website: https://kernowdat.co.uk
 youtube: https://www.youtube.com/channel/UC4F8jPskxHa_X163ELJinkQ
 ---
-Kernow DAT Community
+Kernow DAT host events for Cornwalls creative digital communities.
+
+Try some cutting edge demos, hear interesting talks and join in
+the casual conversation with our local digital community.

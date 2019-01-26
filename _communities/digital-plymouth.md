@@ -11,4 +11,5 @@ instagram: https://www.instagram.com/digitalplymouth/
 website: https://www.digitalplymouth.com/
 youtube: https://www.youtube.com/channel/UCsXe2sZCONAI8tVHnI0H6BQ
 ---
-Digital Plymouth Meetup
+Bringing together the most creative talent in the South West. Each quarter you
+have a chance to build connections, meet like minded people and be inspired.
