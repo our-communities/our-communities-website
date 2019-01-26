@@ -34,7 +34,6 @@ permalink: /calendar/
             {% else %}
               <figure class="post-card__thumb">
                 <div class="dark-bg"></div>
-                <div class="post-card__cover"></div>
               </figure>
             {% endif %}
 

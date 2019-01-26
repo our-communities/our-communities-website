@@ -3,7 +3,7 @@ layout: community-page
 name: Future Sync
 dataID: "18225508719"
 summary: A on day tech conference, hosted at Plymouth University
-featured-img: digital-plymouth
+featured-img: future-sync
 
 twitter: https://twitter.com/FutureSyncConf
 facebook: https://www.facebook.com/FutureSyncConf/
