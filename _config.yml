@@ -19,12 +19,13 @@ social:
 # THEME SETTINGS
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
-  - {name: 'Communities', link: '/communities/', description: 'Find out which communities are a part of this group', featured-img: 'shane-rounce-205187'}
-  - {name: 'Calendar', link: '/calendar/', description: 'Get a list of upcoming events', featured-img: 'emile-perron-190221'}
+  - {name: 'Communities', link: '/communities/', description: 'A list of community led organisations hosting events in the region.', featured-img: 'shane-rounce-205187'}
+  - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the South West.', featured-img: 'emile-perron-190221'}
+  - {name: 'Shared CfP', link: '/proposals/', description: 'Submit a talk via our shared call for proposals form', featured-img: 'shane-rounce-205187'}
   # - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
-  A group of grassroots digital communities with common values, working together to impvrove the tech eco system.
+  A shared events calendar for grassroots digital and tech communities in the South West.
 
 hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
@@ -66,6 +67,8 @@ collections:
   communities:
     output: true
   resources:
-    output: true
+    output: false
   events:
+    output: true
+  proposals:
     output: true
