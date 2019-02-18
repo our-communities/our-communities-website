@@ -71,6 +71,7 @@ build-iPhoneSimulator/
 #####################
 bower_components
 node_modules
+_events
 
 _algolia_api_key
 sw.js
