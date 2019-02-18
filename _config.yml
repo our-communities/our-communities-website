@@ -21,13 +21,13 @@ navigation: # Navigation links
   - {name: 'Home', link: '/'}
   - {name: 'Communities', link: '/communities/', description: 'A list of community led organisations hosting events in the region.', featured-img: 'communities'}
   - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the South West.', featured-img: 'calendar'}
-  - {name: 'Shared CfP', link: '/proposals/', description: 'Submit a talk via our shared call for proposals form', featured-img: 'proposals'}
+  - {name: 'Call for Proposals', link: '/proposals/', description: 'Submit a talk via our shared call for proposals system.', featured-img: 'proposals'}
   # - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
   A shared events calendar for grassroots digital and tech communities in the South West.
 
-hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/header_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 # twitter_username: jan_czizikow # replace with your_twitter_username or comment to remove link from footer
 # github_username:  janczizikow # replace with your_github_username or comment to remove link from footer
