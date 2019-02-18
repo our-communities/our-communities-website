@@ -219,6 +219,7 @@ gulp.task('markdown', function() {
 
           evt.title = evt.title.replace(/(\:)/g, '-');
           evt.title = evt.title.replace(/(\#)/g, '');
+          evt.title = evt.title.replace(/(\")/g, '');
 
           let logger = fs.createWriteStream(`${dirPath}/${fileTitle}.md`);
 
