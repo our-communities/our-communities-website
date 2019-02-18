@@ -30,6 +30,16 @@
   }
 }
 
+.header__name {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #343851;
+
+  &:hover {
+    color: #343851;
+  }
+}
+
 .header__logo {
   display: flex;
   height: 100%;
@@ -46,7 +56,7 @@
   }
 
   .header__logo--container {
-    width: 58px;
+    // width: 58px;
 
     .logo {
       fill: currentColor;
