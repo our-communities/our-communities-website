@@ -212,6 +212,8 @@ gulp.task('markdown', function() {
           fileTitle = fileTitle.replace(/(\/)/g, '-');
           fileTitle = fileTitle.replace(/(\:)/g, '-');
           fileTitle = fileTitle.replace(/(\#)/g, '');
+          fileTitle = fileTitle.replace(/(\")/g, '');
+          fileTitle = fileTitle.replace(/(\')/g, '');
           fileTitle += '-';
           fileTitle += evt.id.toLowerCase();
 
