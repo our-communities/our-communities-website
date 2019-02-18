@@ -3,7 +3,6 @@ title: South West Communities
 author: Future Sync Events
 baseurl: "" # the subpath of the site, e.g. /blog
 url: "" # the base hostname & protocol for the site, e.g. http://example.com
-deployedURL: "https://bit.ly/our-communities"
 
 # SEO PLUGIN
 social:

@@ -11,9 +11,10 @@ permalink: /proposals/
   <p>By submitting a proposal via this form, you are agreeing to share your
   submission with the organisers of:</p>
   <ul>
-    <li>Future Sync / Kernow DAT</li>
+    <li>Future Sync Events</li>
     <li>Tech Exeter</li>
     <li>Digital Plymouth</li>
+    <li>Kernow DAT</li>
     <li>Digital Exeter</li>
   </ul>
   <p>If an appropriate speaking opportunity arrises, individual organisers
