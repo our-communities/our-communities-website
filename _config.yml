@@ -29,7 +29,7 @@ twitter_username: SWCommunities
 # facebook_username: SWCommunities
 instagram_username: SWCommunities
 
-# google_tag_manager: GTM-XXXXXXX
+google_tag_manager: UA-92339313-2
 
 service_worker: false
 
