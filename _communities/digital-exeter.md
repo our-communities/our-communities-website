@@ -4,6 +4,7 @@ name: Digital Exeter
 dataID: Digital-Exeter
 summary: A community for the cities digital industry
 featured-img: digital-exeter
+image: /assets/img/communities/digital-exeter_thumb.jpg
 
 twitter: https://twitter.com/DigitalExeter
 instagram: https://www.instagram.com/digitalexeter/

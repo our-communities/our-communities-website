@@ -4,7 +4,7 @@ name: Exeter Python
 dataID: Exeter-Python
 summary: Python group based in Exeter
 featured-img: 'exeter-python'
-date: 2019-01-26 01:44:35 +0000
+image: /assets/img/communities/exeter-python_thumb.jpg
 
 twitter: https://twitter.com/exeter_python
 website: https://www.meetup.com/Exeter-Python/

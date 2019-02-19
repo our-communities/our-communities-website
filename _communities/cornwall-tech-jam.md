@@ -4,6 +4,7 @@ name: Cornwall Tech Jam
 dataID: JFNoAXzlQ4Is2kHpUouCSLbOEGksUDyh
 summary: A place to play with code
 featured-img: cornwall-tech-jam
+image: /assets/img/communities/cornwall-tech-jam_thumb.jpg
 
 twitter: https://twitter.com/cornwalltechjam
 facebook: https://www.facebook.com/cornwalltechjam/

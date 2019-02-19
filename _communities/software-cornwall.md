@@ -4,6 +4,7 @@ name: Software Cornwall
 dataID: CIAHQy0aMziIvOFikGeyg2lZeAC5KxcS
 summary: A community of tech businesses from around the county.
 featured-img: software-cornwall
+image: /assets/img/communities/software-cornwall_thumb.jpg
 
 twitter: https://twitter.com/SwCornwall
 facebook: https://www.facebook.com/SoftwareCornwall/

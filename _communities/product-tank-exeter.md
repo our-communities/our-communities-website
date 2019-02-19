@@ -2,8 +2,9 @@
 layout: community-page
 name: ProductTank Exeter
 dataID: ProductTank-Exeter
-summary: A meetup for product people to exchange ideas and experiences.
+summary: A meetup for product people to exchange ideas and experiences
 featured-img: product-tank-exeter
+image: /assets/img/communities/product-tank-exeter_thumb.jpg
 
 ---
 ProductTank is a global network of meetups for product people, by product people,

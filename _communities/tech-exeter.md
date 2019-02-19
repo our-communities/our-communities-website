@@ -4,6 +4,7 @@ name: Tech Exeter
 dataID: techexeter
 summary: A community meetup for techy types in Exeter city.
 featured-img: tech-exeter
+image: /assets/img/communities/tech-exeter_thumb.jpg
 
 twitter: http://www.twitter.com/techexeter/
 facebook: http://www.facebook.com/techexeter

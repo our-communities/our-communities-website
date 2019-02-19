@@ -4,6 +4,7 @@ name: THINQTANQ
 dataID: "6377821409"
 summary: A co-working space for the creative community
 featured-img: thinqtanq
+image: /assets/img/communities/thinqtanq_thumb.jpg
 
 twitter: https://twitter.com/THINQTANQSPACES
 facebook: https://www.facebook.com/thethinqtanq/
