@@ -9,7 +9,7 @@ image: /assets/img/communities/digital-taunton_thumb.jpg
 twitter: https://twitter.com/DigitalTaunton
 facebook: https://www.facebook.com/digitaltaunton/
 instagram: https://www.instagram.com/digitaltaunton/
-website: https://www.meetup.com/digitaltaunton/
+meetup: https://www.meetup.com/digitaltaunton/
 ---
 Digital Taunton is a community-driven group of individuals and businesses
 who are passionate about ensuring that Taunton is a place which can be regarded

@@ -6,6 +6,8 @@ summary: A meetup for product people to exchange ideas and experiences
 featured-img: product-tank-exeter
 image: /assets/img/communities/product-tank-exeter_thumb.jpg
 
+meetup: https://www.meetup.com/ProductTank-Exeter/
+
 ---
 ProductTank is a global network of meetups for product people, by product people,
 and provides an opportunity for Product Managers in Exeter to exchange ideas and

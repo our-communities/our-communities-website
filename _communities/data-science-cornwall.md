@@ -6,7 +6,7 @@ summary: Data Science meetup based in Cornwall
 featured-img: 'data-science-cornwall'
 image: /assets/img/communities/data-science-cornwall_thumb.jpg
 
-website: https://www.meetup.com/datasciencecornwall/
+meetup: https://www.meetup.com/datasciencecornwall/
 ---
 Data Science Cornwall is about machine learning, data mining, and artificial
 intelligence using open source tools.
