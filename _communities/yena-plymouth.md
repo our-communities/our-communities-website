@@ -11,8 +11,9 @@ facebook: https://www.facebook.com/yenaplymouth/
 website: https://yena.co.uk/
 meetup: https://www.meetup.com/rebel-meetups-young-entrepreneur-networking-plymouth/
 ---
-A regular meetup for anyone in and around Exeter who uses WordPress.
 
-You can be a beginner or an expert; developer, designer, user or blogger;
-business, charity, education or personal user. Everyone is welcome, we try not
-to be too scary :)
+YENA is a global community of rebels.
+
+Get connected to the resources, people and opportunities you need to start &
+grow a remarkable business. Our events are aimed at under 35s and allow you to
+meet like-minded peers in a non-intimidating environment.
