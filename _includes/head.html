@@ -25,6 +25,12 @@
 
   {% endif %}
 
+  {% if site.facebook_pixel %}
+
+    {% include fbp.html %}
+
+  {% endif %}
+
   <style class="inlineCSS">
 
     {% include critical.css %}
