@@ -231,12 +231,15 @@ gulp.task('markdown', function() {
           logger.write(`organiserid: ${evt.organiserID}\n`);
           logger.write(`organiserName: ${evt.orgName}\n`);
           logger.write(`organiserAltName: ${evt.orgAltName}\n`);
-          logger.write(`image: /assets/img/communities/${evt.orgAltName}_thumb.jpg\n`);
           logger.write(`ticketurl: ${evt.ticketURL}\n`);
           logger.write(`venue: ${evt.venue}\n`);
           logger.write(`geographic: ${evt.geographic}\n`);
           logger.write(`lat: ${evt.lat}\n`);
           logger.write(`long: ${evt.long}\n`);
+
+          // Open Graph / SEO Stuff
+          logger.write(`image: /assets/img/communities/${evt.orgAltName}_thumb.jpg\n`);
+
           logger.write(`---\n`);
           logger.write(`${evt.description}\n`);
           logger.end();
