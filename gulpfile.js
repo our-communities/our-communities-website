@@ -34,7 +34,6 @@ const imagemin = require('gulp-imagemin');
 
 const request = require('request');
 var fs = require('fs');
-var gutil = require('gulp-util');
 const runSequence = require('run-sequence');
 
 
@@ -48,7 +47,7 @@ const dist = {
 };
 
 var isProduction = false;
-if (gutil.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === 'production'){
   isProduction = true;
 }
 console.log('-----IS PRODUCTION----' + isProduction);
