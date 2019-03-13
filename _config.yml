@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 title: South West Communities
-author: Future Sync Events
+author: Future Sync Software
 baseurl: "" # the subpath of the site, e.g. /blog
 url: "" # the base hostname & protocol for the site, e.g. http://example.com
 
