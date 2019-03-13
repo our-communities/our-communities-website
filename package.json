@@ -1,7 +1,7 @@
 {
-  "name": "sleek",
+  "name": "South West Communities",
   "version": "1.0.0",
-  "description": "Sleek is a modern Jekyll theme focused on speed performance & SEO best practices.",
+  "description": "A shared calendar for digital/tech communities across the South West.",
   "main": "gulpfile.js",
   "dependencies": {
     "fg-loadcss": "^1.3.1",
@@ -14,20 +14,15 @@
     "velocity-animate": "^1.5.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",
     "browser-sync": "^2.18.13",
     "browserify": "^15.2.0",
     "critical": "^1.0.0",
-    "eslint": "^4.15.0",
-    "eslint-config-jquery": "^1.0.1",
-    "eslint-plugin-dollar-sign": "^1.0.1",
-    "eslint-plugin-jquery": "^1.3.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.4.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
@@ -51,7 +46,7 @@
     "url": "git+https://github.com/our-communities/our-communities-website"
   },
   "keywords": [],
-  "author": "Jan Czizikow",
+  "author": "Tony Edwards",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/our-communities/our-communities-website/issues"
