@@ -6,7 +6,7 @@ url: "" # the base hostname & protocol for the site, e.g. http://example.com
 
 # SEO PLUGIN
 social:
-  name: Your Name
+  name: South West Communities
   links:
     - https://twitter.com/SWCommunities
     - https://instagram.com/SWCommunities
