@@ -47,7 +47,7 @@ const dist = {
 };
 
 var isProduction = false;
-if (process.env.NODE_ENV === 'production'){
+if (process.env.CONTEXT){
   isProduction = true;
 }
 console.log('-----IS PRODUCTION----' + isProduction);
