@@ -111,7 +111,10 @@ gulp.task('sass', function() {
       includePaths: ['scss'],
       onError: browserSync.notify
     }).on('error', sass.logError))
-    .pipe(prefix())
+    .pipe(prefix({
+      browsers: ['ie 10-11'],
+      flexbox: true
+    }))
     .pipe(rename({ basename: 'main' }))
     .pipe(gulp.dest(dist.css))
     .pipe(browserSync.reload({ stream: true }))
