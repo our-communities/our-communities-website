@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c70bbe4f-6f75-403e-b5e1-fd1ac83c68f7/deploy-status)](https://app.netlify.com/sites/trusting-hamilton-723328/deploys)
+
 # Our Communities Website
 
 The Our Communities website, build with a focus on speed performance & SEO best practices.
