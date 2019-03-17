@@ -1,6 +1,6 @@
 'use strict';
 
-// Are we in a production environment
+// Are we in a production environment?
 const isProduction = process.env.CONTEXT ? true : false;
 console.log('-----IS PRODUCTION-----' + isProduction);
 
@@ -65,7 +65,7 @@ gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
     ['sass', 'js', 'sw'],
-    'markdown',
+    ['markdown', 'api-v1'],
     'jekyll-build',
     cb);
 });
@@ -80,4 +80,4 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('build', ['sass', 'js', 'jekyll-build', 'img', 'sw']);
+gulp.task('build', ['sass', 'js', 'markdown', 'api-v1', 'jekyll-build', 'img', 'sw']);
