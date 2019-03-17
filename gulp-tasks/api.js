@@ -48,6 +48,7 @@ gulp.task('api-v1', function() {
           let description = JSON.stringify(evt.description);
 
           logger.write(`  {`);
+          logger.write(`    "id": "${evt.id}",\n`);
           logger.write(`    "title": "${evt.title}",\n`);
           logger.write(`    "start": "${evt.start}",\n`);
           logger.write(`    "end": "${evt.end}",\n`);
