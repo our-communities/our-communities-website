@@ -27,7 +27,7 @@ Download and open the [NodeJS installer](https://nodejs.org/en/)
 1. Fork the repo
 2. Clone or download the repo into directory of your choice: `git clone https://github.com/your-github-username/our-communities-website.git.
 3. Inside the directory run `bundle install` and `npm install`
-4. Run `gulp dev`
+4. Run `gulp`
 
 ## Usage
 
@@ -49,19 +49,6 @@ Additionally, in `_config.yml` you can find custom theme settings under `# THEME
 
 Other settings usually enable/disable certain feature, and are discussed with the next sections.
 
-### Google Tag Manager
-
-To enable Google Tag Manager, add the uncomment the following line in `_config.yml`:
-
-```yaml
-google_tag_manager: GTM-XXXXXXX
-```
-
-Replace `GTM-XXXXXXX` with your Google Tag Manager Container ID.
-
-**Note** by default GTM tracking snippet will be also included in development environment.
-
-Google Tag Manager was chosen for this project as it's more flexible than Google Analytics, and it can be used to add GA to your site.
 
 ## Contributing
 
