@@ -49,6 +49,10 @@ exclude:
   - npm-debug.log
   - gulpfile.js
   - sleek.jpg
+  - gulp-tasks
+  - jekyll-sleek.gemspec
+  - ruby-version
+  - LICENSE.txt
 
 include: ['_pages']
 permalink: /:title/
@@ -69,3 +73,5 @@ collections:
     output: true
   proposals:
     output: true
+  api:
+    output: false
