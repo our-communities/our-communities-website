@@ -39,7 +39,7 @@ gulp.task('api-v1', function() {
         let logger = fs.createWriteStream(`${dirPath}/file`);
         logger.end();
 
-        logger = fs.createWriteStream(`${dirPath}/data.json`);
+        logger = fs.createWriteStream(`${dirPath}/data.txt`);
         logger.write('[');
         logger.write(`  {`);
         logger.write(`"id": 53543387714,`);
