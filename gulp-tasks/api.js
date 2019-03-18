@@ -42,7 +42,7 @@ gulp.task('api-v1', function() {
         logger = fs.createWriteStream(`${dirPath}/data.json`);
         logger.write('[');
         logger.write(`  {`);
-        logger.write(`"id": 53543387714`);
+        logger.write(`"id": 53543387714,`);
     logger.write(`"title": "Digital Plymouth Meetup",`);
     logger.write(`"start": "2019-11-07T19:00:00",`);
     logger.write(`"end": "2019-11-07T22:00:00",`);
