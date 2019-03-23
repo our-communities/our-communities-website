@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Digital Taunton
-dataID: digitaltaunton
+dataID: 27349249
 summary: Digital Taunton Meetup Group
 featured-img: 'digital-taunton'
 image: /assets/img/communities/digital-taunton_thumb.jpg

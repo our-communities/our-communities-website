@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Exeter Python
-dataID: Exeter-Python
+dataID: 20805314
 summary: Python group based in Exeter
 featured-img: 'exeter-python'
 image: /assets/img/communities/exeter-python_thumb.jpg

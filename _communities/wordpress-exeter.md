@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: WordPress Exeter
-dataID: wpexeter
+dataID: 20234010
 summary: Wordpress Meetup based in Exeter.
 featured-img: 'wordpress-exeter'
 image: /assets/img/communities/wordpress-exeter_thumb.jpg

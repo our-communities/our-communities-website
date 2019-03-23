@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Cornwall .NET Developers
-dataID: Cornwall-NET-Developers
+dataID: 23670110
 summary: Cornwall .NET Developers
 featured-img: 'cornwall-dot-net-developers'
 image: /assets/img/communities/cornwall-dot-net-developers_thumb.jpg

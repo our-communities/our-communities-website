@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: ProductTank Exeter
-dataID: ProductTank-Exeter
+dataID: 30492033
 summary: A meetup for product people to exchange ideas and experiences
 featured-img: product-tank-exeter
 image: /assets/img/communities/product-tank-exeter_thumb.jpg

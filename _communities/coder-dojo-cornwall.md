@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: CoderDojo Cornwall
-dataID: coderdojocornwall
+dataID: 29331508
 summary: CoderDojo Cornwall Meetup Group
 featured-img: 'coder-dojo-cornwall'
 image: /assets/img/communities/coder-dojo-cornwall_thumb.jpg

@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Digital Exeter
-dataID: Digital-Exeter
+dataID: 18581363
 summary: A community for the cities digital industry
 featured-img: digital-exeter
 image: /assets/img/communities/digital-exeter_thumb.jpg
