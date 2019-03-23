@@ -1,4 +1,5 @@
 'use strict';
+const dotenv = require('dotenv').config();
 
 // Are we in a production environment?
 const isProduction = process.env.CONTEXT ? true : false;

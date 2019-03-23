@@ -4,8 +4,8 @@ var fs = require('fs');
 
 
 gulp.task('create-files', function() {
-  console.log('LOG: Creating files');
-  return request('https://our-communities-api.herokuapp.com/getData', function(error, response, body) {
+  console.log(`LOG: Creating files - ${process.env.API_KEY}`);
+  return request(`https://our-communities-api.herokuapp.com/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
   // return request('http://localhost:8080/getData', function(error, response, body) {
         let events = JSON.parse(body);
 

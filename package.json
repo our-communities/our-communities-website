@@ -20,6 +20,7 @@
     "browser-sync": "^2.18.13",
     "browserify": "^15.2.0",
     "critical": "^1.0.0",
+    "dotenv": "^7.0.0",
     "eslint": "^4.15.0",
     "eslint-config-jquery": "^1.0.1",
     "eslint-plugin-dollar-sign": "^1.0.1",
