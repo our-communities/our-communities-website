@@ -18,8 +18,9 @@ gulp.task('markdown', function() {
         }
 
         // Empty the events directory
+        var files;
         try {
-          var files = fs.readdirSync(dirPath);
+          files = fs.readdirSync(dirPath);
         } catch(e) {
           return;
         }
