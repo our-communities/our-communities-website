@@ -65,12 +65,12 @@ gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
     ['sass', 'js', 'sw'],
-    ['markdown', 'api-v1'],
+    ['create-files', 'api-v1'],
     'jekyll-build',
     cb);
 });
 
-gulp.task('deploy', ['markdown']);
+gulp.task('deploy', ['create-files']);
 
 gulp.task('serve', function() {
   browserSync({
@@ -80,4 +80,4 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('build', ['sass', 'js', 'markdown', 'api-v1', 'jekyll-build', 'img', 'sw']);
+gulp.task('build', ['sass', 'js', 'create-files', 'api-v1', 'jekyll-build', 'img', 'sw']);
