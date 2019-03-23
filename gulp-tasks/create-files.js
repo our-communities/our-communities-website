@@ -93,11 +93,11 @@ const createAPIEntry = (logger, evt) => {
   let description = JSON.stringify(evt.description);
 
   logger.write(`  {`);
-  logger.write(`    "id": "${evt.id}",\n`);
+  logger.write(`    "id": ${evt.id},\n`);
   logger.write(`    "title": "${evt.title}",\n`);
   logger.write(`    "start": "${evt.start}",\n`);
   logger.write(`    "end": "${evt.end}",\n`);
-  logger.write(`    "organiserid": "${evt.organiserID}",\n`);
+  logger.write(`    "organiserid": ${evt.organiserID},\n`);
   logger.write(`    "organiserName": "${evt.orgName}",\n`);
   logger.write(`    "organiserAltName": "${evt.orgAltName}",\n`);
   logger.write(`    "ticketurl": "${evt.ticketURL}",\n`);
