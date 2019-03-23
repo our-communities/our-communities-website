@@ -66,7 +66,7 @@ gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
     ['sass', 'js', 'sw'],
-    ['create-files', 'api-v1'],
+    'create-files',
     'jekyll-build',
     cb);
 });
@@ -81,4 +81,4 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('build', ['sass', 'js', 'create-files', 'api-v1', 'jekyll-build', 'img', 'sw']);
+gulp.task('build', ['sass', 'js', 'create-files', 'jekyll-build', 'img', 'sw']);
