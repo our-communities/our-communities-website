@@ -92,8 +92,16 @@ const createAPIEntry = (logger, evt) => {
   //Escape the nasties
   let description = JSON.stringify(evt.description);
 
+  var regex = /^[0-9][0-9]*$/g;
+  var id = evt.id;
+  if (!evt.id.match(regex)) {
+  	id = Math.floor((Math.random() * 9999999999) + 1000000000);
+  }
+
+  Math.floor((Math.random() * 100) + 1);
+
   logger.write(`  {`);
-  logger.write(`    "id": ${evt.id},\n`);
+  logger.write(`    "id": ${id},\n`);
   logger.write(`    "title": "${evt.title}",\n`);
   logger.write(`    "start": "${evt.start}",\n`);
   logger.write(`    "end": "${evt.end}",\n`);
