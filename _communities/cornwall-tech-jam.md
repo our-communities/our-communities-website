@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Cornwall Tech Jam
-dataID: JFNoAXzlQ4Is2kHpUouCSLbOEGksUDyh
+dataID: 271956584376238
 summary: A place to play with code
 featured-img: cornwall-tech-jam
 image: /assets/img/communities/cornwall-tech-jam_thumb.jpg

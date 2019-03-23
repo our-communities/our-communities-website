@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Kernow DAT
-dataID: hVwi8wFm8qwexGwr7891n34x913
+dataID: 054497961539388
 summary: A community meetup for digital creatives.
 featured-img: kernow-dat
 image: /assets/img/communities/kernow-dat_thumb.jpg

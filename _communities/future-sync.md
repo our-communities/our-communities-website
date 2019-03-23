@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Future Sync
-dataID: "18225508719"
+dataID: 18225508719
 summary: A one day tech conference, hosted at Plymouth University
 featured-img: future-sync
 image: /assets/img/communities/future-sync_thumb.jpg

@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: MESH
-dataID: "11380604458"
+dataID: 11380604458
 summary: A meetup for creatives
 featured-img: mesh
 image: /assets/img/communities/mesh_thumb.jpg
@@ -12,7 +12,7 @@ slack: https://t.co/QDqfX04dbW
 website: https://exploremesh.co.uk/
 youtube: https://www.youtube.com/channel/UCmG5X9aKzgBDm1h8S97K7Tg
 ---
-MESH stands for Make – Explore – Socialise – Hack. We’re a Communiversity that
+MESH stands for Make – Explore – Socialise – Hack. They’re a Communiversity that
 uses the power of local people to provide others with the opportunity to improve
 and learn new skills.
 

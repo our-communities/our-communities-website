@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Cornwall Geeks
-dataID: niux6i76QBI6Ppi7yxpisuHa8wy
+dataID: 218412503144680
 summary: A casual meetup for geeks around the county.
 featured-img: cornwall-geeks
 image: /assets/img/communities/cornwall-geeks_thumb.jpg
