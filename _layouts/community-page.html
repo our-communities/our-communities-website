@@ -49,11 +49,15 @@ layout: compress
     <div class="site__content">
       <section class="blog blog--resource blog--calendar">
         <div class="container">
-          {% if sorted-events.size == 0 %}
-            <h2 class="resource-header">No Upcoming Events</h2>
-            <p>&nbsp;</p>
+          {% if page.desc %}
+            <p>{{ page.desc }}</p>
           {% else %}
-            <h2 class="resource-header">Upcoming Events</h2>
+            {% if sorted-events.size == 0 %}
+              <h2 class="resource-header">No Upcoming Events</h2>
+              <p>&nbsp;</p>
+            {% else %}
+              <h2 class="resource-header">Upcoming Events</h2>
+            {% endif %}
           {% endif %}
           <div class="post-list resource-list" id="eventContainer">
 
