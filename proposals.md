@@ -19,8 +19,10 @@ permalink: /proposals/
   </ul>
   <p>If an appropriate speaking opportunity arrises, individual organisers
   will get in touch directly. If they feel that a local community group might
-  be a mroe suitable place to deliver your talk, they'll ask your permission before
+  be a more suitable place to deliver your talk, they'll ask your permission before
   sharing the submission.</p>
+  <p>NOTE: If you are submitting for a specific event or conference, please use
+  the individual organisations call for proposals.</p>
   <a href="https://futuresync1.typeform.com/to/VVQZZM" class="btn"
   title="Submit a talk">Submit your session</a>
   <p>&nbsp;</p>
