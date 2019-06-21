@@ -89,7 +89,7 @@ const createMarkdownFile = (evt, path, fileTitle) => {
   logger.end();
 };
 
-const createAPIEntry = (logger, evt) => {
+const createEventAPIEntry = (logger, evt) => {
   //Escape the nasties
   let description = JSON.stringify(evt.description);
 
