@@ -38,7 +38,7 @@ gulp.task('create-files', function() {
         logger.write('[');
 
         events.forEach(evt => {
-          createAPIEntry(logger, evt);
+          createEventAPIEntry(logger, evt);
         });
 
         logger.write('{}');
@@ -51,6 +51,7 @@ const createFileTitle = (evt) => {
   let fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
   fileTitle = fileTitle.replace(/(\/)/g, '-');
   fileTitle = fileTitle.replace(/(\:)/g, '-');
+  fileTitle = fileTitle.replace(/(\?)/g, '-');
   fileTitle = fileTitle.replace(/(\#)/g, '');
   fileTitle = fileTitle.replace(/(\")/g, '');
   fileTitle = fileTitle.replace(/(\')/g, '');
@@ -116,6 +117,10 @@ const createAPIEntry = (logger, evt) => {
   logger.write(`    "image": "/assets/img/communities/${evt.orgAltName}_thumb.jpg",\n`);
   logger.write(`    "description": ${description}\n`);
   logger.write(`  },`);
+};
+
+const createOrganiserApiEntry = (org) => {
+
 };
 
 const emptyDirectory = (path) => {
