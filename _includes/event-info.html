@@ -16,11 +16,11 @@
     </div>
   </div>
   <p>
-    <a href="{{page.ticketurl}}" class="btn" title="Book your place">Tickets</a>
     {% if page.twitter %}
-      <a class="btn share" target="_blank" rel="noopener" href="{{https://twitter.com/intent/tweet?text=Check%20out%20this%20event%20by%20{{page.twitter}}%20on%20the%20%40SWCommunities%20calendar.%0D%0A%0D%0Ahttps%3A%2F%2Fsouthwestcommunities.co.uk%2F{{page.url}}">Tweet This</a>
+      <a class="btn share" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20event%20by%20{{page.twitter}}%20on%20the%20%40SWCommunities%20calendar.%0D%0A%0D%0Ahttps%3A%2F%2Fsouthwestcommunities.co.uk%2F{{page.url}}">Tweet This</a>
     {% else %}
-      <a class="btn share" target="_blank" rel="noopener" href="{{https://twitter.com/intent/tweet?text=Check%20out%20this%20event%20by%20{{page.organiserName}}%20on%20the%20%40SWCommunities%20calendar.%0D%0A%0D%0Ahttps%3A%2F%2Fsouthwestcommunities.co.uk%2F{{page.url}}">Tweet This</a>
+      <a class="btn share" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20event%20by%20{{page.organiserName}}%20on%20the%20%40SWCommunities%20calendar.%0D%0A%0D%0Ahttps%3A%2F%2Fsouthwestcommunities.co.uk%2F{{page.url}}">Tweet This</a>
     {% endif %}
+    <a href="{{page.ticketurl}}" class="btn" title="Book your place">Tickets</a>
   </p>
 </div>
