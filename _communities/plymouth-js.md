@@ -6,7 +6,7 @@ summary: A community meetup for JavaScript Developers
 featured-img: plymouth-js
 image: /assets/img/communities/plymouth-js_thumb.jpg
 
-twitter: https://twitter.com/plymouthjs
+twitter: plymouthjs
 ---
 Plymouth JS is a community meetup for JavaScript Developers in the wider
 Plymouth area.

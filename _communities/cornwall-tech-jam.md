@@ -6,8 +6,8 @@ summary: A place to play with code
 featured-img: cornwall-tech-jam
 image: /assets/img/communities/cornwall-tech-jam_thumb.jpg
 
-twitter: https://twitter.com/cornwalltechjam
-facebook: https://www.facebook.com/cornwalltechjam/
+twitter: cornwalltechjam
+facebook: cornwalltechjam/
 website: https://www.cornwalltechjam.uk/
 ---
 For anyone interested in technology, of all ages and abilities. Ask questions

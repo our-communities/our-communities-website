@@ -7,10 +7,10 @@ featured-img: digital-exeter
 image: /assets/img/communities/digital-exeter_thumb.jpg
 
 twitter: https://twitter.com/DigitalExeter
-instagram: https://www.instagram.com/digitalexeter/
+instagram: digitalexeter
 website: http://digitalexeter.uk/
 slack: https://digitalexeter.uk/slack/
-linkedin: https://www.linkedin.com/company/digital-exeter/
+linkedin: digital-exeter/
 ---
 Digital Exeter is here to Connect, Share and Support the Digital Economy in and around Exeter.
 

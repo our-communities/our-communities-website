@@ -6,7 +6,7 @@ summary: Love Tech? Live in Weston? The Weston Tech Meet up is here for you!
 featured-img: 'weston-tech'
 image: /assets/img/communities/weston-tech_thumb.jpg
 
-meetup: https://www.meetup.com/Weston-Tech/
+meetup: Weston-Tech/
 
 ---
 Love Tech? Live in Weston? Want to meet your tribe locally rather than a

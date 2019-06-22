@@ -6,11 +6,12 @@ summary: A community of tech businesses from around the county.
 featured-img: software-cornwall
 image: /assets/img/communities/software-cornwall_thumb.jpg
 
-twitter: https://twitter.com/SwCornwall
-facebook: https://www.facebook.com/SoftwareCornwall/
+twitter: SwCornwall
+facebook: SoftwareCornwall
 slack: https://softwarecornwall.slack.com/signup
 website: https://www.softwarecornwall.org/
-youtube: https://www.youtube.com/channel/UCQuYTXIJ3r1GEHPLw--gx7Q
+youtube: UCQuYTXIJ3r1GEHPLw--gx7Q
+github: SoftwareCornwall
 ---
 A member community which promotes, develops and supports  Cornwall's
 growing tech industry.

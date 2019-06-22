@@ -6,8 +6,8 @@ summary: Wordpress Meetup based in Exeter.
 featured-img: 'wordpress-exeter'
 image: /assets/img/communities/wordpress-exeter_thumb.jpg
 
-twitter: https://twitter.com/wpexeter
-facebook: https://www.facebook.com/WPExeter/
+twitter: wpexeter
+facebook: WPExeter
 website: https://wpexeter.uk
 codeofconduct: https://wpexeter.uk/code-of-conduct/
 ---

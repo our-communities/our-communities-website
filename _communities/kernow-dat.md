@@ -6,11 +6,11 @@ summary: A community meetup for digital creatives.
 featured-img: kernow-dat
 image: /assets/img/communities/kernow-dat_thumb.jpg
 
-twitter: https://twitter.com/kernowdat
-facebook: https://www.facebook.com/kernowdat/
-instagram: https://www.instagram.com/kernowdat/
+twitter: kernowdat
+facebook: kernowdat
+instagram: kernowdat
 website: https://kernowdat.co.uk
-youtube: https://www.youtube.com/channel/UC4F8jPskxHa_X163ELJinkQ
+youtube: UC4F8jPskxHa_X163ELJinkQ
 ---
 Kernow DAT host events for Cornwalls creative digital communities.
 

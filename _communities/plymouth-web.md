@@ -6,8 +6,8 @@ summary: A meetup for webbies in the wider Plymouth Area
 featured-img: plymouth-web
 image: /assets/img/communities/plymouth-web_thumb.jpg
 
-twitter: https://twitter.com/Plymouth_Web
-meetup: https://www.meetup.com/Plymouth-Web/
+twitter: Plymouth_Web
+meetup: Plymouth-Web/
 ---
 Plymouth Web is an event in Plymouth centered around web design and development.
 Each month we host a meetup in Plymouth which provides a regular opportunity to

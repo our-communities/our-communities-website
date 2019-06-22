@@ -6,7 +6,7 @@ summary: A regular meetup for software developers in Taunton the wider Taunton a
 featured-img: 'taunton-developers-meetup'
 image: /assets/img/communities/taunton-developers-meetup_thumb.jpg
 
-meetup: https://www.meetup.com/Taunton-and-area-Developers-Meetup/
+meetup: Taunton-and-area-Developers-Meetup/
 ---
 A regular meetup for software developers in Taunton the wider Taunton area.
 The group has regular presentations on all aspects of the software development

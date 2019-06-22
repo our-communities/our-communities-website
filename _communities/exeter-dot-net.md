@@ -6,7 +6,7 @@ summary: Cornwall .NET Developers
 featured-img: 'exeter-dot-net'
 image: /assets/img/communities/exeter-dot-net_thumb.jpg
 
-meetup: https://www.meetup.com/Exeter-NET-Meetup/
+meetup: Exeter-NET-Meetup/
 ---
 Are you a .NET developer (or even interested in what the .NET space has to offer!)
 looking to meet and share knowledge with other local .NET fans?

@@ -6,8 +6,8 @@ summary: A monthly meeting for everyone interested in  Micro Computers, Micro Co
 featured-img: 'exeter-raspberry-jam'
 image: /assets/img/communities/exeter-raspberry-jam_thumb.jpg
 
-twitter: https://twitter.com/exeterRaspJam
-meetup: https://www.meetup.com/Exeter-Raspberry-Jam/
+twitter: exeterRaspJam
+meetup: Exeter-Raspberry-Jam/
 ---
 Exeter Raspberry Jam is a monthly meeting for everyone interested in all things Micro Computers, Micro Controllers, Robotics and making.
 

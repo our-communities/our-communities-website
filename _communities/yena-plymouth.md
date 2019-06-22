@@ -6,10 +6,10 @@ summary: Meetups for young entrepreneurs and rebel business owners.
 featured-img: 'yena-plymouth'
 image: /assets/img/communities/yena-plymouth_thumb.jpg
 
-twitter: https://twitter.com/yenaplymouth
-facebook: https://www.facebook.com/yenaplymouth/
+twitter: yenaplymouth
+facebook: yenaplymouth/
 website: https://yena.co.uk/
-meetup: https://www.meetup.com/rebel-meetups-young-entrepreneur-networking-plymouth/
+meetup: rebel-meetups-young-entrepreneur-networking-plymouth/
 ---
 
 YENA is a global community of rebels.

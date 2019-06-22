@@ -6,8 +6,8 @@ summary: Meetup for people interested in the intersection of art and code.
 featured-img: 'algorithmic-art'
 image: /assets/img/communities/algorithmic-art_thumb.jpg
 
-meetup: https://www.meetup.com/Algorithmic-Art/
-twitter: https://twitter.com/algorithmic_art
+meetup: Algorithmic-Art/
+twitter: algorithmic_art
 ---
 
 Algorithmic Art is about maths and code making art.
