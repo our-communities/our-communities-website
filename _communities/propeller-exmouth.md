@@ -2,7 +2,7 @@
 layout: community-page
 name: Propeller:Exmouth
 dataID: 30511814
-summary: Propeller:Exmouth is a vibrant new co-working space centred around building a friendly community of people.
+summary: Propeller:Exmouth is a vibrant co-working space.
 featured-img: 'propeller-exmouth'
 image: /assets/img/communities/propeller-exmouth_thumb.jpg
 
