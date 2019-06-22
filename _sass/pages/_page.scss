@@ -9,7 +9,6 @@
   background-size: cover;
 
   @include breakpoint($lg) {
-    margin: 0 auto;
     height: 26em;
   }
 
