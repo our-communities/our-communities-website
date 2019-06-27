@@ -65,3 +65,9 @@ a.share {
     background-color: lighten(#00aced, 14%);
   }
 }
+
+.btn-wrapper{
+  @include breakpoint($md) {
+    margin-top: -5.05em;
+  }
+}
