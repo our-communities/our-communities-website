@@ -4,7 +4,7 @@ var fs = require('fs');
 
 
 gulp.task('create-files', function() {
-  console.log(`LOG: Creating files - ${process.env.API_KEY}`);
+  console.log(`LOG: Creating files`);
   return request(`https://our-communities-api.herokuapp.com/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
   // return request(`http://localhost:8080/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
         let events = JSON.parse(body);
@@ -80,6 +80,7 @@ const createMarkdownFile = (evt, path, fileTitle) => {
   logger.write(`geographic: ${evt.geographic}\n`);
   logger.write(`lat: ${evt.lat}\n`);
   logger.write(`long: ${evt.long}\n`);
+  logger.write(`twitter: ${evt.twitter}\n`);
 
   // Open Graph / SEO Stuff
   logger.write(`image: /assets/img/communities/${evt.orgAltName}_thumb.jpg\n`);
@@ -115,7 +116,8 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`    "lat": "${evt.lat}",\n`);
   logger.write(`    "long": "${evt.long}",\n`);
   logger.write(`    "image": "/assets/img/communities/${evt.orgAltName}_thumb.jpg",\n`);
-  logger.write(`    "description": ${description}\n`);
+  logger.write(`    "description": ${description},\n`);
+  logger.write(`    "twitter": ${evt.twitter}\n`);
   logger.write(`  },`);
 };
 

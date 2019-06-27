@@ -6,7 +6,7 @@ summary: A community for the cities digital industry
 featured-img: digital-exeter
 image: /assets/img/communities/digital-exeter_thumb.jpg
 
-twitter: https://twitter.com/DigitalExeter
+twitter: DigitalExeter
 instagram: digitalexeter
 website: http://digitalexeter.uk/
 slack: https://digitalexeter.uk/slack/

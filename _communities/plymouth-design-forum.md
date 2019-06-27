@@ -6,7 +6,7 @@ summary: A monthly social for the cities creative community.
 featured-img: plymouth-design-forum
 image: /assets/img/communities/plymouth-design-forum_thumb.jpg
 
-twitter: designplym
+twitter: DesignPlym
 website: https://plymouthdesignforum.co.uk/
 instagram: plymouthdesignforum
 ---

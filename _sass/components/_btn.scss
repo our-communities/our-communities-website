@@ -27,8 +27,8 @@ input[type="button"] {
   }
 
   &:hover,
-  :focus,
-  :active {
+  &:focus,
+  &:active {
     color: $bg-color;
     background-color: lighten($button-dark, 14%);
     outline: 0;
@@ -49,11 +49,19 @@ button:disabled {
   transition: background-color .2s ease;
 
   &:hover,
-  :focus {
+  &:focus {
     background-color: $button-dark;
   }
 }
 
-.share {
+a.share {
   background-color: #00aced;
+  color: white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+    background-color: lighten(#00aced, 14%);
+  }
 }
