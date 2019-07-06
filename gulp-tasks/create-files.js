@@ -117,7 +117,7 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`    "long": "${evt.long}",\n`);
   logger.write(`    "image": "/assets/img/communities/${evt.orgAltName}_thumb.jpg",\n`);
   logger.write(`    "description": ${description},\n`);
-  logger.write(`    "twitter": ${evt.twitter}\n`);
+  logger.write(`    "twitter": "${evt.twitter}"\n`);
   logger.write(`  },`);
 };
 
