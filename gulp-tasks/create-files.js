@@ -7,6 +7,10 @@ gulp.task('create-files', function() {
   console.log(`LOG: Creating files`);
   return request(`https://our-communities-api.herokuapp.com/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
   // return request(`http://localhost:8080/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
+        if (error) {
+          console.log('ERROR: ', error);
+        }
+
         let events = JSON.parse(body);
 
         console.log('LOG: Building Markdown');
@@ -76,6 +80,10 @@ const createFileTitle = (evt) => {
 
   if (evt.fileTitle.startsWith('-')) {
     evt.fileTitle = evt.fileTitle.slice(1);
+  }
+
+  if (evt.title.endsWith(' ')){
+    evt.title = evt.title.slice(0, -1);
   }
 
   // titles starting with - causes a yaml error during jekyll build
