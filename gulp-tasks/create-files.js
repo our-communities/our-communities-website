@@ -20,8 +20,8 @@ gulp.task('create-files', function() {
 
         // Generate the markdown for each event
         events.forEach(evt => {
-          let fileTitle = createFileTitle(evt);
-          createMarkdownFile(evt, dirPath, fileTitle);
+          evt = createFileTitle(evt);
+          createMarkdownFile(evt, dirPath, evt.fileTitle);
         });
 
         console.log('LOG: Building API');
@@ -37,10 +37,12 @@ gulp.task('create-files', function() {
         logger = fs.createWriteStream(`${dirPath}/data.json`);
         logger.write('[');
 
+        // Generate API entry for each event
         events.forEach(evt => {
           createEventAPIEntry(logger, evt);
         });
 
+        // Wrap up the API file
         logger.write('{}');
         logger.write(']');
         logger.end();
@@ -48,28 +50,29 @@ gulp.task('create-files', function() {
 });
 
 const createFileTitle = (evt) => {
-  let fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
-  fileTitle = fileTitle.replace(/(\/)/g, '-');
-  fileTitle = fileTitle.replace(/(\:)/g, '-');
-  fileTitle = fileTitle.replace(/(\?)/g, '-');
-  fileTitle = fileTitle.replace(/(\#)/g, '');
-  fileTitle = fileTitle.replace(/(\")/g, '');
-  fileTitle = fileTitle.replace(/(\')/g, '');
-  fileTitle = fileTitle.replace(/(\!)/g, '');
-  fileTitle = fileTitle.replace(/(\-\-)/g, '-');
-  fileTitle = fileTitle.replace(/(\-\-)/g, '-');
-  fileTitle += '-';
-  fileTitle += evt.id.toLowerCase();
+  evt.fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
+  evt.fileTitle = evt.fileTitle.replace(/(\/)/g, '-');
+  evt.fileTitle = evt.fileTitle.replace(/(\:)/g, '-');
+  evt.fileTitle = evt.fileTitle.replace(/(\?)/g, '-');
+  evt.fileTitle = evt.fileTitle.replace(/(\#)/g, '');
+  evt.fileTitle = evt.fileTitle.replace(/(\")/g, '');
+  evt.fileTitle = evt.fileTitle.replace(/(\')/g, '');
+  evt.fileTitle = evt.fileTitle.replace(/(\!)/g, '');
+  evt.fileTitle = evt.fileTitle.replace(/(\-\-)/g, '-');
+  evt.fileTitle = evt.fileTitle.replace(/(\-\-)/g, '-');
+  evt.fileTitle += '-';
+  evt.fileTitle += evt.id.toLowerCase();
 
-  if (fileTitle.startsWith('-')) {
-    fileTitle = fileTitle.slice(1);
+  if (evt.fileTitle.startsWith('-')) {
+    evt.fileTitle = evt.fileTitle.slice(1);
   }
 
   evt.title = evt.title.replace(/(\:)/g, '-');
   evt.title = evt.title.replace(/(\#)/g, '');
   evt.title = evt.title.replace(/(\")/g, '');
+  evt.title = evt.title.replace(/(\- )/g, '');
 
-  return fileTitle;
+  return evt;
 };
 
 const createMarkdownFile = (evt, path, fileTitle) => {
