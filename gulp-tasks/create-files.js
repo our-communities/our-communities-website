@@ -50,16 +50,27 @@ gulp.task('create-files', function() {
 });
 
 const createFileTitle = (evt) => {
+  evt.title = evt.title.replace(/(\:)/g, '-');
+  evt.title = evt.title.replace(/(\#)/g, '');
+  evt.title = evt.title.replace(/(\")/g, '');
+
+  // Org specifics
+  evt.title = evt.title.replace(/(\(North Somerset\) )/g, '');
+  evt.title = evt.title.replace(/( Speaker to be announced)/g, '');
+
+  // Generate the file title
   evt.fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
   evt.fileTitle = evt.fileTitle.replace(/(\/)/g, '-');
-  evt.fileTitle = evt.fileTitle.replace(/(\:)/g, '-');
   evt.fileTitle = evt.fileTitle.replace(/(\?)/g, '-');
-  evt.fileTitle = evt.fileTitle.replace(/(\#)/g, '');
-  evt.fileTitle = evt.fileTitle.replace(/(\")/g, '');
   evt.fileTitle = evt.fileTitle.replace(/(\')/g, '');
   evt.fileTitle = evt.fileTitle.replace(/(\!)/g, '');
+  evt.fileTitle = evt.fileTitle.replace(/(\,)/g, '');
+
+  // Check for double dashes
   evt.fileTitle = evt.fileTitle.replace(/(\-\-)/g, '-');
   evt.fileTitle = evt.fileTitle.replace(/(\-\-)/g, '-');
+
+  // End with ID to prevent url clashes
   evt.fileTitle += '-';
   evt.fileTitle += evt.id.toLowerCase();
 
@@ -67,9 +78,7 @@ const createFileTitle = (evt) => {
     evt.fileTitle = evt.fileTitle.slice(1);
   }
 
-  evt.title = evt.title.replace(/(\:)/g, '-');
-  evt.title = evt.title.replace(/(\#)/g, '');
-  evt.title = evt.title.replace(/(\")/g, '');
+  // titles starting with - causes a yaml error during jekyll build
   evt.title = evt.title.replace(/(\- )/g, '');
 
   return evt;
