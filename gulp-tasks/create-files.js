@@ -55,12 +55,20 @@ const createFileTitle = (evt) => {
   fileTitle = fileTitle.replace(/(\#)/g, '');
   fileTitle = fileTitle.replace(/(\")/g, '');
   fileTitle = fileTitle.replace(/(\')/g, '');
+  fileTitle = fileTitle.replace(/(\!)/g, '');
+  fileTitle = fileTitle.replace(/(\-\-)/g, '-');
+  fileTitle = fileTitle.replace(/(\-\-)/g, '-');
   fileTitle += '-';
   fileTitle += evt.id.toLowerCase();
+
+  if (fileTitle.startsWith('-')) {
+    fileTitle = fileTitle.slice(1);
+  }
 
   evt.title = evt.title.replace(/(\:)/g, '-');
   evt.title = evt.title.replace(/(\#)/g, '');
   evt.title = evt.title.replace(/(\")/g, '');
+
   return fileTitle;
 };
 
