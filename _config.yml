@@ -1,6 +1,7 @@
 # SITE CONFIGURATION
 title: South West Communities
-author: Future Sync Software
+description: A curated community calendar for digtal / tech events in the South West.
+author: Tony Edwards
 baseurl: "" # the subpath of the site, e.g. /blog
 url: "" # the base hostname & protocol for the site, e.g. http://example.com
 
@@ -25,12 +26,31 @@ tagline: >
 
 hero_img: posts/header_lg.jpg # Main background image: use the path from /assets/img/
 
+lang: en-GB
+
+webmaster_verifications:
+  google: c7eA3kWQqI-zwFH_W9efNAqGsmiRlgRDjz3SYXkpw3Q
+  bing: 8957716371BB285A2445EAFE5013939C
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+
 twitter_username: SWCommunities
 facebook_username: SWCommunities
 instagram_username: SWCommunities
 
 google_tag_manager: UA-92339313-2
 facebook_pixel: 796127733884814
+
+# Jekyll SEO stuff
+twitter:
+  username: SWCommunities
+  card: summary
+
+facebook:
+  app_id: 2725356861082849
+#  publisher: 1234
+#  admins: tonyedwardspz
 
 service_worker: false
 
