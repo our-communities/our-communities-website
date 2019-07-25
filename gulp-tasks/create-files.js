@@ -24,7 +24,6 @@ gulp.task('create-files', function() {
 
         // Generate the markdown for each event
         events.forEach(evt => {
-          evt = createFileTitle(evt);
           createMarkdownFile(evt, dirPath, evt.fileTitle);
         });
 
@@ -53,47 +52,8 @@ gulp.task('create-files', function() {
     });
 });
 
-const createFileTitle = (evt) => {
-  evt.title = evt.title.replace(/(\:)/g, '-');
-  evt.title = evt.title.replace(/(\#)/g, '');
-  evt.title = evt.title.replace(/(\")/g, '');
-
-  // Org specifics
-  evt.title = evt.title.replace(/(\(North Somerset\) )/g, '');
-  evt.title = evt.title.replace(/( Speaker to be announced)/g, '');
-
-  // Generate the file title
-  evt.fileTitle = evt.title.toLowerCase().replace(/\s+/g, '-');
-  evt.fileTitle = evt.fileTitle.replace(/(\/)/g, '-');
-  evt.fileTitle = evt.fileTitle.replace(/(\?)/g, '-');
-  evt.fileTitle = evt.fileTitle.replace(/(\')/g, '');
-  evt.fileTitle = evt.fileTitle.replace(/(\!)/g, '');
-  evt.fileTitle = evt.fileTitle.replace(/(\,)/g, '');
-
-  // Check for double dashes
-  evt.fileTitle = evt.fileTitle.replace(/(\-\-)/g, '-');
-  evt.fileTitle = evt.fileTitle.replace(/(\-\-)/g, '-');
-
-  // End with ID to prevent url clashes
-  evt.fileTitle += '-';
-  evt.fileTitle += evt.id.toLowerCase();
-
-  if (evt.fileTitle.startsWith('-')) {
-    evt.fileTitle = evt.fileTitle.slice(1);
-  }
-
-  if (evt.title.endsWith(' ')){
-    evt.title = evt.title.slice(0, -1);
-  }
-
-  // titles starting with - causes a yaml error during jekyll build
-  evt.title = evt.title.replace(/(\- )/g, '');
-
-  return evt;
-};
-
-const createMarkdownFile = (evt, path, fileTitle) => {
-  let logger = fs.createWriteStream(`${path}/${fileTitle}.md`);
+const createMarkdownFile = (evt, path) => {
+  let logger = fs.createWriteStream(`${path}/${evt.fileTitle}.md`);
 
   logger.write(`---\n`);
   logger.write(`layout: page\n`);
