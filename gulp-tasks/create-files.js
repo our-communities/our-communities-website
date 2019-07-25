@@ -7,48 +7,48 @@ gulp.task('create-files', function() {
   console.log(`LOG: Creating files`);
   return request(`https://our-communities-api.herokuapp.com/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
   // return request(`http://localhost:8080/getData?API_KEY=${process.env.API_KEY}`, function(error, response, body) {
-        if (error) {
-          console.log('ERROR: ', error);
-        }
+    if (error) {
+      console.log('ERROR: ', error);
+    }
 
-        let events = JSON.parse(body);
+    let events = JSON.parse(body);
 
-        console.log('LOG: Building Markdown');
-        // Choose the path wisely and empty it
-        let dirPath = process.env.CONTEXT ? '/opt/build/repo/_events' : '_events';
-        emptyDirectory(dirPath);
+    console.log('LOG: Building Markdown');
+    // Choose the path wisely and empty it
+    let dirPath = process.env.CONTEXT ? '/opt/build/repo/_events' : '_events';
+    emptyDirectory(dirPath);
 
-        // Create a blank file to prevent the dev folder being untracked
-        let logger = fs.createWriteStream(`${dirPath}/file`);
-        logger.end();
+    // Create a blank file to prevent the dev folder being untracked
+    let logger = fs.createWriteStream(`${dirPath}/file`);
+    logger.end();
 
-        // Generate the markdown for each event
-        events.forEach(evt => {
-          createMarkdownFile(evt, dirPath, evt.fileTitle);
-        });
+    // Generate the markdown for each event
+    events.forEach(evt => {
+      createMarkdownFile(evt, dirPath, evt.fileTitle);
+    });
 
-        console.log('LOG: Building API');
-        // Generate the API data
-        dirPath = process.env.CONTEXT ? '/opt/build/repo/_api/v1' : '_api/v1';
-        emptyDirectory(dirPath);
+    console.log('LOG: Building API');
+    // Generate the API data
+    dirPath = process.env.CONTEXT ? '/opt/build/repo/_api/v1' : '_api/v1';
+    emptyDirectory(dirPath);
 
-        // Create a blank file to prevent the dev folder being untracked
-        logger = fs.createWriteStream(`${dirPath}/file`);
-        logger.end();
+    // Create a blank file to prevent the dev folder being untracked
+    logger = fs.createWriteStream(`${dirPath}/file`);
+    logger.end();
 
-        // Generate API file
-        logger = fs.createWriteStream(`${dirPath}/data.json`);
-        logger.write('[');
+    // Generate API file
+    logger = fs.createWriteStream(`${dirPath}/data.json`);
+    logger.write('[');
 
-        // Generate API entry for each event
-        events.forEach(evt => {
-          createEventAPIEntry(logger, evt);
-        });
+    // Generate API entry for each event
+    events.forEach(evt => {
+      createEventAPIEntry(logger, evt);
+    });
 
-        // Wrap up the API file
-        logger.write('{}');
-        logger.write(']');
-        logger.end();
+    // Wrap up the API file
+    logger.write('{}');
+    logger.write(']');
+    logger.end();
     });
 });
 

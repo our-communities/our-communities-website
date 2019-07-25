@@ -8,14 +8,14 @@ const uglify = require('gulp-uglify');
 const size = require('gulp-size');
 const browserSync = require('browser-sync');
 
-function handleErrors() {
+const handleErrors = () => {
   var args = Array.prototype.slice.call(arguments);
   notify.onError({
     title: 'Compile Error',
     message: '<%= error.message %>'
   }).apply(this, args);
   this.emit('end'); // Keep gulp from hanging on this task
-}
+};
 
 //  JS
 gulp.task('js', function() {
