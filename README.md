@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c70bbe4f-6f75-403e-b5e1-fd1ac83c68f7/deploy-status)](https://app.netlify.com/sites/trusting-hamilton-723328/deploys)
 
-# Our Communities Website
+# South West Communities Website
 
-The Our Communities website, build with a focus on speed performance & SEO best practices.
+The South West Communities website, build with a focus on speed performance & SEO best practices.
 
 ## Features
 
@@ -54,7 +54,7 @@ Other settings usually enable/disable certain feature, and are discussed with th
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/our-communities/our-communities-website]https://github.com/our-communities/our-communities-website). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/south-west-communities/website]https://github.com/south-west-communities/website). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
