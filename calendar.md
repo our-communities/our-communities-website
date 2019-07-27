@@ -11,6 +11,12 @@ permalink: /calendar/
       {% assign thismonth = month.name | date: "%B %Y" %}
       {% if thismonth != lastmonth %}
         <h2 class="resource-header">{{thismonth}}</h2>
+        {% assign shortMonth = thismonth | size %}
+        {% if forloop.first %}
+          <p>There's {{ month.items | size }} events remaining in {{month.name | date: "%B"}}.</p>
+        {% else %}
+          <p>There are {{ month.items | size }} events listed in {{month.name | date: "%B"}}.</p>
+        {% endif %}
       {% endif%}
       {% assign lastmonth = thismonth %}
       <div class="post-list resource-list">
