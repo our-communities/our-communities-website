@@ -69,6 +69,7 @@ const createMarkdownFile = (evt, path) => {
   logger.write(`lat: ${evt.lat}\n`);
   logger.write(`long: ${evt.long}\n`);
   logger.write(`twitter: ${evt.twitter}\n`);
+  logger.write(`gCalURL: ${evt.gCalURL}\n`);
 
   // Open Graph / SEO Stuff
   logger.write(`image: /assets/img/communities/${evt.orgAltName}_thumb.jpg\n`);
@@ -107,6 +108,7 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`    "description": ${description},\n`);
   logger.write(`    "url": "https://southwestcommunities.co.uk/events/${evt.fileTitle}",\n`);
   logger.write(`    "twitter": "${evt.twitter}"\n`);
+  logger.write(`    "gCalURL": "${evt.gCalURL}"\n`);
   logger.write(`  },`);
 };
 
