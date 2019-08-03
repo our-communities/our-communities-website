@@ -12,6 +12,7 @@ social:
     - https://twitter.com/SWCommunities
     - https://instagram.com/SWCommunities
     - https://www.facebook.com/SWCommunities
+    - https://www.youtube.com/channel/UCqw-wsWwZ_0NO5wUsIiq27Q
 
 # THEME SETTINGS
 navigation: # Navigation links
@@ -38,6 +39,7 @@ webmaster_verifications:
 twitter_username: SWCommunities
 facebook_username: SWCommunities
 instagram_username: SWCommunities
+youtube_username: UCqw-wsWwZ_0NO5wUsIiq27Q
 
 google_tag_manager: UA-92339313-2
 facebook_pixel: 796127733884814

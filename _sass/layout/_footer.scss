@@ -38,3 +38,13 @@ footer {
 .social_icon--facebook path {
   transform: scale(0.035);
 }
+
+.social__icon--youtube path,
+.social__icon--youtube polygon {
+  transform: scale(0.12);
+}
+
+.social__icon--youtube {
+  height: 21px;
+  margin-top: 3px;
+}
