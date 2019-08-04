@@ -17,9 +17,9 @@ social:
 # THEME SETTINGS
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
-  - {name: 'Communities', link: '/communities/', description: 'A list of community led organisations hosting events in the region.', featured-img: 'communities'}
-  - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the South West.', featured-img: 'calendar'}
-  - {name: 'Call for Proposals', link: '/proposals/', description: 'Submit a talk via our shared call for proposals system.', featured-img: 'proposals'}
+  - {name: 'Communities', link: '/communities/', description: 'A list of community led organisations hosting events in the region.', featured-img: 'communities', title: View our list of communities}
+  - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the South West.', featured-img: 'calendar', title: View upcoming events}
+  - {name: 'Call for Proposals', link: '/proposals/', description: 'Submit a talk via our shared call for proposals system.', featured-img: 'proposals', title: Submit a talk to our communities}
   # - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
