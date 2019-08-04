@@ -3,7 +3,7 @@ title: South West Communities
 description: A curated calendar for tech events in the South West.
 author: Tony Edwards
 baseurl: "" # the subpath of the site, e.g. /blog
-url: "" # the base hostname & protocol for the site, e.g. http://example.com
+url: "https://southwestcommunities.co.uk" # the base hostname & protocol for the site, e.g. http://example.com
 
 # SEO PLUGIN
 social:
