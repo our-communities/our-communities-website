@@ -1,5 +1,5 @@
 <div class="post-card">
-  <a href="{{ item.link | relative_url }}" title="{{ item.title }}">
+  <a href="{{ item.link | relative_url }}" title="{{ item.title }}.">
     {% if item.featured-img %}
       <figure class="post-card__thumb">
         <img
@@ -16,7 +16,7 @@
       </figure>
     {% endif %}
   </a>
-  <a class="post-card__inner" href="{{ item.link | relative_url }}" title="{{ item.title }}">
+  <a class="post-card__inner" href="{{ item.link | relative_url }}" title="{{ item.title }}.">
     <div class="post-card__header">
       <h2>{{ item.name | strip_html | truncate: 50 }}</h2>
     </div>

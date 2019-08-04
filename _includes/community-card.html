@@ -1,5 +1,5 @@
 <div class="post-card">
-  <a href="{{ community.url | relative_url }}">
+  <a href="{{ community.url | relative_url }}" title="Visit the {{ community.name }} page.">
     {% if community.featured-img %}
       <figure class="post-card__thumb">
         <img
@@ -18,7 +18,7 @@
       </figure>
     {% endif %}
   </a>
-  <a class="post-card__inner" href="{{ community.url | relative_url }}">
+  <a class="post-card__inner" href="{{ community.url | relative_url }}" title="Visit the {{ community.name }} page.">
     <div class="post-card__header">
       <h2>{{ community.name | strip_html | truncate: 50 }}</h2>
       {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
