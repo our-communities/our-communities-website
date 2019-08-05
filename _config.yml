@@ -1,6 +1,9 @@
 # SITE CONFIGURATION
 title: South West Communities
-description: A curated calendar for tech events in the South West.
+description: >
+  Shared events calendar for grassroots digital & tech communities in
+  the South West. Built with the support of meetups across Cornwall,
+  Devon, Somerset & Dorset.
 author: Tony Edwards
 baseurl: "" # the subpath of the site, e.g. /blog
 url: "https://southwestcommunities.co.uk" # the base hostname & protocol for the site, e.g. http://example.com
@@ -23,7 +26,7 @@ navigation: # Navigation links
   # - {name: 'Resources', link: '/resources/', description: 'Discover some useful resources for people runing events', featured-img: 'sleek'}
 
 tagline: >
-  A shared events calendar for grassroots digital and tech communities across the South West
+  A shared events calendar for digital and tech communities across the South West.
 
 hero_img: posts/header_lg.jpg # Main background image: use the path from /assets/img/
 
