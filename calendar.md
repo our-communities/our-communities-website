@@ -48,7 +48,13 @@ permalink: /calendar/
               <div class="post-card__header">
                 <h2>{{event.title | strip_html | truncate: 50}}</h2>
 
-                <p>{{event.start | date_to_string }} // {{event.start | slice: 11, 5}} // {{event.geographic}}</p>
+                <p>{{event.start | date_to_string }} // {{event.start | slice: 11, 5}} //
+                  {% if event.geographic == 'undefined' %}
+                    Venue TBC
+                  {% else %}
+                    {{event.geographic}}
+                  {% endif %}
+                </p>
                 <p>{{ event.excerpt | strip_html | truncatewords:20 }}</p>
               </div>
             </a>
