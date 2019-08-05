@@ -12,7 +12,7 @@ permalink: /resources/
 
         {% for resource in group.items %}
         <div class="post-card resource-card">
-          <a class="post-card__inner" href="{{ resource.url | relative_url }}">
+          <a class="post-card__inner" href="{{ resource.url | relative_url }}" title="{{resource.title}}">
             <div class="post-card__header">
               <h2>{{ resource.title | strip_html | truncate: 50 }}</h2>
             </div>

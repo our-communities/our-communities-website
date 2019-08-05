@@ -26,7 +26,7 @@ permalink: /calendar/
 
             {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
 
-            <a class="post-card__inner" href="{{ event.url }}">
+            <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}">
             {% if organiser.first.featured-img %}
               <figure class="post-card__thumb">
                 <img

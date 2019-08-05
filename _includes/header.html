@@ -11,7 +11,8 @@
         <div class="container header__links-wrapper">
           {% for item in site.navigation %}
             <a class="header__link" href="{{ item.link | relative_url }}"
-               itemprop="url">
+               itemprop="url"
+               title="{{ item.link }} page">
               <span itemprop="name">{{ item.name }}</span>
             </a>
           {% endfor %}
