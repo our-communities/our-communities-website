@@ -137,7 +137,9 @@ function ShowHideNav() {
 }
 
 
-/////////// MAP STUFF
+/*-------------------------------------------------------------------------*/
+/* MAP EMBED                                                               */
+/* ------------------------------------------------------------------------*/
 
 function showMapEmbed(lat, long, venue, geographic) {
   let html = document.getElementById('map-container');
