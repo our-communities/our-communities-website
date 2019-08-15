@@ -74,6 +74,10 @@
       line-height: 3.125rem;
     }
   }
+
+  .hero__meta ~ .hero__meta {
+    font-size: 1.05rem;
+  }
 }
 
 .page-content {
