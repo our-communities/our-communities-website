@@ -49,7 +49,7 @@ gulp.task('img', function() {
 });
 
 gulp.task('site-img', function() {
-  return gulp.src('assets/img/posts/*.{png,jpg}')
+  return gulp.src('_img/posts/*.{png,jpg}')
     .pipe($.responsive({
       // For all the images in the folder
       '*': [{
