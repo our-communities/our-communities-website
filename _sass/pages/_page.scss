@@ -30,6 +30,7 @@
   width: 100%;
   position: relative;
   background-color: $dark-light;
+  background-size: cover;
 
   @include breakpoint($lg) {
     height: 12.5em;
