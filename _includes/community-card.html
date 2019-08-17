@@ -28,5 +28,11 @@
     {% else %}
       <p>{{ community.content | strip_html | truncatewords: 20 }}</p>
     {% endif %}
+
+    {% assign sorted-events = site.events | where: 'organiserid', community.dataID %}
+    {% if sorted-events.size > 0 %}
+      <p><span class="btn pill">Active</span></p>
+    {% endif %}
+
   </a>
 </div>
