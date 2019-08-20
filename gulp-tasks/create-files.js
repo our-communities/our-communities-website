@@ -107,7 +107,7 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`    "image": "/assets/img/communities/${evt.orgAltName}_thumb.jpg",\n`);
   logger.write(`    "description": ${description},\n`);
   logger.write(`    "url": "https://southwestcommunities.co.uk/events/${evt.fileTitle}",\n`);
-  logger.write(`    "twitter": "${evt.twitter}"\n`);
+  logger.write(`    "twitter": "${evt.twitter}",\n`);
   logger.write(`    "gCalURL": "${evt.gCalURL}"\n`);
   logger.write(`  },`);
 };
