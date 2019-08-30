@@ -54,7 +54,7 @@ gulp.task('rebuild', ['jekyll-build-incremental'], function (done) {
 });
 
 // Serve after jekyll-build
-gulp.task('browser-sync', ['sass', 'js', 'sw', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['build-site'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -66,6 +66,7 @@ gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
     ['sass', 'js', 'sw'],
+    ['img', 'site-img', 'icons', 'img-misc'],
     'create-files',
     'jekyll-build',
     cb);

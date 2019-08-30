@@ -89,3 +89,14 @@ gulp.task('site-img', function() {
     .pipe(imagemin())
     .pipe(gulp.dest('assets/img/posts/'));
 });
+
+// Icons and manifest stuff
+gulp.task('icons', function() {
+  return gulp.src('_img/icons/*')
+    .pipe(gulp.dest('assets/img/icons/'));
+});
+
+gulp.task('img-misc', function() {
+  return gulp.src('_img/*.jpg')
+    .pipe(gulp.dest('assets/img/'));
+});
