@@ -5,7 +5,7 @@ permalink: /privacy/
 ---
 <div class="container">
   <p></p>
-  <p>South West Communities use a small number of third party services in order to understand how the site is used. The information collected is vital to us in understanding how the website and connected services are used and help inform future product development. Any data collected will never be shared or sold by us. Ever.</p>
+  <p>The South West Communities website uses a small number of third party services in order to understand our users behaviour. The information collected is vital to us for understanding how the website and connected services are used and help inform future product development. Any data collected will never be shared or sold by us. Ever.</p>
   <p>This data is, from our perspective, anonymous. This said, providers may be able to combine your information from this website with that collate from other in order to identify you.</p>
   <p>The easiest way to prevent this tracking is to install an in-browser ad blocker.</p>
   <p>Our data providers are:</p>

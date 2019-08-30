@@ -4,39 +4,23 @@ const $ = require('gulp-load-plugins')();
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 
-// Images
+var inDirPath = process.env.CONTEXT ? '/opt/build/repo/_img' : '_img';
+var outDirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img' : 'assets/img';
+
+// Community Images
 gulp.task('img', function() {
-  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/communities/' : 'assets/img/communities/';
-  return gulp.src('_img/communities/*.{png,jpg}')
+  return gulp.src(`${inDirPath}/communities/*.{png,jpg}`)
     .pipe($.responsive({
-      // For all the images in the folder
       '*': [{
         width: 230,
         rename: {suffix: '_placehold'},
       }, {
-        // thubmnail
         width: 535,
         rename: { suffix: '_thumb' },
       },
       {
-        // thumbnail @2x
         width: 535 * 2,
         rename: { suffix: '_thumb@2x' },
-    // {
-    //     width: 575,
-    //     rename: { suffix: '_xs'}
-    //   }, {
-    //     width: 767,
-    //     rename: {suffix: '_sm'}
-    //   }, {
-    //     width: 991,
-    //     rename: { suffix: '_md' }
-    //   }, {
-    //     width: 1999,
-    //     rename: { suffix: '_lg' }
-    //   }, {
-    //     // max-width hero
-    //     width: 1920,
       }],
     },
     {
@@ -46,23 +30,20 @@ gulp.task('img', function() {
       errorOnEnlargement: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest(dirPath));
+    .pipe(gulp.dest(`${outDirPath}/communities/`));
 });
 
+// Post and header images
 gulp.task('site-img', function() {
-  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/posts/' : 'assets/img/posts/';
-  return gulp.src('_img/posts/*.{png,jpg}')
+  return gulp.src(`${inDirPath}/posts/*.{png,jpg}`)
     .pipe($.responsive({
-      // For all the images in the folder
       '*': [{
         width: 230,
         rename: {suffix: '_placehold'},
       }, {
-        // thubmnail
         width: 535,
         rename: { suffix: '_thumb' },
       }, {
-        // thumbnail @2x
         width: 535 * 2,
         rename: { suffix: '_thumb@2x' }
       }, {
@@ -78,7 +59,6 @@ gulp.task('site-img', function() {
         width: 1999,
         rename: { suffix: '_lg' }
       }, {
-        // max-width hero
         width: 1920,
       }],
     },
@@ -89,18 +69,17 @@ gulp.task('site-img', function() {
       errorOnEnlargement: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest(dirPath));
+    .pipe(gulp.dest(`${outDirPath}/posts/`));
 });
 
 // Icons and manifest stuff
 gulp.task('icons', function() {
-  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/icons/' : 'assets/img/icons/';
-  return gulp.src('_img/icons/*')
-    .pipe(gulp.dest(dirPath));
+  return gulp.src(`${inDirPath}/icons/*.{png,jpg}`)
+    .pipe(gulp.dest(`${outDirPath}/icons/`));
 });
 
+// Misc images
 gulp.task('img-misc', function() {
-  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/' : 'assets/img/';
-  return gulp.src('_img/*.jpg')
-    .pipe(gulp.dest(dirPath));
+  return gulp.src(`${inDirPath}/*.jpg`)
+    .pipe(gulp.dest(`${outDirPath}/`));
 });
