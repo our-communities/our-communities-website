@@ -19,6 +19,7 @@ const handleErrors = () => {
 
 //  JS
 gulp.task('js', function() {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/js' : 'assets/js';
   return browserify('_js/scripts.js', {debug: true, extensions: ['es6']})
     .transform('babelify', {presets: ['es2015']})
     .bundle()
@@ -31,5 +32,5 @@ gulp.task('js', function() {
     .pipe(size())
     .pipe(gulp.dest('_site/assets/js'))
     .pipe(browserSync.reload({stream: true}))
-    .pipe(gulp.dest('assets/js'));
+    .pipe(gulp.dest(dirPath));
 });

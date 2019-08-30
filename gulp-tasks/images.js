@@ -6,6 +6,7 @@ const imagemin = require('gulp-imagemin');
 
 // Images
 gulp.task('img', function() {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/communities/' : 'assets/img/communities/';
   return gulp.src('_img/communities/*.{png,jpg}')
     .pipe($.responsive({
       // For all the images in the folder
@@ -45,10 +46,11 @@ gulp.task('img', function() {
       errorOnEnlargement: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/img/communities/'));
+    .pipe(gulp.dest(dirPath));
 });
 
 gulp.task('site-img', function() {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/posts/' : 'assets/img/posts/';
   return gulp.src('_img/posts/*.{png,jpg}')
     .pipe($.responsive({
       // For all the images in the folder
@@ -87,16 +89,18 @@ gulp.task('site-img', function() {
       errorOnEnlargement: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/img/posts/'));
+    .pipe(gulp.dest(dirPath));
 });
 
 // Icons and manifest stuff
 gulp.task('icons', function() {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/icons/' : 'assets/img/icons/';
   return gulp.src('_img/icons/*')
-    .pipe(gulp.dest('assets/img/icons/'));
+    .pipe(gulp.dest(dirPath));
 });
 
 gulp.task('img-misc', function() {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/img/' : 'assets/img/';
   return gulp.src('_img/*.jpg')
-    .pipe(gulp.dest('assets/img/'));
+    .pipe(gulp.dest(dirPath));
 });

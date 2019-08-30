@@ -7,6 +7,8 @@ const browserSync = require('browser-sync');
 
 // SASS
 gulp.task('sass', function() {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/_site/assets/css' : '_site/assets/css';
+  let dirPath2 = process.env.CONTEXT ? '/opt/build/repo/assets/css' : 'assets/css';
   return gulp.src('_sass/main.scss')
     .pipe(sass({
       outputStyle: 'compressed',
@@ -18,17 +20,19 @@ gulp.task('sass', function() {
       flexbox: true
     }))
     .pipe(rename({ basename: 'main' }))
-    .pipe(gulp.dest('_site/assets/css'))
+    .pipe(gulp.dest(dirPath))
     .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest(dirPath2));
 });
 
 // Generate critical CSS for inlining into document
 gulp.task('critical', function () {
+  let dirPath = process.env.CONTEXT ? '/opt/build/repo/_site/' : '_site/';
+  let dirPath2 = process.env.CONTEXT ? '/opt/build/repo/assets/css/main.css' : 'assets/css/main.css';
   critical.generate({
-    base: '_site/',
+    base: dirPath,
     src: 'index.html',
-    css: ['assets/css/main.css'],
+    css: dirPath2,
     dimensions: [{
       width: 320,
       height: 480
