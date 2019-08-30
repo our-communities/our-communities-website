@@ -66,6 +66,7 @@ gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
     ['sass', 'js', 'sw'],
+    ['img', 'site-img', 'icons', 'img-misc'],
     'create-files',
     'jekyll-build',
     cb);
