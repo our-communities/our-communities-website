@@ -5,6 +5,7 @@
 npm-debug.log
 
 _site
+assets/
 
 #Commented out during forestry setup
 #*.js.map
