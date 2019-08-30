@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: Software Cornwall
-dataID: 141228100812756
+dataID: 8412213159
 summary: A community of tech businesses from around the county.
 featured-img: software-cornwall
 image: /assets/img/communities/software-cornwall_thumb.jpg
