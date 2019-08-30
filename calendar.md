@@ -1,6 +1,8 @@
 ---
 layout: content-feed
 title: Calendar
+description: Community curated calendar for tech events in the South West.
+image: /assets/img/posts/calendar-og_sm.jpg
 permalink: /calendar/
 ---
 

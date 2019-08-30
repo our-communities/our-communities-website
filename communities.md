@@ -1,6 +1,8 @@
 ---
 layout: content-feed
 title: Communities
+description: A list of communities whose events are included in our calendar.
+image: /assets/img/posts/communities-og_sm.jpg
 permalink: /communities/
 ---
 <section class="blog">
