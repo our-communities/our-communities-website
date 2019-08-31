@@ -17,20 +17,23 @@ const handleErrors = () => {
   this.emit('end'); // Keep gulp from hanging on this task
 };
 
+var inDirPath = process.env.CONTEXT ? '/opt/build/repo/_js' : '_js';
+var outDirPath = process.env.CONTEXT ? '/opt/build/repo/_site/assets/js' : '_site/assets/js';
+
 //  JS
 gulp.task('js', function() {
   let dirPath = process.env.CONTEXT ? '/opt/build/repo/assets/js' : 'assets/js';
-  return browserify('_js/scripts.js', {debug: true, extensions: ['es6']})
+  return browserify(`${inDirPath}/scripts.js`, {debug: true, extensions: ['es6']})
     .transform('babelify', {presets: ['es2015']})
     .bundle()
     .on('error', handleErrors)
-    .pipe(source('bundle.js'))
+    .pipe(source(`${inDirPath}/bundle.js`))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(uglify())
-    .pipe(sourcemaps.write('./maps'))
+    .pipe(sourcemaps.write(`${inDirPath}/maps`))
     .pipe(size())
-    .pipe(gulp.dest('_site/assets/js'))
+    .pipe(gulp.dest(outDirPath))
     .pipe(browserSync.reload({stream: true}))
     .pipe(gulp.dest(dirPath));
 });
