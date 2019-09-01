@@ -13,10 +13,16 @@ gulp.task('img', function() {
     .pipe($.responsive({
       '*': [{
         width: 230,
-        rename: {suffix: '_placehold'},
+        rename: {
+          suffix: '_placehold',
+
+        },
       }, {
         width: 535,
-        rename: { suffix: '_thumb' },
+        rename: {
+          suffix: '_thumb',
+
+        },
       }],
     },
     {
@@ -35,27 +41,51 @@ gulp.task('site-img', function() {
     .pipe($.responsive({
       '*': [{
         width: 230,
-        rename: {suffix: '_placehold'},
+        rename: {
+          suffix: '_placehold',
+
+        },
       }, {
         width: 535,
-        rename: { suffix: '_thumb' },
-      }, {
+        rename: {
+          suffix: '_thumb' ,
+
+        },
+      },{
         width: 535 * 2,
-        rename: { suffix: '_thumb@2x' }
-      }, {
+        rename: {
+          suffix: '_thumb@2x',
+
+         }
+      },{
         width: 575,
-        rename: { suffix: '_xs'}
-      }, {
+        rename: {
+          suffix: '_xs',
+
+        }
+      },{
         width: 767,
-        rename: {suffix: '_sm'}
+        rename: {
+          suffix: '_sm',
+
+        }
       }, {
         width: 991,
-        rename: { suffix: '_md' }
-      }, {
-        width: 1999,
-        rename: { suffix: '_lg' }
+        rename: {
+          suffix: '_md',
+
+        }
       }, {
         width: 1920,
+        rename: {
+          suffix: '_lg',
+
+        }
+      }, {
+        width: 1920,
+        rename: {
+
+        }
       }],
     },
     {
