@@ -17,10 +17,6 @@ gulp.task('img', function() {
       }, {
         width: 535,
         rename: { suffix: '_thumb' },
-      },
-      {
-        width: 535 * 2,
-        rename: { suffix: '_thumb@2x' },
       }],
     },
     {
