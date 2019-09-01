@@ -74,7 +74,7 @@ gulp.task('site-img', function() {
 
 // Icons and manifest stuff
 gulp.task('icons', function() {
-  return gulp.src(`${inDirPath}/icons/*.{png,jpg}`)
+  return gulp.src(`${inDirPath}/icons/*.{png,jpg,xml,ico,json,svg}`)
     .pipe(gulp.dest(`${outDirPath}/icons/`));
 });
 
