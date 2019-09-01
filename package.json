@@ -36,8 +36,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-responsive": "^2.8.0",
     "gulp-sass": "^3.1.0",
-    "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "require-dir": "^1.2.0",
     "sw-precache": "^5.2.0",

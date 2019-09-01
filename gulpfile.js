@@ -27,7 +27,12 @@ gulp.task('watch', function() {
   gulp.watch('_img/*.jpg', ['img']);
 });
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', function(cb) {
+  runSequence(
+    'browser-sync', 'watch',
+    cb);
+  }
+);
 
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
