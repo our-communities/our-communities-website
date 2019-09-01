@@ -4,8 +4,8 @@
 .idea/*
 npm-debug.log
 
-_site
-assets/
+assets/*
+!assets/.gitkeep
 
 #Commented out during forestry setup
 #*.js.map
@@ -50,14 +50,6 @@ _site/
 
 # Used by dotenv library to load environment variables.
 #.env
-
-## Specific to RubyMotion:
-.dat*
-.repl_history
-build/
-*.bridgesupport
-build-iPhoneOS/
-build-iPhoneSimulator/
 
 ## Environment normalization:
 /.bundle/
