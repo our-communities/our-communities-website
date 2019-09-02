@@ -19,7 +19,7 @@ layout: compress
 
     {% include header.html %}
 
-    <div class="hero lazyload" data-bg="/assets/img/{{ site.hero_img }}">
+    <div class="hero lazyload" data-bg="/assets/img/{{ site.hero_img }}.jpeg">
       <div class="hero__wrap">
         <h1 class="hero__title">{{ site.title | escape }}</h1>
         <p class="hero__meta">{{ site.tagline }}</p>
@@ -46,12 +46,12 @@ layout: compress
                 {% if organiser.first.featured-img %}
                   <figure class="post-card__thumb">
                     <img
-                      src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpg"
-                      data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpg"
+                      src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpeg"
+                      data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg"
                       class="lazyload blur"
                       alt="{{event.title}}"
                     />
-                    <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpg" alt="{{ event.title }}"></noscript>
+                    <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}"></noscript>
                   </figure>
                 {% else %}
                   <figure class="post-card__thumb">

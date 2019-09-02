@@ -4,7 +4,7 @@ name: Fab Lab Devon
 dataID: 6722521537
 summary: A small-scale workshop offering digital fabrication. It’s an open access, not-for-profit community resource where anybody can make just about anything.
 featured-img: fablab-devon
-image: /assets/img/communities/fablab-devon_thumb.jpg
+image: /assets/img/communities/fablab-devon_thumb.jpeg
 
 twitter: FabLabDevon
 facebook: fablabdevon

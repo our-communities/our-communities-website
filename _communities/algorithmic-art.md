@@ -4,7 +4,7 @@ name: Algorithmic Art
 dataID: 22392802
 summary: Meetup for people interested in the intersection of art and code.
 featured-img: 'algorithmic-art'
-image: /assets/img/communities/algorithmic-art_thumb.jpg
+image: /assets/img/communities/algorithmic-art_thumb.jpeg
 
 meetup: Algorithmic-Art/
 twitter: algorithmic_art

@@ -4,7 +4,7 @@ name: Exeter .NET
 dataID: 19485670
 summary: Cornwall .NET Developers
 featured-img: 'exeter-dot-net'
-image: /assets/img/communities/exeter-dot-net_thumb.jpg
+image: /assets/img/communities/exeter-dot-net_thumb.jpeg
 
 meetup: Exeter-NET-Meetup/
 ---

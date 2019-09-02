@@ -4,7 +4,7 @@ name: Data Science Cornwall
 dataID: 29193006
 summary: Data Science meetup based in Cornwall
 featured-img: 'data-science-cornwall'
-image: /assets/img/communities/data-science-cornwall_thumb.jpg
+image: /assets/img/communities/data-science-cornwall_thumb.jpeg
 
 meetup: datasciencecornwall/
 ---

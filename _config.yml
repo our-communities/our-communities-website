@@ -29,7 +29,7 @@ navigation: # Navigation links
 tagline: >
   A shared events calendar for digital and tech communities across the South West.
 
-hero_img: posts/header_lg.jpg # Main background image: use the path from /assets/img/
+hero_img: posts/header_lg # Main background image: use the path from /assets/img/
 
 lang: en-GB
 
@@ -74,7 +74,7 @@ exclude:
   - vendor
   - npm-debug.log
   - gulpfile.js
-  - sleek.jpg
+  - sleek.jpeg
   - gulp-tasks
   - jekyll-sleek.gemspec
   - ruby-version

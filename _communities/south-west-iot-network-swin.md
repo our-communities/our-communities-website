@@ -4,7 +4,7 @@ name: South West Internet of Things Network
 dataID: 25373382021
 summary: SWIN is an independent organisation working closely with key partners, to develop & support IoT in the South West.
 featured-img: south-west-iot-network-swin
-image: /assets/img/communities/south-west-iot-network-swin_thumb.jpg
+image: /assets/img/communities/south-west-iot-network-swin_thumb.jpeg
 
 twitter: TTN_SWIN
 facebook: SouthWestIoT

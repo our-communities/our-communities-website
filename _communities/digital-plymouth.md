@@ -4,7 +4,7 @@ name: Digital Plymouth
 dataID: 8225401568
 summary: A community for the cities digital industry
 featured-img: digital-plymouth
-image: /assets/img/communities/digital-plymouth_thumb.jpg
+image: /assets/img/communities/digital-plymouth_thumb.jpeg
 
 twitter: DigitalPlymouth
 facebook: digitalplymouth

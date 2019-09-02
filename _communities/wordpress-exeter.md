@@ -4,7 +4,7 @@ name: WordPress Exeter
 dataID: 20234010
 summary: Wordpress Meetup based in Exeter.
 featured-img: 'wordpress-exeter'
-image: /assets/img/communities/wordpress-exeter_thumb.jpg
+image: /assets/img/communities/wordpress-exeter_thumb.jpeg
 
 twitter: wpexeter
 facebook: WPExeter

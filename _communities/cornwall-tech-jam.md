@@ -4,7 +4,7 @@ name: Cornwall Tech Jam
 dataID: 271956584376238
 summary: A place to play with code
 featured-img: cornwall-tech-jam
-image: /assets/img/communities/cornwall-tech-jam_thumb.jpg
+image: /assets/img/communities/cornwall-tech-jam_thumb.jpeg
 
 twitter: cornwalltechjam
 facebook: cornwalltechjam

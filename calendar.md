@@ -32,12 +32,12 @@ permalink: /calendar/
             {% if organiser.first.featured-img %}
               <figure class="post-card__thumb">
                 <img
-                  src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpg"
-                  data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpg, {{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb@2x.jpg 2x"
+                  src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpeg"
+                  data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg, {{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb@2x.jpeg 2x"
                   class="lazyload blur"
                   alt="{{event.title}}"
                 />
-                <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpg" alt="{{ event.title }}"></noscript>
+                <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}"></noscript>
               </figure>
             {% else %}
               <figure class="post-card__thumb">

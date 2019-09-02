@@ -4,7 +4,7 @@ name: Plymouth Data Meetup
 dataID: 28243974
 summary: Plymouth based meetup for people interested in data.
 featured-img: 'plymouth-data-meetup'
-image: /assets/img/communities/plymouth-data-meetup_thumb.jpg
+image: /assets/img/communities/plymouth-data-meetup_thumb.jpeg
 
 meetup: Plymouth-Data-Meetup/
 ---

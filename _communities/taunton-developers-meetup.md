@@ -4,7 +4,7 @@ name: Taunton Developers Meetup
 dataID: 12362652
 summary: A regular meetup for software developers in Taunton the wider Taunton area..
 featured-img: 'taunton-developers-meetup'
-image: /assets/img/communities/taunton-developers-meetup_thumb.jpg
+image: /assets/img/communities/taunton-developers-meetup_thumb.jpeg
 
 meetup: Taunton-and-area-Developers-Meetup/
 ---

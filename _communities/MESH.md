@@ -4,7 +4,7 @@ name: MESH
 dataID: 11380604458
 summary: A meetup for creatives
 featured-img: mesh
-image: /assets/img/communities/mesh_thumb.jpg
+image: /assets/img/communities/mesh_thumb.jpeg
 
 twitter: exploremesh
 facebook: exploremesh

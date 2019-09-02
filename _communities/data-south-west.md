@@ -4,7 +4,7 @@ name: Data South West
 dataID: 21740803
 summary: SQL user group based in Exeter
 featured-img: 'data-south-west'
-image: /assets/img/communities/data-south-west_thumb.jpg
+image: /assets/img/communities/data-south-west_thumb.jpeg
 
 meetup: SQL-South-West/
 ---

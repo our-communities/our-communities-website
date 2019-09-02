@@ -4,7 +4,7 @@ name: Women in STEM Plymouth
 dataID: 7944478778
 summary: The Women in STEM Plymouth Community
 featured-img: women-in-stem-plymouth
-image: /assets/img/communities/women-in-stem-plymouth_thumb.jpg
+image: /assets/img/communities/women-in-stem-plymouth_thumb.jpeg
 
 twitter: WinSTEMplym
 facebook: WinSTEMPlym/

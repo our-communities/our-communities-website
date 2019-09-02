@@ -4,7 +4,7 @@ name: Exeter Functional Programmers
 dataID: 18577020
 summary: A group for anyone interested in programming and hacking using Functional Programming.
 featured-img: 'exeter-functional-programmers'
-image: /assets/img/communities/exeter-functional-programmers_thumb.jpg
+image: /assets/img/communities/exeter-functional-programmers_thumb.jpeg
 
 meetup: Exeter-Functional-Programmers/
 ---

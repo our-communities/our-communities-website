@@ -4,7 +4,7 @@ name: Digital Taunton
 dataID: 27349249
 summary: Digital Taunton Meetup Group
 featured-img: 'digital-taunton'
-image: /assets/img/communities/digital-taunton_thumb.jpg
+image: /assets/img/communities/digital-taunton_thumb.jpeg
 
 twitter: DigitalTaunton
 facebook: digitaltaunton
