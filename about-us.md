@@ -2,7 +2,7 @@
 layout: content-feed
 title: About Us
 description: Find out a little more about the South West Communities project
-image: /assets/img/posts/about-us-og_sm.jpg
+image: /assets/img/posts/about-us-og_sm.jpeg
 permalink: /about-us/
 ---
 <div class="container">
