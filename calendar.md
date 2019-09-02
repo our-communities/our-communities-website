@@ -33,7 +33,7 @@ permalink: /calendar/
               <figure class="post-card__thumb">
                 <img
                   src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpeg"
-                  data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg, {{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb@2x.jpeg 2x"
+                  data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg,"
                   class="lazyload blur"
                   alt="{{event.title}}"
                 />
