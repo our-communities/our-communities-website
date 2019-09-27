@@ -7,6 +7,9 @@ featured-img: product-tank-exeter
 image: /assets/img/communities/product-tank-exeter_thumb.jpeg
 
 meetup: ProductTank-Exeter/
+twitter: producttankexe
+facebook: producttankexeter
+youtube: UCgDJZt6E8BLEfHoQJZ_mrFg
 
 ---
 ProductTank is a global network of meetups for product people, by product people,
