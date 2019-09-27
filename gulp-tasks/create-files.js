@@ -11,7 +11,7 @@ gulp.task('create-files', function() {
       console.log('ERROR: ', error);
     }
 
-    let events = JSON.parse(body);
+    let data = JSON.parse(body);
 
     console.log('LOG: Building Markdown');
     // Choose the path wisely and empty it
@@ -23,7 +23,7 @@ gulp.task('create-files', function() {
     logger.end();
 
     // Generate the markdown for each event
-    events.forEach(evt => {
+    data.events.forEach(evt => {
       createMarkdownFile(evt, dirPath, evt.fileTitle);
     });
 
@@ -41,7 +41,7 @@ gulp.task('create-files', function() {
     logger.write('[');
 
     // Generate API entry for each event
-    events.forEach(evt => {
+    data.events.forEach(evt => {
       createEventAPIEntry(logger, evt);
     });
 
