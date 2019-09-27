@@ -9,6 +9,8 @@ permalink: /calendar/
 <section class="blog blog--resource blog--calendar">
   <div class="container">
     {% assign sorted-events = site.events | sort: 'start' | group_by_exp: "item", "item.start | date: '%B %Y'" %}
+    {% include filters.html %}
+
     {% for month in sorted-events %}
       {% assign thismonth = month.name | date: "%B %Y" %}
       {% if thismonth != lastmonth %}

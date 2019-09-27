@@ -1,0 +1,19 @@
+<div class="filters">
+
+  <div class="type-wrap">
+
+  </div>
+
+  <div class="select-wrap">
+
+    <label for="pet-select">Filter by location</label>
+
+    <select id="pet-select">
+      <option value="all">--show all--</option>
+      {% for location in site.locations %}
+        <option value="{{location}}">{{location}}-</option>
+      {% endfor %}
+    </select>
+  </div>
+
+</div>
