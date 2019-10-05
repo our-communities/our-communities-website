@@ -39,14 +39,27 @@ gulp.task('create-files', function() {
     // Generate API file
     logger = fs.createWriteStream(`${dirPath}/data.json`);
     logger.write('[');
+    logger.write('{');
+    logger.write('"events" : [');
 
     // Generate API entry for each event
     data.events.forEach(evt => {
       createEventAPIEntry(logger, evt);
     });
 
-    // Wrap up the API file
+    // Wrap up the event object
     logger.write('{}');
+    logger.write('],');
+
+    let locArray = `[`;
+    data.locations.forEach((loc, key, arr) => {
+      locArray += '"' + loc + '"';
+      if (!Object.is(arr.length - 1, key)) {
+        locArray += ',';
+      }
+    });
+    logger.write(`"locations" : ${locArray}`);
+    
     logger.write(']');
     logger.end();
     });
@@ -110,10 +123,6 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`    "twitter": "${evt.twitter}",\n`);
   logger.write(`    "gCalURL": "${evt.gCalURL}"\n`);
   logger.write(`  },`);
-};
-
-const createOrganiserApiEntry = (org) => {
-
 };
 
 const emptyDirectory = (path) => {
