@@ -59,8 +59,9 @@ gulp.task('create-files', function() {
       }
     });
     logger.write(`"locations" : ${locArray}`);
-    
+
     logger.write(']');
+    logger.write('}]');
     logger.end();
     });
 });
