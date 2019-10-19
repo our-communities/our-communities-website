@@ -18,10 +18,6 @@ gulp.task('create-files', function() {
     let dirPath = process.env.CONTEXT ? '/opt/build/repo/_events' : '_events';
     emptyDirectory(dirPath);
 
-    // Create a blank file to prevent the dev folder being untracked
-    let logger = fs.createWriteStream(`${dirPath}/file`);
-    logger.end();
-
     // Generate the markdown for each event
     data.events.forEach(evt => {
       createMarkdownFile(evt, dirPath, evt.fileTitle);
@@ -31,10 +27,6 @@ gulp.task('create-files', function() {
     // Generate the API data
     dirPath = process.env.CONTEXT ? '/opt/build/repo/_api/v1' : '_api/v1';
     emptyDirectory(dirPath);
-
-    // Create a blank file to prevent the dev folder being untracked
-    logger = fs.createWriteStream(`${dirPath}/file`);
-    logger.end();
 
     // Generate API file
     logger = fs.createWriteStream(`${dirPath}/data.json`);
@@ -144,4 +136,7 @@ const emptyDirectory = (path) => {
       }
     }
   }
+  // Create a blank file to prevent the dev folder being untracked
+  let logger = fs.createWriteStream(`${path}/file`);
+  logger.end();
 };
