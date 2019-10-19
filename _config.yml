@@ -101,3 +101,5 @@ collections:
     output: true
   api:
     output: false
+  locations:
+    output: false

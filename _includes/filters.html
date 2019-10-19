@@ -6,12 +6,12 @@
 
   <div class="select-wrap">
 
-    <label for="pet-select">Filter by location</label>
+    <label for="location-select">Filter by location</label>
 
-    <select id="pet-select">
+    <select id="location-select">
       <option value="all">--show all--</option>
       {% for location in site.locations %}
-        <option value="{{location}}">{{location}}-</option>
+        <option value="{{location.name}}">{{location.name}}</option>
       {% endfor %}
     </select>
   </div>
