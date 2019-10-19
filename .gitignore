@@ -6,6 +6,8 @@ npm-debug.log
 
 assets/*
 !assets/.gitkeep
+_locations/*
+!_locations/file
 
 #Commented out during forestry setup
 #*.js.map
@@ -64,6 +66,7 @@ _site/
 bower_components
 node_modules
 _events
+_locations
 
 
 _algolia_api_key
