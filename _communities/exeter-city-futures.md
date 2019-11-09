@@ -12,7 +12,7 @@ instagram: exetercityfutures
 youtube: https://www.youtube.com/channel/UCd_P7MiNwowgCMb_NNSpjWQ
 linkedin: https://www.linkedin.com/company/exeter-city-futures/
 website: https://www.exetercityfutures.com/
-meetup: https://www.meetup.com/Exeter-City-Futures-Meetup/
+meetup: Exeter-City-Futures-Meetup/
 ---
 Exeter City Futures is an independent Community Interest Company that is working to help Exeter solve its urbanisation challenges in a way that reduces social inequality and contributes to economic growth.
 

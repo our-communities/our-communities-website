@@ -2,7 +2,7 @@
 layout: community-page
 name: Exeter .NET
 dataID: 19485670
-summary: Cornwall .NET Developers
+summary: Exeter .NET Developers, hosting regular lightning talks on the .NET ecosystem
 featured-img: 'exeter-dot-net'
 image: /assets/img/communities/exeter-dot-net_thumb.jpeg
 
