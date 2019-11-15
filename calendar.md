@@ -24,7 +24,7 @@ permalink: /calendar/
       <div class="post-list resource-list">
 
         {% for event in month.items %}
-          <div class="post-card resource-card">
+          <div class="post-card resource-card" data-location="{{event.geographic}}">
 
             {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
 
