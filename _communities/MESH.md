@@ -5,6 +5,7 @@ dataID: 11380604458
 summary: A meetup for creatives
 featured-img: mesh
 image: /assets/img/communities/mesh_thumb.jpeg
+type: community
 
 twitter: exploremesh
 facebook: exploremesh

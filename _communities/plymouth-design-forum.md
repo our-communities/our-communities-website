@@ -5,6 +5,7 @@ dataID: 21751176839
 summary: A monthly social for the cities creative community.
 featured-img: plymouth-design-forum
 image: /assets/img/communities/plymouth-design-forum_thumb.jpeg
+type: community
 
 twitter: DesignPlym
 website: https://plymouthdesignforum.co.uk/

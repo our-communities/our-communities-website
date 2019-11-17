@@ -5,6 +5,7 @@ dataID: 1767306
 summary: A community meetup for techy types in Exeter city.
 featured-img: tech-exeter
 image: /assets/img/communities/tech-exeter_thumb.jpeg
+type: community
 
 twitter: techexeter
 facebook: techexeter

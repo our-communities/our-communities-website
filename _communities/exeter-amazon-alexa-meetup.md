@@ -5,6 +5,7 @@ dataID: 32164885
 summary: The Exeter branch of Amazon Alexa voice skills meetup.
 featured-img: 'exeter-amazon-alexa-meetup'
 image: /assets/img/communities/exeter-amazon-alexa-meetup_thumb.jpeg
+type: community
 ---
 
 The Exeter branch of Amazon Alexa voice skills meetup.

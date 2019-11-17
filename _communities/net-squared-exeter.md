@@ -5,6 +5,7 @@ dataID: 32557855
 summary: NetSquared Exeter is a free regular event for people in and around the Exeter area interested in using tech for social good.
 featured-img: 'net-squared'
 image: /assets/img/communities/net-squared_thumb.jpeg
+type: community
 
 meetup: NetSquared-Exeter
 twitter: netsquared

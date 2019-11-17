@@ -5,6 +5,7 @@ dataID: 9802040321
 summary: Exeter City Futures is working to help Exeter solve its urbanisation challenges, reduce social inequality and stimulate economic growth.
 featured-img: exeter-city-futures
 image: /assets/img/communities/exeter-city-futures_thumb.jpeg
+type: funded
 
 twitter: ExeCityFutures
 facebook: exetercityfutures

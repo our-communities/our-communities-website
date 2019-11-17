@@ -5,6 +5,7 @@ dataID: 6722521537
 summary: A small-scale workshop offering digital fabrication. It’s an open access, not-for-profit community resource where anybody can make just about anything.
 featured-img: fablab-devon
 image: /assets/img/communities/fablab-devon_thumb.jpeg
+type: community
 
 twitter: FabLabDevon
 facebook: fablabdevon

@@ -5,6 +5,7 @@ dataID: 30478960
 summary: A monthly meeting for everyone interested in  Micro Computers, Micro Controllers, Robotics and making.
 featured-img: 'exeter-raspberry-jam'
 image: /assets/img/communities/exeter-raspberry-jam_thumb.jpeg
+type: educational
 
 twitter: exeterRaspJam
 meetup: Exeter-Raspberry-Jam/

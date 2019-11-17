@@ -5,6 +5,7 @@ dataID: 17763342041
 summary: PRISM Exeter is a network for LGBTQ+ people in STEM.
 featured-img: prism-exeter
 image: /assets/img/communities/prism-exeter_thumb.jpeg
+type: community
 
 twitter: PRISMexeter
 facebook: PRISMexeter

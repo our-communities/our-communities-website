@@ -5,6 +5,7 @@ dataID: 30511814
 summary: Propeller:Exmouth is a vibrant co-working space.
 featured-img: 'propeller-exmouth'
 image: /assets/img/communities/propeller-exmouth_thumb.jpeg
+type: community
 
 meetup: Propeller-Exmouth/
 website: https://propellerexmouth.co.uk/
