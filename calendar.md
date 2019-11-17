@@ -31,9 +31,11 @@ permalink: /calendar/
              data-month="{{lastmonth | replace: " ", "-"}}">
 
           {% for event in month.items %}
-            <div class="post-card resource-card event-card" data-location="{{event.geographic}}">
+            {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
 
-              {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
+            <div class="post-card resource-card event-card"
+            data-location="{{event.geographic}}"
+            data-type="{{organiser.first.type}}">
 
               <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}">
               {% if organiser.first.featured-img %}
@@ -42,7 +44,7 @@ permalink: /calendar/
                     src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpeg"
                     data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg,"
                     class="lazyload blur"
-                    alt="{{event.title}}"
+                    alt="{{event.title}}."
                   />
                   <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}"></noscript>
                 </figure>

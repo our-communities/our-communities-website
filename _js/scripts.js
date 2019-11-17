@@ -26,6 +26,10 @@ $(document).ready(function() {
   $('#location-select').change(function() {
     locationFilter();
   });
+
+  $('button.type-button').click(function(e){
+    typeFilter(e);
+  });
 });
 
 $(window).resize(function() {
@@ -225,5 +229,41 @@ function locationFilter() {
 
     // Add the location if applicable
     $('.num-remaining-location-' + month).html(' in ' + selectedLocation);
+  });
+}
+
+
+function typeFilter(e){
+  console.log('type filter hit');
+
+  // insert original dom state incase this isn't the first filter
+  $('#calendar-wrap').replaceWith(originalCalendar[0]);
+  originalCalendar.shift();
+
+  let selectedType = e.target.getAttribute('data-type');
+  console.log(selectedType);
+
+  if (selectedType === 'all'){
+    return;
+  }
+
+  $('.month-block').each(function(i, block) {
+    block = $(block);
+    let items = block.find('.event-card');
+    let matches = [];
+
+    // Filter out the matched
+    items.each(function(j, item) {
+      console.log($(item).data('type'));
+      if ($(item).data('type') === selectedType) {
+        matches.push(item);
+      }
+    });
+
+    // Add matches into the DOM
+    block.empty();
+    matches.forEach(function(match) {
+      block.append(match);
+    });
   });
 }

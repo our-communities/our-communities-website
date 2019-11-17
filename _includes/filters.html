@@ -1,15 +1,15 @@
 <div class="filters">
 
   <div class="type-wrap">
-    <button>Communities & Work Spaces</button>
-    <button>Funded Projects</button>
-    <button>Networking Groups</button>
+    <button class="type-button" data-type="all">Show All</button>
+    <button class="type-button" data-type="community">Communities & Work Spaces</button>
+    <button class="type-button" data-type="funded">Funded Projects</button>
+    <button class="type-button" data-type="networking">Networking Groups</button>
+    <button class="type-button" data-type="educational">Education & Training</button>
   </div>
 
   <div class="location-select-wrap">
-
     <label for="location-select">Filter by location</label>
-
     <select id="location-select">
       <option value="all">--show all--</option>
       {% for location in site.locations %}
