@@ -59,6 +59,7 @@ gulp.task('create-files', function() {
     // Generate locations files
     console.log('LOG: Building location files');
     dirPath = process.env.CONTEXT ? '/opt/build/repo/_locations' : '_locations';
+    emptyDirectory(dirPath);
 
     data.locations.forEach(loc => {
       logger = fs.createWriteStream(`${dirPath}/${loc}.md`);
