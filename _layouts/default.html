@@ -42,7 +42,7 @@ layout: compress
 
                 {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
 
-                <a class="post-card__inner" href="{{ event.url }}" title="More infor about {{event.title}}">
+                <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}.">
                 {% if organiser.first.featured-img %}
                   <figure class="post-card__thumb">
                     <img
@@ -51,15 +51,15 @@ layout: compress
                       class="lazyload blur"
                       alt="{{event.title}}"
                     />
-                    <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}"></noscript>
+                    <noscript>
+                      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}">
+                    </noscript>
                   </figure>
                 {% else %}
                   <figure class="post-card__thumb">
                     <div class="dark-bg"></div>
                   </figure>
                 {% endif %}
-
-
 
                   <div class="post-card__header">
                     <h2>{{event.title | strip_html | truncate: 50}}</h2>
@@ -80,7 +80,6 @@ layout: compress
       </section>
 
       <section class="container">
-
         <div class="page-content page-content__columns">
           <h2>What do we do?</h2>
           <p>Meetups and events are a key part of the digital and tech sector.
@@ -100,10 +99,9 @@ layout: compress
         </div>
       </section>
 
-
       <section class="blog">
         <div class="container">
-          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
+          <div class="post-list">
 
             {% for item in site.navigation %}
               {% if item.name != 'Home' %}
@@ -114,6 +112,16 @@ layout: compress
             {% endfor %}
 
           </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="page-content">
+          <h2>Join our newsletter</h2>
+          <p>If you'd like to receive the occasional update about upcoming events
+             and community news, drop your details into the form below.
+             <a href="/newsletter" title="More information about our newsletter.">More info</a>.</p>
+          {% include newsletter.html %}
         </div>
       </section>
     </main>
