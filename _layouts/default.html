@@ -107,7 +107,9 @@ layout: compress
 
             {% for item in site.navigation %}
               {% if item.name != 'Home' %}
-                {% include card.html %}
+                {% if item.name != 'Newsletter' %}
+                  {% include card.html %}
+                {% endif %}
               {% endif %}
             {% endfor %}
 
