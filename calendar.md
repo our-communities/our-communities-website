@@ -20,9 +20,9 @@ permalink: /calendar/
           <h2 class="resource-header">{{thismonth}}</h2>
           {% assign shortMonth = thismonth | size %}
           {% if forloop.first %}
-            <p>There's <span class="num-remaining-{{thismonth | replace: " ", "-"}}">{{ month.items | size }}</span> event<span class="num-remaining-plural-{{thismonth | replace: " ", "-"}}">s</span> remaining during {{month.name | date: "%B"}}<span class="num-remaining-location-{{thismonth | replace: " ", "-"}}"></span>.</p>
+            <p>There's <span class="num-remaining-{{thismonth | replace: " ", "-"}}">{{ month.items | size }}</span> event<span class="num-remaining-plural-{{thismonth | replace: " ", "-"}}">s</span> remaining during {{month.name | date: "%B"}}<span class="num-remaining-location-{{thismonth | replace: " ", "-"}}"></span><span class="type-text-{{thismonth | replace: " ", "-"}}"></span>.</p>
           {% else %}
-            <p>There <span class="are-is-{{thismonth | replace: " ", "-"}}">are</span> <span class="num-remaining-{{thismonth | replace: " ", "-"}}">{{ month.items | size }}</span> event<span class="num-remaining-plural-{{thismonth | replace: " ", "-"}}">s</span> listed during {{month.name | date: "%B"}}<span class="num-remaining-location-{{thismonth | replace: " ", "-"}}"></span>.</p>
+            <p>There <span class="are-is-{{thismonth | replace: " ", "-"}}">are</span> <span class="num-remaining-{{thismonth | replace: " ", "-"}}">{{ month.items | size }}</span> event<span class="num-remaining-plural-{{thismonth | replace: " ", "-"}}">s</span> listed during {{month.name | date: "%B"}}<span class="num-remaining-location-{{thismonth | replace: " ", "-"}}"></span><span class="type-text-{{thismonth | replace: " ", "-"}}"></span>.</p>
           {% endif %}
         {% endif%}
         {% assign lastmonth = thismonth %}

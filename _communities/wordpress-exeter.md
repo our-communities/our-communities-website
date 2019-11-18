@@ -10,6 +10,7 @@ type: community
 twitter: wpexeter
 facebook: WPExeter
 website: https://wpexeter.uk
+meetup: https://www.meetup.com/wpexeter/
 codeofconduct: https://wpexeter.uk/code-of-conduct/
 ---
 A regular meetup for anyone in and around Exeter who uses WordPress.

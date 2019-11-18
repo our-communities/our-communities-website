@@ -249,6 +249,7 @@ function typeFilter(e){
 
   $('.month-block').each(function(i, block) {
     block = $(block);
+    let month = block.data('month');
     let items = block.find('.event-card');
     let matches = [];
 
@@ -265,5 +266,23 @@ function typeFilter(e){
     matches.forEach(function(match) {
       block.append(match);
     });
+
+    // Tweak the text based upon number of events and location
+    $('.num-remaining-' + month).html(matches.length);
+    if (matches.length === 1){
+      $('.num-remaining-plural-' + month).html('');
+      $('.are-is-' + month).html('is');
+    } else {
+      $('.num-remaining-plural-' + month).html('s');
+      $('.are-is-' + month).html('are');
+    }
+
+    // Remove the location
+    $('.num-remaining-location-' + month).html('');
+
+    // Add type
+    if (selectedType !== 'all'){
+      $('.type-text-' + month).html(' in the ' + selectedType + ' category');
+    }
   });
 }
