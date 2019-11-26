@@ -77,6 +77,6 @@ a.share {
 
 .btn-wrapper{
   @include breakpoint($md) {
-    margin-top: -5.05em;
+    margin-top: -1em;
   }
 }
