@@ -4,13 +4,14 @@
       <p>Organised by: <a href="/communities/{{page.organiserAltName}}"
                           title="{{page.organiserName}} organiser page.">{{page.organiserName}}</a><br>
          Date:
-         {% assign dy = page.date | date: "%a" %}
+         <!-- {% assign dy = page.date | date: "%a" %}
          {% case dy %}
            {% when "Tue" %}Tues
            {% when "Thu" %}Thurs
            {% else %}{{ dy }}
          {% endcase %}
-         {{page.start | date: '%d' }}
+         {{page.start | date: '%d' }} -->
+
          {{page.start | date: '%B %Y' }}
 
          // {{page.start | slice: 11, 5}}<br>
