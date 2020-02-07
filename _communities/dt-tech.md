@@ -1,7 +1,7 @@
 ---
 layout: community-page
 name: DT Tech
-dataID: 27349249
+dataID: 12362652
 summary: DT Tech is the perfect place for people within the Tech Industry in the Taunton Area.
 featured-img: 'dt-tech'
 image: /assets/img/communities/dt-tech_thumb.jpeg
