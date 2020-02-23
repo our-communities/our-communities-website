@@ -15,7 +15,7 @@ layout: null
         {% for event in sorted-events %}
             <item>
                 <title>{{ event.title | xml_escape }}</title>
-				        <author>South West Communities</author>
+				        <author>{{ event.organiserName | xml_escape }}</author>
                 <description>{{ event.excerpt | strip_html | truncatewords:20 | xml_escape }}</description>
                 <pubDate>{{ event.start | date_to_rfc822 }}</pubDate>
                 <link>https://southwestcommunities.co.uk{{ event.url }}</link>
