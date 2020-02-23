@@ -253,6 +253,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.12)
   github-pages
+  jekyll-feed
   jekyll-sleek!
   rake (~> 10.0)
 

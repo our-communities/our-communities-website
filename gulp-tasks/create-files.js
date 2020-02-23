@@ -84,6 +84,7 @@ const createMarkdownFile = (evt, path) => {
   logger.write(`long: ${evt.long}\n`);
   logger.write(`twitter: ${evt.twitter}\n`);
   logger.write(`gCalURL: ${evt.gCalURL}\n`);
+  logger.write(`url: https://southwestcommunities.co.uk/calendar/${evt.fileTitle}\n`);
 
   // Open Graph / SEO Stuff
   logger.write(`image: /assets/img/communities/${evt.orgAltName}_thumb.jpeg\n`);
