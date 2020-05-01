@@ -140,7 +140,6 @@ function ShowHideNav() {
     } );
 }
 
-
 /*-------------------------------------------------------------------------*/
 /* MAP EMBED                                                               */
 /* ------------------------------------------------------------------------*/
@@ -164,13 +163,17 @@ try {
   });
 } catch (e){}
 
+/*-------------------------------------------------------------------------*/
+/* SOCIAL SHARE                                                            */
+/* ------------------------------------------------------------------------*/
+
 function socialShare() {
 
     // Can we use web share?
     if (navigator.share){
 
         // get page information
-        const description = document.getElementsByName('description'),
+        const description = document.getElementsByName('description');
         const pageInfo = {
             url: location.href,
             title: document.title || '',
@@ -186,4 +189,3 @@ function socialShare() {
         });  
     } 
 };
-
