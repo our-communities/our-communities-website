@@ -9,6 +9,10 @@ require( 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js' );
 $( document ).ready( function() {
     toggleMobileNav();
     ShowHideNav();
+
+    if (navigator.share){
+        socialShare();
+    }
 } );
 
 $( window ).resize( function() {
@@ -159,3 +163,27 @@ try {
     }
   });
 } catch (e){}
+
+function socialShare() {
+
+    // Can we use web share?
+    if (navigator.share){
+
+        // get page information
+        const description = document.getElementsByName('description'),
+        const pageInfo = {
+            url: location.href,
+            title: document.title || '',
+            text: description.length ? description[0].content : ''
+        };
+
+        const shareButton = document.getElementsByClassName("share");
+
+        shareButton.innerHTML('Share this');
+
+        shareButton.addEventListener('click', (e) => {
+            navigator.share(pageInfo);
+        });  
+    } 
+};
+
