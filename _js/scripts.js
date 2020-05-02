@@ -9,10 +9,7 @@ require( 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js' );
 $( document ).ready( function() {
     toggleMobileNav();
     ShowHideNav();
-
-    if (navigator.share){
-        socialShare();
-    }
+    socialShare();
 } );
 
 $( window ).resize( function() {
@@ -173,6 +170,7 @@ function socialShare() {
 
     // Can we use web share?
     if (navigator.share){
+        alert('Social share available');
 
         // get page information
         const description = document.getElementsByName('description');
@@ -189,5 +187,7 @@ function socialShare() {
         shareButton.addEventListener('click', (e) => {
             navigator.share(pageInfo);
         });  
-    } 
+    } else {
+        console.log('No social share available');
+    }
 };
