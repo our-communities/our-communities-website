@@ -179,9 +179,9 @@ function socialShare() {
             text: description.length ? description[0].content : ''
         };
 
-        const shareButton = document.getElementsByClassName("share")[0];
+        const shareButton = document.querySelector(".share");
 
-        shareButton.innerHTML('Share this');
+        shareButton.innerHTML = 'Share this';
 
         shareButton.addEventListener('click', (e) => {
             e.preventDefault();
