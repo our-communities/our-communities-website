@@ -170,7 +170,6 @@ function socialShare() {
 
     // Can we use web share?
     if (navigator.share){
-        alert('Social share available');
 
         // get page information
         const description = document.getElementsByName('description');
@@ -180,14 +179,13 @@ function socialShare() {
             text: description.length ? description[0].content : ''
         };
 
-        const shareButton = document.getElementsByClassName("share");
+        const shareButton = document.getElementsByClassName("share")[0];
 
         shareButton.innerHTML('Share this');
 
         shareButton.addEventListener('click', (e) => {
+            e.preventDefault();
             navigator.share(pageInfo);
         });  
-    } else {
-        console.log('No social share available');
     }
 };
