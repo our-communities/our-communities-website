@@ -176,7 +176,7 @@ function socialShare() {
         const pageInfo = {
             url: location.href,
             title: document.title || '',
-            text: description.length ? description[0].content : ''
+            text: window.shareDescription ? window.shareDescription : description[0].content
         };
 
         const shareButton = document.querySelector(".share");
