@@ -9,10 +9,13 @@ require( 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js' );
 $( document ).ready( function() {
     toggleMobileNav();
     ShowHideNav();
+    socialShare();
 } );
 
 $( window ).resize( function() {
     $( '.header' ).removeClass( 'hide-nav' ); // Ensure nav will be shown on resize
+    $( ".header__toggle" ).removeClass( "--open" );
+    $( ".header__links" ).removeClass( "js--open" );
     $( '.header__links' ).removeAttr( 'style' ); // If mobile nav was collapsed, make sure it's show on DESK
     $( '.header__overlay' ).remove(); // Remove mobile navigation overlay in case it was opened
 } );
@@ -136,7 +139,6 @@ function ShowHideNav() {
     } );
 }
 
-
 /*-------------------------------------------------------------------------*/
 /* MAP EMBED                                                               */
 /* ------------------------------------------------------------------------*/
@@ -159,3 +161,31 @@ try {
     }
   });
 } catch (e){}
+
+/*-------------------------------------------------------------------------*/
+/* SOCIAL SHARE                                                            */
+/* ------------------------------------------------------------------------*/
+
+function socialShare() {
+
+    // Can we use web share?
+    if (navigator.share){
+
+        // get page information
+        const description = document.getElementsByName('description');
+        const pageInfo = {
+            url: location.href,
+            title: document.title || '',
+            text: window.shareDescription ? window.shareDescription : description[0].content
+        };
+
+        const shareButton = document.querySelector(".share");
+
+        shareButton.innerHTML = 'Share this';
+
+        shareButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.share(pageInfo);
+        });  
+    }
+};
