@@ -11,6 +11,7 @@ var originalCalendar = null;
 $(document).ready(function() {
   toggleMobileNav();
   ShowHideNav();
+  socialShare();
 
   // Save original calendar state
   if (originalCalendar === null) {
@@ -30,10 +31,16 @@ $(document).ready(function() {
   $('button.type-button').click(function(e){
     typeFilter(e);
   });
+
+  $('button#online').click(function(e){
+    onlineFilter(e);
+  });
 });
 
 $(window).resize(function() {
   $('.header').removeClass('hide-nav'); // Ensure nav will be shown on resize
+  $( ".header__toggle" ).removeClass( '--open' );
+  $( ".header__links" ).removeClass( 'js--open' );
   $('.header__links').removeAttr('style'); // If mobile nav was collapsed, make sure it's show on DESK
   $('.header__overlay').remove(); // Remove mobile navigation overlay in case it was opened
 });
@@ -182,6 +189,34 @@ try {
 } catch (e) {}
 
 /*-------------------------------------------------------------------------*/
+/* SOCIAL SHARE                                                            */
+/* ------------------------------------------------------------------------*/
+
+function socialShare() {
+
+  // Can we use web share?
+  if (navigator.share){
+
+      // get page information
+      const description = document.getElementsByName('description');
+      const pageInfo = {
+          url: location.href,
+          title: document.title || '',
+          text: window.shareDescription ? window.shareDescription : description[0].content
+      };
+
+      const shareButton = document.querySelector('.share');
+
+      shareButton.innerHTML = 'Share this';
+
+      shareButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          navigator.share(pageInfo);
+      });
+  }
+};
+
+/*-------------------------------------------------------------------------*/
 /* LOCATION FILTER                                                         */
 /* ------------------------------------------------------------------------*/
 
@@ -232,6 +267,9 @@ function locationFilter() {
   });
 }
 
+/*-------------------------------------------------------------------------*/
+/* TYPE FILTER                                                          */
+/* ------------------------------------------------------------------------*/
 
 function typeFilter(e){
   console.log('type filter hit');
@@ -244,6 +282,7 @@ function typeFilter(e){
   console.log(selectedType);
 
   if (selectedType === 'all'){
+    $('#location-select :nth-child(1)').prop('selected', true).trigger('change');
     return;
   }
 
@@ -284,5 +323,48 @@ function typeFilter(e){
     if (selectedType !== 'all'){
       $('.type-text-' + month).html(' in the ' + selectedType + ' category');
     }
+  });
+}
+
+/*-------------------------------------------------------------------------*/
+/* ONLINE FILTER                                                          */
+/* ------------------------------------------------------------------------*/
+
+function onlineFilter() {
+  // insert original dom state incase this isn't the first filter
+  $('#calendar-wrap').replaceWith(originalCalendar[0]);
+  originalCalendar.shift();
+
+  $('.month-block').each(function(i, block) {
+    block = $(block);
+    let month = block.data('month');
+    let items = block.find('.event-card');
+    let matches = [];
+
+    // Filter out the matched
+    items.each(function(j, item) {
+      if ($(item).data('location') === 'Online event') {
+        matches.push(item);
+      }
+    });
+
+    // Add matches into the DOM
+    block.empty();
+    matches.forEach(function(match) {
+      block.append(match);
+    });
+
+    // Tweak the text based upon number of events and location
+    $('.num-remaining-' + month).html(matches.length);
+    if (matches.length === 1){
+      $('.num-remaining-plural-' + month).html('');
+      $('.are-is-' + month).html('is');
+    } else {
+      $('.num-remaining-plural-' + month).html('s');
+      $('.are-is-' + month).html('are');
+    }
+
+    // Add the location if applicable
+    $('.num-remaining-location-' + month).html(' which are being hosted online');
   });
 }

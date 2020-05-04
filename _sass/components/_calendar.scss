@@ -13,3 +13,13 @@
   vertical-align: middle;
   line-height: 40px;
 }
+
+.type-wrap {
+  margin-bottom: 2em;
+}
+
+.type-button:active,
+.type-button:focus {
+  border-bottom: 5px solid purple;
+  padding-bottom: 13px;
+}

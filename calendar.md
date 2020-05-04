@@ -34,7 +34,7 @@ permalink: /calendar/
             {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
 
             <div class="post-card resource-card event-card"
-            data-location="{{event.geographic}}"
+            data-location="{% if event.venue == 'Online event' %}Online event{% else %}{{event.geographic}}{% endif %}"
             data-type="{{organiser.first.type}}">
 
               <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}">
@@ -60,7 +60,9 @@ permalink: /calendar/
                   <h2>{{event.title | strip_html | truncate: 50}}</h2>
 
                   <p>{{event.start | date_to_string }} // {{event.start | slice: 11, 5}} //
-                    {% if event.geographic == 'undefined' %}
+                    {% if event.venue == 'Online event' %}
+                      Online event
+                    {% elsif event.geographic == 'undefined' %}
                       Venue TBC
                     {% else %}
                       {{event.geographic}}
