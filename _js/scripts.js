@@ -231,15 +231,18 @@ function locationFilter() {
   // get location value
   let selectedLocation = $('#location-select').val();
 
+  // Update visual state
+  if (selectedLocation === 'Online event'){
+    $('#online').addClass('active');
+  } else {
+    $('#online').removeClass('active');
+    $('#all-types-button').addClass('active');
+  }
+
   // Handle show all
   if (selectedLocation === 'all'){
     $('#all-types-button').addClass('active');
-    $('#online').removeClass('active');
     return;
-  }
-
-  if (selectedLocation === 'Online event'){
-    $('#online').addClass('active');
   }
 
   $('.month-block').each(function(i, block) {
