@@ -18,26 +18,18 @@ gulp.task('create-files', function() {
     let dirPath = process.env.CONTEXT ? '/opt/build/repo/_events' : '_events';
     emptyDirectory(dirPath);
 
-    // Create a blank file to prevent the dev folder being untracked
-    let logger = fs.createWriteStream(`${dirPath}/file`);
-    logger.end();
-
     // Generate the markdown for each event
     data.events.forEach(evt => {
       createMarkdownFile(evt, dirPath, evt.fileTitle);
     });
 
     console.log('LOG: Building API');
-    // Generate the API data
+
     dirPath = process.env.CONTEXT ? '/opt/build/repo/_api/v1' : '_api/v1';
     emptyDirectory(dirPath);
 
-    // Create a blank file to prevent the dev folder being untracked
-    logger = fs.createWriteStream(`${dirPath}/file`);
-    logger.end();
-
     // Generate API file
-    logger = fs.createWriteStream(`${dirPath}/data.json`);
+    let logger = fs.createWriteStream(`${dirPath}/data.json`);
     logger.write('[');
     logger.write('{');
     logger.write('"events" : [');
@@ -63,7 +55,21 @@ gulp.task('create-files', function() {
     logger.write(']');
     logger.write('}]');
     logger.end();
+
+    // Generate locations files
+    console.log('LOG: Building location files');
+    dirPath = process.env.CONTEXT ? '/opt/build/repo/_locations' : '_locations';
+    emptyDirectory(dirPath);
+
+    data.locations.forEach(loc => {
+      logger = fs.createWriteStream(`${dirPath}/${loc}.md`);
+      logger.write('---\n');
+      logger.write(`name: ${loc}\n`);
+      logger.write('---');
+      logger.end();
     });
+
+  });
 });
 
 const createMarkdownFile = (evt, path) => {
@@ -145,4 +151,7 @@ const emptyDirectory = (path) => {
       }
     }
   }
+  // Create a blank file to prevent the dev folder being untracked
+  let logger = fs.createWriteStream(`${path}/file`);
+  logger.end();
 };

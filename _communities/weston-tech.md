@@ -5,6 +5,7 @@ dataID: 27271453
 summary: Love Tech? Live in Weston? The Weston Tech Meet up is here for you!
 featured-img: 'weston-tech'
 image: /assets/img/communities/weston-tech_thumb.jpeg
+type: community
 
 meetup: Weston-Tech/
 

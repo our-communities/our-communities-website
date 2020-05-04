@@ -5,6 +5,7 @@ dataID: 218412503144680
 summary: A casual meetup for geeks around the county.
 featured-img: cornwall-geeks
 image: /assets/img/communities/cornwall-geeks_thumb.jpeg
+type: community
 
 twitter: CornwallGeeks
 slack: https://join.cornwallgeeks.net/

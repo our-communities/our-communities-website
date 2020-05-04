@@ -5,6 +5,7 @@ dataID: 28785264
 summary: PHP Dorset is a welcoming local user group based in Westbourne.
 featured-img: 'php-dorset'
 image: /assets/img/communities/php-dorset_thumb.jpeg
+type: community
 
 meetup: PHPDorset
 twitter: PHPDorset

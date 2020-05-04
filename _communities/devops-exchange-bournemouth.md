@@ -5,6 +5,7 @@ dataID: 28869740
 summary: A regular DevOps meetup based in Bournemouth and the surrounding area.
 featured-img: 'devops-exchange-bournemouth'
 image: /assets/img/communities/devops-exchange-bournemouth_thumb.jpeg
+type: community
 
 meetup: Bournemouth-DevOps
 twitter: TheDoxHub

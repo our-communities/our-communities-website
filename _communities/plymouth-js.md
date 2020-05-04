@@ -5,6 +5,7 @@ dataID: 16812344332
 summary: A community meetup for JavaScript Developers
 featured-img: plymouth-js
 image: /assets/img/communities/plymouth-js_thumb.jpeg
+type: community
 
 twitter: plymouthjs
 ---

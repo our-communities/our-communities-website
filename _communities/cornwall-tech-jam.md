@@ -5,6 +5,7 @@ dataID: 271956584376238
 summary: A place to play with code
 featured-img: cornwall-tech-jam
 image: /assets/img/communities/cornwall-tech-jam_thumb.jpeg
+type: educational
 
 twitter: cornwalltechjam
 facebook: cornwalltechjam

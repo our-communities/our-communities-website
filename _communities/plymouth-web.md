@@ -5,6 +5,7 @@ dataID: 14338472
 summary: A meetup for webbies in the wider Plymouth Area
 featured-img: plymouth-web
 image: /assets/img/communities/plymouth-web_thumb.jpeg
+type: community
 
 twitter: Plymouth_Web
 meetup: Plymouth-Web/

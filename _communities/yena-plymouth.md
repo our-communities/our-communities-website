@@ -5,6 +5,7 @@ dataID: 26687133
 summary: Meetups for young entrepreneurs and rebel business owners.
 featured-img: 'yena-plymouth'
 image: /assets/img/communities/yena-plymouth_thumb.jpeg
+type: community
 
 twitter: yenaplymouth
 facebook: yenaplymouth/

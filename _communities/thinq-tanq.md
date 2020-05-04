@@ -5,6 +5,7 @@ dataID: 6377821409
 summary: A co-working space for the creative community
 featured-img: thinqtanq
 image: /assets/img/communities/thinqtanq_thumb.jpeg
+type: community
 
 twitter: THINQTANQSPACES
 facebook: thethinqtanq

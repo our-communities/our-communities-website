@@ -5,6 +5,7 @@ dataID: 7944478778
 summary: The Women in STEM Plymouth Community
 featured-img: women-in-stem-plymouth
 image: /assets/img/communities/women-in-stem-plymouth_thumb.jpeg
+type: community
 
 twitter: WinSTEMplym
 facebook: WinSTEMPlym/

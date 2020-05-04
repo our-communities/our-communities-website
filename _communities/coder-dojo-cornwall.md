@@ -5,6 +5,7 @@ dataID: 29331508
 summary: CoderDojo Cornwall Meetup Group
 featured-img: 'coder-dojo-cornwall'
 image: /assets/img/communities/coder-dojo-cornwall_thumb.jpeg
+type: educational
 
 meetup: coderdojocornwall/
 twitter: CoderDojoKernow

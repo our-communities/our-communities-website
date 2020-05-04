@@ -5,6 +5,7 @@ dataID: 23670110
 summary: Cornwall .NET Developers
 featured-img: 'cornwall-dot-net-developers'
 image: /assets/img/communities/cornwall-dot-net-developers_thumb.jpeg
+type: community
 
 meetup: Cornwall-NET-Developers/
 ---

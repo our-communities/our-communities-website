@@ -5,6 +5,7 @@ dataID: 17588129076
 summary: The Environmental Futures & Big Data Impact Lab is a partnership of seven Devon-based organisations.
 featured-img: the-environmental-futures-and-big-data-impact-lab
 image: /assets/img/communities/the-environmental-futures-and-big-data-impact-lab_thumb.jpeg
+type: funded
 
 twitter: efbd_impactlab
 linkedin: efbd-impactlab

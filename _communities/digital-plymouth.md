@@ -5,6 +5,7 @@ dataID: 8225401568
 summary: A community for the cities digital industry
 featured-img: digital-plymouth
 image: /assets/img/communities/digital-plymouth_thumb.jpeg
+type: community
 
 twitter: DigitalPlymouth
 facebook: digitalplymouth
