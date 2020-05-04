@@ -14,7 +14,9 @@
     <select id="location-select">
       <option value="all">--show all--</option>
       {% for location in site.locations %}
-        <option value="{{location.name}}">{{location.name}}</option>
+        {% if location.name != null %}
+          <option value="{{location.name}}">{{location.name}}</option>
+        {% endif %}
       {% endfor %}
     </select>
   </div>
