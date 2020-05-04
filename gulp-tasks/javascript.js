@@ -5,6 +5,8 @@ const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync');
+const remove_logging = require("gulp-remove-logging");
+const gulpif = require('gulp-if');
 
 const handleErrors = () => {
   var args = Array.prototype.slice.call(arguments);
@@ -28,6 +30,7 @@ gulp.task('js', function() {
     .bundle()
     .on('error', handleErrors)
     .pipe(source('bundle.js'))
+    .pipe(gulpif(isProd, remove_logging()))
     .pipe(buffer())
     .pipe(uglify())
     .pipe(gulp.dest(outDirPath))
