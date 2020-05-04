@@ -45,13 +45,13 @@ permalink: /calendar/
               </figure>
             {% endif %}
 
-
-
               <div class="post-card__header">
                 <h2>{{event.title | strip_html | truncate: 50}}</h2>
 
                 <p>{{event.start | date_to_string }} // {{event.start | slice: 11, 5}} //
-                  {% if event.geographic == 'undefined' %}
+                  {% if event.venue == 'Online event' %}
+                    Online event
+                  {% elsif event.geographic == 'undefined' %}
                     Venue TBC
                   {% else %}
                     {{event.geographic}}

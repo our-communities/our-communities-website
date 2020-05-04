@@ -16,7 +16,9 @@
 
          // {{page.start | slice: 11, 5}}<br>
          Location:
-         {% if page.geographic == 'undefined' %}
+         {% if page.venue == 'Online event' %}
+          Online event
+         {% elsif page.geographic == 'undefined' %}
            Venue TBC
          {% else %}
            {{page.venue}}, {{page.geographic}}
