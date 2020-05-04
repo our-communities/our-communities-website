@@ -47,6 +47,12 @@ gulp.task('jekyll-build-incremental', function (done) {
         .on('close', done);
 });
 
+gulp.task('jekyll-serve', function (done) {
+  browserSync.notify(messages.jekyllBuild);
+  return cp.spawn( 'bundle' , ['exec', 'jekyll', 'serve', '--config', '_config.yml', '--incremental'], {stdio: 'inherit'})
+      .on('close', done);
+});
+
 gulp.task('deploy', ['jekyll-build'], function () {
     return gulp.src('./_site/**/*')
         .pipe(deploy());

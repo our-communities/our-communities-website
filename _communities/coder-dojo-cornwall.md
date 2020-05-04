@@ -8,6 +8,7 @@ image: /assets/img/communities/coder-dojo-cornwall_thumb.jpeg
 type: educational
 
 meetup: coderdojocornwall/
+twitter: CoderDojoKernow
 ---
 
 A CoderDojo is a fun and relaxed way to learn to code. And with code you can craft websites, build smartphone apps, make games, control robots and create beautiful art.
