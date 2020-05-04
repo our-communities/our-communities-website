@@ -1,7 +1,7 @@
 <div class="filters">
 
   <div class="type-wrap">
-    <button class="type-button btn" data-type="all">Show All</button>
+    <button class="type-button btn active" id="all-types-button" data-type="all">Show All</button>
     <button class="type-button btn" id="online">Online Events</button>
     <!-- <button class="type-button btn" data-type="community">Communities Groups</button>
     <button class="type-button btn" data-type="funded">Funded Projects</button>
@@ -9,7 +9,7 @@
     <button class="type-button btn" data-type="educational">Education & Training</button> -->
   </div>
 
-  <!-- <div class="location-select-wrap">
+  <div class="location-select-wrap">
     <label for="location-select">Filter by location</label>
     <select id="location-select">
       <option value="all">--show all--</option>
@@ -17,6 +17,6 @@
         <option value="{{location.name}}">{{location.name}}</option>
       {% endfor %}
     </select>
-  </div> -->
+  </div>
 
 </div>

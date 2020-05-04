@@ -8,18 +8,31 @@
 .post-card__cover {
   margin-top: 33%;
   height: 80px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: $bg-color-trans;
   text-align: center;
   vertical-align: middle;
   line-height: 40px;
+}
+
+.filters {
+  display: flex;
+  align-items: baseline;
 }
 
 .type-wrap {
   margin-bottom: 2em;
 }
 
+@media only screen and (min-width: 450px){
+  .location-select-wrap {
+      margin-left: 2em;
+  }
+}
+
 .type-button:active,
-.type-button:focus {
-  border-bottom: 5px solid purple;
+.type-button:focus,
+.type-button.active {
+  border-bottom: 5px solid $brand-color;
   padding-bottom: 13px;
+  background-color: lighten($button-dark, 14%);
 }

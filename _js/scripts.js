@@ -221,6 +221,9 @@ function socialShare() {
 /* ------------------------------------------------------------------------*/
 
 function locationFilter() {
+  // reset active indicator
+  $('#all-types-button').removeClass('active');
+
   // insert original dom state incase this isn't the first filter
   $('#calendar-wrap').replaceWith(originalCalendar[0]);
   originalCalendar.shift();
@@ -230,7 +233,13 @@ function locationFilter() {
 
   // Handle show all
   if (selectedLocation === 'all'){
+    $('#all-types-button').addClass('active');
+    $('#online').removeClass('active');
     return;
+  }
+
+  if (selectedLocation === 'Online event'){
+    $('#online').addClass('active');
   }
 
   $('.month-block').each(function(i, block) {
@@ -263,7 +272,12 @@ function locationFilter() {
     }
 
     // Add the location if applicable
-    $('.num-remaining-location-' + month).html(' in ' + selectedLocation);
+    if (selectedLocation === 'Online event'){
+      $('.num-remaining-location-' + month).html(' which are hosted online');
+    } else {
+      $('.num-remaining-location-' + month).html(' in ' + selectedLocation);
+    }
+    
   });
 }
 
@@ -273,6 +287,9 @@ function locationFilter() {
 
 function typeFilter(e){
   console.log('type filter hit');
+
+  // reset active indicator
+  $('.type-button').removeClass('active');
 
   // insert original dom state incase this isn't the first filter
   $('#calendar-wrap').replaceWith(originalCalendar[0]);
@@ -365,6 +382,6 @@ function onlineFilter() {
     }
 
     // Add the location if applicable
-    $('.num-remaining-location-' + month).html(' which are being hosted online');
+    $('.num-remaining-location-' + month).html(' which are hosted online');
   });
 }
