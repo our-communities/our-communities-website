@@ -207,12 +207,14 @@ function socialShare() {
 
       const shareButton = document.querySelector('.share');
 
-      shareButton.innerHTML = 'Share this';
+      if(shareButton){
+        shareButton.innerHTML = 'Share this';
 
-      shareButton.addEventListener('click', (e) => {
-          e.preventDefault();
-          navigator.share(pageInfo);
-      });
+        shareButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.share(pageInfo);
+        });
+      }
   }
 };
 
