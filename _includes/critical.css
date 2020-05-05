@@ -511,16 +511,13 @@ a {
     font-size: 2.625em;
     line-height: 3.125rem
   }
-
-  .post-list {
-    /* padding-top: 5em */
-  }
 }
 
 .hero--small {
   margin: 3.75rem auto 0;
   min-height: 8.75rem;
-  width: 100%
+  width: 100%;
+  position: relative;
 }
 
 @media only screen and (min-width: 62em){
