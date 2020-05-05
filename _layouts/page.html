@@ -25,17 +25,19 @@ layout: compress
           <hr />
 
           {{ content }}
-
-          <hr />
+          
           {% if page.collection == 'events' %}
-            <div class="map-container" id="map-container">
-              <a href="" id="show-map" data-lat="{{page.lat}}"
-                                       data-long="{{page.long}}"
-                                       data-venue="{{page.venue}}"
-                                       data-geographic="{{page.geographic}}"
-                                       class="btn"
-                                       title="Click to display map">Show map</a>
-            </div>
+            {% if page.venue != 'Online event' %}
+              <hr />
+              <div class="map-container" id="map-container">
+                <a href="" id="show-map" data-lat="{{page.lat}}"
+                                        data-long="{{page.long}}"
+                                        data-venue="{{page.venue}}"
+                                        data-geographic="{{page.geographic}}"
+                                        class="btn"
+                                        title="Click to display map">Show map</a>
+              </div>
+            {% endif %}
           {% endif %}
 
         </div>
