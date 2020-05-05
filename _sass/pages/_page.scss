@@ -1,6 +1,6 @@
 .hero {
   margin: 3.75rem auto 0;
-  min-height: 16.25rem;
+  // min-height: 16.25rem;
   width: 100%;
   position: relative;
   background-color: #dde5ea;
@@ -69,7 +69,6 @@
   .hero__title {
     font-size: 1.8em;
     color: $bg-color;
-
 
     @include breakpoint($md) {
       padding: 1rem 0;

@@ -7,7 +7,8 @@
 
 // 2. Vendors
 @import
-  "vendor/normalize";
+  "vendor/normalize",
+  "vendor/mailchimp";
 
 // 3. Base
 @import
@@ -30,7 +31,6 @@
   "components/label",
   "components/pagination",
   "components/form",
-  "components/mailchimp",
   "components/modal",
   "components/table",
   "components/syntax",
