@@ -43,6 +43,10 @@ input[type="button"] {
   }
 }
 
+a.btn:hover {
+  padding-bottom: 17px;
+}
+
 .btn + .btn {
   margin-top: 1em;
 
