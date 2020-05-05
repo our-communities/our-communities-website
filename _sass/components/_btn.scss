@@ -41,6 +41,13 @@ input[type="button"] {
     outline: 0;
     padding: 10px;
   }
+  
+}
+
+.btn {
+  @include breakpoint(450px) {
+    margin-right: 2em;
+  }
 }
 
 a.btn:hover {
@@ -49,10 +56,6 @@ a.btn:hover {
 
 .btn + .btn {
   margin-top: 1em;
-
-  @include breakpoint(450px) {
-    margin-left: 2em;
-  }
 }
 
 button:disabled {
