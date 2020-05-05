@@ -2,12 +2,10 @@
 
 window.jQuery = window.$ = require('jquery');
 require('velocity-animate/velocity.js');
-require('lazysizes');
-require('lazysizes/plugins/unveilhooks/ls.unveilhooks.js');
 
 var originalCalendar = null;
 
-// Jquery & Velocity JS included in GULP
+// Jquery & Velocity JS included in at build time
 $(document).ready(function () {
   toggleMobileNav();
   ShowHideNav();

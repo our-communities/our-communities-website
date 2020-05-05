@@ -41,10 +41,10 @@ permalink: /calendar/
               {% if organiser.first.featured-img %}
                 <figure class="post-card__thumb">
                   <img
-                    src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpeg"
-                    data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg,"
-                    class="lazyload blur"
+                    src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg"
                     alt="{{event.title}}."
+                    height="301px" width="535px"
+                    loading="lazy"
                   />
                   <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}"></noscript>
                 </figure>

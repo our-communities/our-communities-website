@@ -36,15 +36,11 @@ layout: compress
                 <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}.">
                 {% if organiser.first.featured-img %}
                   <figure class="post-card__thumb">
-                    <img
-                      src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_placehold.jpeg"
-                      data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg"
-                      class="lazyload blur"
+                    <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg"
+                      height="301px" width="535px"
+                      loading="lazy"
                       alt="{{event.title}}"
                     />
-                    <noscript>
-                      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}">
-                    </noscript>
                   </figure>
                 {% else %}
                   <figure class="post-card__thumb">

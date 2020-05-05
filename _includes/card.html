@@ -2,13 +2,12 @@
   <a href="{{ item.link | relative_url }}" title="{{ item.title }}.">
     {% if item.featured-img %}
       <figure class="post-card__thumb">
-        <img
-          src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{item.featured-img}}_placehold.jpeg",
-          data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{item.featured-img}}_thumb.jpeg, {{ site.url }}{{ site.baseurl }}/assets/img/posts/{{item.featured-img}}_thumb@2x.jpeg 2x"
-          class="lazyload blur"
+        <img 
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{item.featured-img}}_thumb.jpeg"
+          height="301px" width="535px"
+          loading="lazy"
           alt="{{item.name}}"
         />
-        <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{item.featured-img}}_thumb.jpeg" alt="{{ item.name }}"></noscript>
       </figure>
     {% else %}
       <figure class="post-card__thumb">
