@@ -516,6 +516,12 @@ a {
   }
 }
 
+.hero--small {
+  margin: 3.75rem auto 0;
+  min-height: 8.75rem;
+  width: 100%;
+}
+
 .blog.blog--resource {
     padding-top: 2.25rem;
 }
