@@ -12,12 +12,6 @@ gulp.task('img', function() {
   return gulp.src(`${inDirPath}/communities/*.{png,jpg}`)
     .pipe($.responsive({
       '*': [{
-        width: 230,
-        rename: {
-          suffix: '_placehold',
-          extname: '.jpeg',
-        },
-      }, {
         width: 535,
         rename: {
           suffix: '_thumb',
@@ -40,12 +34,6 @@ gulp.task('site-img', function() {
   return gulp.src(`${inDirPath}/posts/*.{png,jpg}`)
     .pipe($.responsive({
       '*': [{
-        width: 230,
-        rename: {
-          suffix: '_placehold',
-          extname: '.jpeg',
-        },
-      }, {
         width: 535,
         rename: {
           suffix: '_thumb' ,
@@ -58,25 +46,7 @@ gulp.task('site-img', function() {
           extname: '.jpeg',
          }
       },{
-        width: 575,
-        rename: {
-          suffix: '_xs',
-          extname: '.jpeg',
-        }
-      },{
-        width: 767,
-        rename: {
-          suffix: '_sm',
-          extname: '.jpeg',
-        }
-      }, {
-        width: 991,
-        rename: {
-          suffix: '_md',
-          extname: '.jpeg',
-        }
-      }, {
-        width: 1920,
+        width: 1600,
         rename: {
           suffix: '_lg',
           extname: '.jpeg',
@@ -90,7 +60,7 @@ gulp.task('site-img', function() {
     },
     {
       quality: 85,
-      progressive: false,
+      progressive: true,
       withMetadata: false,
       errorOnEnlargement: false,
     }))
