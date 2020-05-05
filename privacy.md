@@ -2,6 +2,7 @@
 layout: content-feed
 title: Privacy
 permalink: /privacy/
+newsletter: false
 ---
 <div class="container">
   <div class="page-content">

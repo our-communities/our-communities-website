@@ -4,6 +4,7 @@ title: About Us
 description: Find out a little more about the South West Communities project
 image: /assets/img/posts/about-us-og_sm.jpeg
 permalink: /about-us/
+newsletter: false
 ---
 <div class="container">
 <div class="page-content">

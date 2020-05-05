@@ -2,6 +2,7 @@
 layout: content-feed
 title: Shared Call for Proposals
 permalink: /proposals/
+newsletter: false
 ---
 <div class="container">
   <p></p>

@@ -76,7 +76,7 @@ gulp.task('browser-sync', ['build-site'], function() {
 gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
-    ['sass', 'js', 'sw'],
+    ['sass', 'js', 'mc-js', 'sw'],
     ['img', 'site-img', 'icons', 'img-misc'],
     'create-files',
     'jekyll-build',

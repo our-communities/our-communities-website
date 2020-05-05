@@ -6,4 +6,5 @@
 #
 layout: default
 title: 
+newsletter: true
 ---

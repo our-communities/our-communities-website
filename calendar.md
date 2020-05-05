@@ -4,6 +4,7 @@ title: Calendar
 description: Community curated calendar for tech events in the South West.
 image: /assets/img/posts/calendar-og_sm.jpeg
 permalink: /calendar/
+newsletter: false
 ---
 
 <section class="blog blog--resource blog--calendar">

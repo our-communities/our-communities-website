@@ -52,7 +52,13 @@
     </span>
   </div>
 </footer>
-<script async src="{{ "/assets/js/bundle.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/bundle.js" | relative_url }}"></script>
+
+{% if page.newsletter == true %}
+  <script defer src="{{ "/assets/js/mc-bundle.js" | relative_url }}"></script>
+  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='COUNTY';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+{% endif %}
+
 {% if site.service_worker %}
 <script async>
   if ('serviceWorker' in navigator) {

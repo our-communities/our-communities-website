@@ -4,6 +4,7 @@ title: Newsletter
 description: Get South West event updates straight to your inbox
 image: /assets/img/posts/newsletter-og_sm.jpeg
 permalink: /newsletter/
+newsletter: true
 ---
 <div class="container">
   <div class="page-content">

@@ -4,6 +4,7 @@ title: Communities
 description: A list of communities whose events are included in our calendar.
 image: /assets/img/posts/communities-og_sm.jpeg
 permalink: /communities/
+newsletter: false
 ---
 <section class="blog">
   <div class="container">

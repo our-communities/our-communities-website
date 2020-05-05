@@ -17,9 +17,6 @@ $(document).ready(function () {
     originalCalendar = [];
     for (let i = 0; i < 50; i++) {
       originalCalendar[i] = $('#calendar-wrap').clone();
-
-      // prevent lazy load issue with first 3 images remaining blured
-      originalCalendar[i].find('img').removeClass('lazyload blur');
     }
   }
 

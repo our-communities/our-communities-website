@@ -2,6 +2,7 @@
 layout: content-feed
 title: Resources
 permalink: /resources/
+newsletter: false
 ---
 <section class="blog blog--resource">
   <div class="container">
