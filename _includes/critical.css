@@ -630,3 +630,30 @@ select {
 .type-wrap {
   margin-bottom: 2em
 }
+
+.site__content.event .page-content {
+  padding-top: 1rem;
+}
+
+.event-org-logo-container {
+  text-align: center;
+  height: 160px;
+}
+
+a.share {
+  background-color: #00aced;
+  color: white;
+}
+
+.page-content.page__community {
+  margin-top: 4rem;
+  padding: 3.75rem 0 1rem 0;
+}
+
+@media only screen and (min-width: 48em){
+.page-content__columns {
+    -webkit-columns: 2 auto;
+    -moz-columns: 2 auto;
+    columns: 2 auto;
+}
+}
