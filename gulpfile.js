@@ -64,15 +64,6 @@ gulp.task('rebuild', ['jekyll-build-incremental'], function (done) {
     done();
 });
 
-
-gulp.task('dev', function (done) {
-  runSequence(
-    ['sass', 'js', 'sw'],
-    'create-files',
-    'jekyll-build',
-    cb);
-});
-
 // Serve after jekyll-build
 gulp.task('browser-sync', ['build-site'], function() {
     browserSync({
