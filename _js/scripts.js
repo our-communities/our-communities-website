@@ -1,12 +1,11 @@
 /* global $ */
 
-window.jQuery = window.$ = require('jquery');
 require('velocity-animate/velocity.js');
 
 var originalCalendar = null;
 
 // Jquery & Velocity JS included in at build time
-$(document).ready(function () {
+$(document).ready(function ($) {
   toggleMobileNav();
   ShowHideNav();
   socialShare();
