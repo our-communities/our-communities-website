@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../sw-communities-public-api"
+		},
+		{
+			"path": "../sw-communities-fulfilment"
+		},
+		{
+			"path": "../sw-communities-internal-api"
+		}
+	]
+}
