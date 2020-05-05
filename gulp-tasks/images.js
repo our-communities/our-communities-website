@@ -40,12 +40,6 @@ gulp.task('site-img', function() {
           extname: '.jpeg',
         },
       },{
-        width: 535 * 2,
-        rename: {
-          suffix: '_thumb@2x',
-          extname: '.jpeg',
-         }
-      },{
         width: 1600,
         rename: {
           suffix: '_lg',
