@@ -29,7 +29,7 @@ gulp.task('img', function() {
     .pipe(gulp.dest(`${outDirPath}/communities/`));
 });
 
-// Post and header images
+// Post images
 gulp.task('site-img', function() {
   return gulp.src(`${inDirPath}/posts/*.{png,jpg}`)
     .pipe($.responsive({
@@ -39,15 +39,50 @@ gulp.task('site-img', function() {
           suffix: '_thumb' ,
           extname: '.jpeg',
         },
+      }],
+    },
+    {
+      quality: 85,
+      progressive: true,
+      withMetadata: false,
+      errorOnEnlargement: false,
+    }))
+    .pipe(imagemin())
+    .pipe(gulp.dest(`${outDirPath}/posts/`));
+});
+
+// header images
+gulp.task('site-img', function() {
+  return gulp.src(`${inDirPath}/posts/*.{png,jpg}`)
+    .pipe($.responsive({
+      '*': [{
+        width: 580,
+        rename: {
+          suffix: 'xs' ,
+          extname: '.jpeg',
+        },
       },{
-        width: 1600,
+        width: 770,
+        rename: {
+          suffix: '_sm',
+          extname: '.jpeg',
+        }
+      }, {
+        width: 1000,
+        rename: {
+          suffix: '_md',
+          extname: '.jpeg',
+        }
+      },{
+        width: 1200,
         rename: {
           suffix: '_lg',
           extname: '.jpeg',
         }
-      }, {
-        width: 1920,
+      },{
+        width: 1600,
         rename: {
+          suffix: '_xl',
           extname: '.jpeg',
         }
       }],

@@ -463,6 +463,36 @@ a {
   background-color: #f9f9f9
 }
 
+@media only all and (min-width: 0) {
+  .hero,.hero--small {
+      background-image:url("/assets/img/posts/header_xs.jpeg")
+  }
+}
+
+@media only all and (min-width: 36em) {
+  .hero,.hero--small {
+      background-image:url("/assets/img/posts/header_sm.jpeg")
+  }
+}
+
+@media only all and (min-width: 48em) {
+  .hero,.hero--small {
+      background-image:url("/assets/img/posts/header_md.jpeg")
+  }
+}
+
+@media only all and (min-width: 62em) {
+  .hero,.hero--small {
+      background-image:url("/assets/img/posts/header_lg.jpeg")
+  }
+}
+
+@media only all and (min-width: 75em) {
+  .hero,.hero--small {
+      background-image:url("/assets/img/posts/header_xl.jpeg")
+  }
+}
+
 .post-list {
   padding-top: 0em;
   display: -webkit-box;
