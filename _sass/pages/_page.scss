@@ -27,23 +27,23 @@
 .hero,
 .hero--small {
   @include breakpoint($xs) {
-    background-image: url("/assets/img/posts/header_xs.jpeg");
+    background-image: url("/assets/img/headers/header_xs.jpeg");
   }
 
   @include breakpoint($sm) {
-    background-image: url("/assets/img/posts/header_sm.jpeg");
+    background-image: url("/assets/img/headers/header_sm.jpeg");
   }
 
   @include breakpoint($md) {
-    background-image: url("/assets/img/posts/header_md.jpeg");
+    background-image: url("/assets/img/headers/header_md.jpeg");
   }
 
   @include breakpoint($lg) {
-    background-image: url("/assets/img/posts/header_lg.jpeg");
+    background-image: url("/assets/img/headers/header_lg.jpeg");
   }
 
   @include breakpoint($xl) {
-    background-image: url("/assets/img/posts/header_xl.jpeg");
+    background-image: url("/assets/img/headers/header_xl.jpeg");
   }
 }
 

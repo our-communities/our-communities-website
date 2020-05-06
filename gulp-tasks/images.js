@@ -58,7 +58,7 @@ gulp.task('header-img', function() {
       '*': [{
         width: 580,
         rename: {
-          suffix: 'xs' ,
+          suffix: '_xs' ,
           extname: '.jpeg',
         },
       },{
