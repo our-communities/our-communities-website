@@ -94,7 +94,7 @@ gulp.task('header-img', function() {
       errorOnEnlargement: false,
     }))
     .pipe(imagemin())
-    .pipe(gulp.dest(`${outDirPath}/posts/`));
+    .pipe(gulp.dest(`${outDirPath}/headers/`));
 });
 
 // Icons and manifest stuff
