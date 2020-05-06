@@ -30,7 +30,7 @@ gulp.task('img', function() {
 });
 
 // Post images
-gulp.task('site-img', function() {
+gulp.task('post-img', function() {
   return gulp.src(`${inDirPath}/posts/*.{png,jpg}`)
     .pipe($.responsive({
       '*': [{
@@ -52,8 +52,8 @@ gulp.task('site-img', function() {
 });
 
 // header images
-gulp.task('site-img', function() {
-  return gulp.src(`${inDirPath}/posts/*.{png,jpg}`)
+gulp.task('header-img', function() {
+  return gulp.src(`${inDirPath}/headers/*.{png,jpg}`)
     .pipe($.responsive({
       '*': [{
         width: 580,

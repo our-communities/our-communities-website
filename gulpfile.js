@@ -78,7 +78,7 @@ gulp.task('build-site', function(cb) {
     'clean',
     ['sass', 'js', 'sw'],
     'mc-js',
-    ['img', 'site-img', 'icons', 'img-misc'],
+    ['img', 'post-img', 'header-img', 'icons', 'img-misc'],
     'create-files',
     'jekyll-build',
     cb);
