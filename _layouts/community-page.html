@@ -10,12 +10,17 @@ layout: compress
 
     {% include header.html %}
 
+    <div class="hero hero--small">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ page.name }}</h1>
+      </div>
+    </div>
+
     <main class="site__content community">
       <div class="container">
         <div class="page-content page__community page-content__columns">
 
           <div class="page--community__columns">
-            <h1>{{ page.name }}</h1>
             {{ content }}
           </div>
 
