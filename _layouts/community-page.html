@@ -52,7 +52,7 @@ layout: compress
               <h2 class="resource-header">No Upcoming Events</h2>
               <p>&nbsp;</p>
             {% else %}
-              <h2 class="resource-header">{% sorted-events.size %} Upcoming Events</h2>
+              <h2 class="resource-header">{{ sorted-events.size }} Upcoming Event{% if sorted-events.size > 1 %}s{% endif %}</h2>
             {% endif %}
           {% endif %}
           <div class="post-list resource-list" id="eventContainer">
