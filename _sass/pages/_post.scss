@@ -8,58 +8,58 @@
   }
 }
 
-.comments {
-  padding: 50px 0;
-  background-color: #fafafa;
-}
+// .comments {
+//   padding: 50px 0;
+//   background-color: #fafafa;
+// }
 
-.controls__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.375rem 0 1.25rem;
-  border-top: 1px solid $border;
+// .controls__inner {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 1.375rem 0 1.25rem;
+//   border-top: 1px solid $border;
 
-  .prev {
-    align-items: flex-start;
-    text-align: left;
-  }
+//   .prev {
+//     align-items: flex-start;
+//     text-align: left;
+//   }
 
-  .next {
-    align-items: flex-end;
-    text-align: right;
-  }
-}
+//   .next {
+//     align-items: flex-end;
+//     text-align: right;
+//   }
+// }
 
-.controls__item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+// .controls__item {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
 
-  span {
-    font-size: 0.875rem;
-    color: $grey;
-  }
+//   span {
+//     font-size: 0.875rem;
+//     color: $grey;
+//   }
 
-  a {
-    color: $heading-color;
-    font-weight: bold;
-    border-bottom: 0;
+//   a {
+//     color: $heading-color;
+//     font-weight: bold;
+//     border-bottom: 0;
 
-    svg {
-      transition: all .2s linear;
-    }
+//     svg {
+//       transition: all .2s linear;
+//     }
 
-    &:hover {
-      color: $primary;
-      border-bottom: 0;
+//     &:hover {
+//       color: $primary;
+//       border-bottom: 0;
 
-      svg {
-        fill: $primary;
-      }
-    }
-  }
-}
+//       svg {
+//         fill: $primary;
+//       }
+//     }
+//   }
+// }
 
 .post-card__cover {
   margin-top: 33%;
