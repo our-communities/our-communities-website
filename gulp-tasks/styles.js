@@ -23,10 +23,10 @@ gulp.task('sass', function() {
       browsers: autoprefixBrowsers,
       flexbox: true
     }))
-    .pipe(cleanCSS({
-      compatibility: 'ie8',
-      level: 2
-    }))
+    //.pipe(cleanCSS({
+    //  compatibility: 'ie8',
+    //  level: 2
+    //}))
     .pipe(rename({ basename: 'critical' }))
     .pipe(gulp.dest(criticalPathOutput))
     // .pipe(rename({ basename: 'main' }))
