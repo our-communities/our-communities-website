@@ -55,20 +55,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="{{ "/assets/js/bundle.js" | relative_url }}"></script>
 
+{% if site.google_tag_manager %}
+  {% include gtm.html %}
+{% endif %}
+
+{% if site.facebook_pixel %}
+  {% include fbp.html %}
+{% endif %}
+
 {% if page.newsletter == true %}
   <script defer src="{{ "/assets/js/mailchimp-validation.js" | relative_url }}"></script>
   <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='COUNTY';ftypes[3]='dropdown';}(jQuery));</script>
 {% endif %}
 
 {% if site.service_worker %}
-<script async>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}').then(function( registration ) {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    })
-    .catch(function(error) {
-      console.log('ServiceWorker registration failed: ', error);
-    });
-  }
-</script>
+  <script async>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}').then(function( registration ) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('ServiceWorker registration failed: ', error);
+      });
+    }
+  </script>
 {% endif %}
