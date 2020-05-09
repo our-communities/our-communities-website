@@ -33,46 +33,7 @@ newsletter: false
 
           {% for event in month.items %}
             {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
-
-            <div class="post-card resource-card event-card"
-            data-location="{% if event.venue == 'Online event' %}Online event{% else %}{{event.geographic}}{% endif %}"
-            data-type="{{organiser.first.type}}">
-
-              <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}">
-              {% if organiser.first.featured-img %}
-                <figure class="post-card__thumb">
-                  <img
-                    src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg"
-                    alt="{{event.title}}."
-                    height="301px" width="535px"
-                    loading="lazy"
-                  />
-                  <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg" alt="{{ event.title }}"></noscript>
-                </figure>
-              {% else %}
-                <figure class="post-card__thumb">
-                  <div class="dark-bg"></div>
-                </figure>
-              {% endif %}
-
-
-
-                <div class="post-card__header">
-                  <h2>{{event.title | strip_html | truncate: 50}}</h2>
-
-                  <p>{{event.start | date_to_string }} // {{event.start | slice: 11, 5}} //
-                    {% if event.venue == 'Online event' %}
-                      Online event
-                    {% elsif event.geographic == 'undefined' %}
-                      Venue TBC
-                    {% else %}
-                      {{event.geographic}}
-                    {% endif %}
-                  </p>
-                  <p>{{ event.excerpt | strip_html | truncatewords:20 }}</p>
-                </div>
-              </a>
-            </div>
+            {% include event-card.html picture='true' %}
           {% endfor %}
         </div>
       {% endfor %}
