@@ -76,11 +76,11 @@ gulp.task('browser-sync', ['build-site'], function() {
 gulp.task('build-site', function(cb) {
   runSequence(
     'clean',
-    ['sass', 'js', 'sw'],
+    ['sass', 'js', 'jquery'],
     'mc-js',
     ['img', 'post-img', 'header-img', 'icons', 'img-misc'],
     'create-files',
-    'jekyll-build',
+    'jekyll-build'
     cb);
 });
 
@@ -94,4 +94,4 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('build', ['sass', 'js', 'create-files', 'jekyll-build', 'img', 'sw']);
+gulp.task('build', ['sass', 'js', 'create-files', 'jekyll-build', 'img']);

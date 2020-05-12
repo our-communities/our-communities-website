@@ -53,8 +53,6 @@ twitter:
 facebook:
   app_id: 2725356861082849
 
-service_worker: false
-
 # BUILD SETTINGS
 
 markdown: kramdown
@@ -75,6 +73,7 @@ exclude:
   - jekyll-sleek.gemspec
   - ruby-version
   - LICENSE.txt
+  - South West Communities.code-workspace
 
 include: ['_pages']
 permalink: /:title/
