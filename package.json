@@ -34,6 +34,7 @@
     "gulp-responsive": "^2.8.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "jshit": "0.0.1",
     "require-dir": "^1.2.0",
     "sw-precache": "^5.2.0",
     "vinyl-buffer": "^1.0.1",
