@@ -32,15 +32,6 @@ input[type="button"] {
     background-color: lighten($button-dark, 14%);
     outline: 0;
   }
-
-  &.pill {
-    border-radius: 16px;
-    background-color: $blue-pill;
-    border-bottom: 0;
-    outline: 0;
-    padding: 10px;
-  }
-  
 }
 
 .btn {
