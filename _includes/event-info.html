@@ -4,17 +4,23 @@
       <p>Organised by: <a href="/communities/{{page.organiserAltName}}"
                           title="{{page.organiserName}} organiser page.">{{page.organiserName}}</a><br>
          Date:
-         <!-- {% assign dy = page.date | date: "%a" %}
+         {% assign dy = page.start | date: "%a" %}
          {% case dy %}
            {% when "Tue" %}Tues
            {% when "Thu" %}Thurs
            {% else %}{{ dy }}
-         {% endcase %}-->
-         {{page.start | date: '%d' }}
+         {% endcase %}
 
-         {{page.start | date: '%B %Y' }}
+         {% assign day = page.start | date: "%d" %}
+         {% case day %}
+          {% when '1' or '21' or '31' %}{{ day }}st
+          {% when '2' or '22'         %}{{ day }}nd
+          {% when '3' or '23'         %}{{ day }}rd
+          {% else                     %}{{ day }}th
+        {% endcase %}
 
-         // {{page.start | slice: 11, 5}}<br>
+         {{page.start | date: '%B %Y' }}<br>
+         Time: {{page.start | slice: 11, 5}} to {{page.end | slice: 11, 5}}<br>
          Location:
          {% if page.venue == 'Online event' %}
           Online event
