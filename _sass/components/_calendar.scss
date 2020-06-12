@@ -38,5 +38,5 @@
   padding-bottom: 13px;
   background-color: lighten($button-dark, 14%);
 
-  @include set-dark-color((border-bottom: 5px solid $dark-brand-color, background-color: lighten($dark-button-dark, 14%)));
+  @include set-dark-color((color: darken($dark-bg-color, 20%), background-color: $dark-button-dark, border-bottom: 5px solid $dark-brand-color));
 }
