@@ -26,3 +26,9 @@
     @content;
   }
 }
+
+@mixin set-color($property, $color) {
+  @media (prefers-color-scheme: dark) {
+    #{$property}: $color;
+  }
+}
