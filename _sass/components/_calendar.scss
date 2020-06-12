@@ -12,6 +12,8 @@
   text-align: center;
   vertical-align: middle;
   line-height: 40px;
+
+  @include set-dark-color((background-color: $dark-bg-color-trans));
 }
 
 .filters {
@@ -35,4 +37,6 @@
   border-bottom: 5px solid $brand-color;
   padding-bottom: 13px;
   background-color: lighten($button-dark, 14%);
+
+  @include set-dark-color((border-bottom: 5px solid $dark-brand-color, background-color: lighten($dark-button-dark, 14%)));
 }

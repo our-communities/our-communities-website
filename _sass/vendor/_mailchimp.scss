@@ -42,6 +42,8 @@
   text-indent: 2%;
   color: $text-color;
 
+  @include set-dark-color((color: $dark-text-color));
+
   &::selection {
     color: #000000;
     background-color: #fff;
@@ -142,6 +144,8 @@
   background: $bg-color;
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
+
+  @include set-dark-color((background: $dark-bg-color));
 }
 
 #mc-embedded-subscribe.btn {

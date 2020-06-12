@@ -7,6 +7,8 @@
   top: 0;
   left: 0;
 
+  @include set-dark-color((color: $dark-text-color, background-color: $dark-bg-color));
+
   a {
     display: flex;
     align-items: center;
@@ -19,6 +21,8 @@
     background-color: $bg-color;
     transition: transform .3s, background-color 0.5s ease;
     z-index: 5;
+
+    @include set-dark-color((background-color: $dark-bg-color));
   }
 
   &.hide-nav {
@@ -32,8 +36,12 @@
   font-size: 1.2em;
   color: $grey;
 
+  @include set-dark-color((color: $dark-grey));
+
   &:hover {
     color: $text-color;
+
+    @include set-dark-color((color: $text-color));
   }
 }
 
@@ -53,12 +61,16 @@
   width: 100%;
   height: auto;
   background: $bg-color;
+
+  @include set-dark-color((background: $dark-bg-color));
 }
 
 .header__link {
   color: $text-color;
   padding: .938rem 0;
   border-top: 1px solid $border;
+
+  @include set-dark-color((color: $dark-text-color, border-top: 1px solid $dark-border));
 }
 
 
@@ -81,6 +93,8 @@
     height: 2px;
     border-radius: 1px;
     transition: all 0.2s cubic-bezier(1, 0.13, 0.35, 1.09);
+
+    @include set-dark-color((background-color: $dark-text-color));
 
     &:first-child {
       margin-top: 0;
@@ -162,10 +176,14 @@
       transform: scaleX(0);
       background: $link-color;
       transition: color 0.2s ease-in-out, transform .2s ease-in-out;
+
+      @include set-dark-color((background: $dark-link-color));
     }
 
     &:hover {
       color: darken($link-color, 20%);
+      
+      @include set-dark-color((color: darken($dark-link-color, 20%)));
     }
 
     &:hover::after,
@@ -174,6 +192,8 @@
       transform: scaleX(1);
       color: darken($link-color, 20%);
       transition: transform .2s ease-in-out;
+
+      @include set-dark-color((color: darken($dark-link-color, 20%)));
     }
   }
 }

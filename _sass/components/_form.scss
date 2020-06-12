@@ -9,9 +9,13 @@ textarea {
   font-family: $font-stack;
   background: transparent;
 
+  @include set-dark-color((border-bottom: 2px solid $dark-border));
+
   &:focus {
     border-color: $primary;
     transition: border-color .25s;
+
+    @include set-dark-color((border-color: $dark-primary));
   }
 }
 
@@ -32,6 +36,8 @@ textarea {
     z-index: 5;
     transition: width .45s cubic-bezier(.694, .048, .335, 1);
     transition-delay: .1s;
+
+    @include set-dark-color((background: $dark-primary));
   }
 
   &::after {
@@ -44,6 +50,8 @@ textarea {
     background: $secondary;
     z-index: 4;
     transition: width .45s cubic-bezier(.694, .048, .335, 1);
+
+    @include set-dark-color((background: 2px solid $dark-secondary));
   }
 
   &:hover::after,
@@ -76,10 +84,13 @@ textarea {
 .error {
   input {
     border-bottom-color: $error;
+
+    @include set-dark-color((border-bottom-color: $dark-error));
   }
 
   textarea {
     border-bottom-color: $error;
+    @include set-dark-color((border-bottom-color: $dark-error));
   }
 }
 
@@ -89,4 +100,6 @@ textarea {
   position: absolute;
   left: 0;
   bottom: -21px;
+
+  @include set-dark-color((color: $dark-error));
 }

@@ -25,6 +25,8 @@
   background-position: 50%;
   background-size: cover;
 
+  @include set-dark-color((background-color: $dark-text-color));
+
   &::before {
     position: absolute;
     display: block;
@@ -69,6 +71,8 @@
   max-width: 90%;
   z-index: 1;
 
+  @include set-dark-color((color: $dark-hero-text-color-trans));
+
   @include breakpoint($md) {
     max-width: 40em;
   }
@@ -76,6 +80,8 @@
   .hero__title {
     font-size: 1.8em;
     color: $hero-text-color-trans;
+
+    @include set-dark-color((color: $dark-hero-text-color-trans));
 
     @include breakpoint($md) {
       padding: 1rem 0;
@@ -101,6 +107,8 @@
 
 .blog {
   background-color: $light-bg-color;
+
+  @include set-dark-color((background-color: $dark-light-bg-color));
 
   &.blog--resource {
     padding-top: 2.25rem;
