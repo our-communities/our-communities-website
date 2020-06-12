@@ -30,10 +30,10 @@
 .header__name {
   font-weight: 500;
   font-size: 1.2em;
-  color: #343851;
+  color: $grey;
 
   &:hover {
-    color: #343851;
+    color: $text-color;
   }
 }
 

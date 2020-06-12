@@ -40,6 +40,12 @@
   width: 100%;
   padding: 8px 0;
   text-indent: 2%;
+  color: $text-color;
+
+  &::selection {
+    color: #000000;
+    background-color: #fff;
+  }
 }
 
 #mc_embed_signup .mc-field-group select {
@@ -133,7 +139,7 @@
 }
 
 #mc_embed_signup {
-  background: #fff;
+  background: $bg-color;
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
 }
