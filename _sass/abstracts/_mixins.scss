@@ -26,3 +26,11 @@
     @content;
   }
 }
+
+@mixin set-dark-color($values) {
+  @media (prefers-color-scheme: dark) {
+    @each $property, $value in $values {
+      #{$property}: $value;
+    }
+  }
+}

@@ -7,11 +7,15 @@ body {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+
+  @include set-dark-color((background-color: $dark-bg-color, color: $dark-text-color, font-weight: 300));
 }
 
 ::selection {
   color: $bg-color;
   background-color: $reverse;
+
+  @include set-dark-color((background-color: $dark-text-color, color: $dark-bg-color));
 }
 
 // Reboot
@@ -31,6 +35,12 @@ h6 {
   margin-top: 0;
   margin-bottom: .5rem;
   width: 100%;
+
+  @include set-dark-color((color: $dark-text-color));
+}
+
+h2{
+  @include set-dark-color((font-weight: 500));
 }
 
 h2.resource-header:first-of-type() {
@@ -48,6 +58,8 @@ a {
   transition: border-bottom .2s linear;
   border-bottom: 1px dashed $link-color;
 
+  @include set-dark-color((color: $dark-link-color));
+
   &:active,
   &:focus {
     outline: 0;
@@ -58,6 +70,8 @@ a {
     color: $primary-light;
     transition: border-bottom .2s linear;
     border-bottom: 1px solid $primary-light;
+
+    @include set-dark-color((color: $dark-primary-light, border-bottom: 1px solid $dark-primary-light));
   }
 }
 
@@ -65,4 +79,6 @@ hr {
   height: 1px;
   background: $border;
   border: 0;
+
+  @include set-dark-color((background: $dark-border));
 }

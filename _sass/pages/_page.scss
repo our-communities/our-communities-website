@@ -25,6 +25,8 @@
   background-position: 50%;
   background-size: cover;
 
+  @include set-dark-color((background-color: $dark-text-color));
+
   &::before {
     position: absolute;
     display: block;
@@ -64,10 +66,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: $hero-text-color-trans;
   width: 100%;
   max-width: 90%;
   z-index: 1;
+
+  @include set-dark-color((color: $dark-hero-text-color-trans));
 
   @include breakpoint($md) {
     max-width: 40em;
@@ -75,7 +79,9 @@
 
   .hero__title {
     font-size: 1.8em;
-    color: $bg-color;
+    color: $hero-text-color-trans;
+
+    @include set-dark-color((color: $dark-hero-text-color-trans));
 
     @include breakpoint($md) {
       padding: 1rem 0;
@@ -100,7 +106,9 @@
 }
 
 .blog {
-  background-color: #f9f9f9;
+  background-color: $light-bg-color;
+
+  @include set-dark-color((background-color: $dark-light-bg-color));
 
   &.blog--resource {
     padding-top: 2.25rem;
@@ -133,4 +141,8 @@
   @include breakpoint($md) {
     columns: 2 auto;
   }
+}
+
+.event-org-logo-container a {
+  border-bottom: none;
 }

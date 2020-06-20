@@ -9,13 +9,19 @@ table {
   border-radius: 4px;
   font-size: 14.5px;
 
+  @include set-dark-color((border: 1px solid $dark-border));
+
   th {
     background-color: $light-bg-color;
+
+    @include set-dark-color((background-color: $dark-light-bg-color));
   }
 
   th,
   td {
     padding: 6px 13px;
     border: 1px solid $border;
+
+    @include set-dark-color((border: 1px solid $dark-border));
   }
 }

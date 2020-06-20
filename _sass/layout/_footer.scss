@@ -5,14 +5,20 @@ footer {
   font-size: 0.875rem;
   color: $grey;
 
+  @include set-dark-color((color: $dark-grey));
+
   a {
     color: $grey;
     border-bottom: 0;
+
+    @include set-dark-color((color: $dark-grey));
 
     &:hover,
     &:focus {
       color: $primary;
       border-bottom: 0;
+
+      @include set-dark-color((color: $dark-primary));
     }
   }
 }

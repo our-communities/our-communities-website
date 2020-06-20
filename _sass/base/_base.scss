@@ -45,3 +45,6 @@ figure {
   clear: both;
   width: 100%;
 }
+img {
+  @include set-dark-color((opacity: 0.7));
+}

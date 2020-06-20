@@ -16,5 +16,7 @@
     color: $bg-color;
     background-color: $primary;
     border: 2px solid $primary;
+
+    @include set-dark-color((color: $dark-bg-color, background-color: $dark-primary, border: 2px solid $dark-primary));
   }
 }
