@@ -13,11 +13,12 @@
 
          {% assign day = page.start | date: "%d" %}
          {% case day %}
-          {% when '1' or '21' or '31' %}{{ day }}st
-          {% when '2' or '22'         %}{{ day }}nd
-          {% when '3' or '23'         %}{{ day }}rd
-          {% else                     %}{{ day }}th
+          {% when '01' or '21' or '31' %}{% assign ord = "st" %}
+          {% when '02' or '22'         %}{% assign ord = "nd" %}
+          {% when '03' or '23'         %}{% assign ord = "rd" %}
+          {% else                      %}{% assign ord = "th" %}
         {% endcase %}
+         {{page.start | date: "%e"}}{{ord}}
 
          {{page.start | date: '%B %Y' }}<br>
          Time: {{page.start | slice: 11, 5}} to {{page.end | slice: 11, 5}}<br>
