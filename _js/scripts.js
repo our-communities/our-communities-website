@@ -30,6 +30,10 @@ $(document).ready(function ($) {
   $('button#online').click(function (e) {
     onlineFilter(e);
   });
+
+  if (getParameterByName('online')){
+    onlineFilter();
+  }
 });
 
 $(window).resize(function () {
@@ -286,8 +290,6 @@ function locationFilter() {
 /* ------------------------------------------------------------------------*/
 
 function typeFilter(e) {
-  console.log('type filter hit');
-
   // reset active indicator
   $('.type-button').removeClass('active');
 
@@ -296,7 +298,6 @@ function typeFilter(e) {
   originalCalendar.shift();
 
   let selectedType = e.target.getAttribute('data-type');
-  console.log(selectedType);
 
   if (selectedType === 'all') {
     $('#location-select :nth-child(1)').prop('selected', true).trigger('change');
@@ -311,7 +312,6 @@ function typeFilter(e) {
 
     // Filter out the matched
     items.each(function (j, item) {
-      console.log($(item).data('type'));
       if ($(item).data('type') === selectedType) {
         matches.push(item);
       }
@@ -348,6 +348,9 @@ function typeFilter(e) {
 /* ------------------------------------------------------------------------*/
 
 function onlineFilter() {
+  // unset button state
+  $('.type-button').removeClass('active');
+
   // insert original dom state incase this isn't the first filter
   $('#calendar-wrap').replaceWith(originalCalendar[0]);
   originalCalendar.shift();
@@ -383,6 +386,9 @@ function onlineFilter() {
 
     // Add the location if applicable
     $('.num-remaining-location-' + month).html(' which are hosted online');
+
+    // Update button states
+    $('#online').addClass('active');
   });
 }
 
@@ -395,4 +401,22 @@ function iframeResize() {
         let height = Math.floor($(this).width() / (16/9));
         $(this).height(height);
     });
+}
+
+/*-------------------------------------------------------------------------*/
+/* Paramter check to allow for online event filtering by URL               */
+/* ------------------------------------------------------------------------*/
+
+function getParameterByName(name) {
+  let url = window.location.href; 
+  name = name.replace(/[\[\]]/g, '\\$&');
+  let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+  let results = regex.exec(url);
+  if (!results) {
+    return null;
+  }
+  if (!results[2]) {
+    return '';
+  }
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
