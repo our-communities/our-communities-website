@@ -20,6 +20,8 @@
   justify-content: center;
   color: white;
 
+  @include set-dark-color((filter: opacity(0.8)));
+
   @media screen and (min-width: $md) {
     height: 400px;
   }
