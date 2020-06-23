@@ -34,6 +34,7 @@ input[type="button"] {
     transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1);
     background-color: lighten($button-dark, 14%);
     outline: 0;
+    padding-bottom: 17px;
 
     @include set-dark-color((color: darken($dark-bg-color, 20%), background-color: darken($dark-button-dark, 20%)));
   }
@@ -45,9 +46,9 @@ input[type="button"] {
   }
 }
 
-a.btn:hover {
-  padding-bottom: 17px;
-}
+// a.btn:hover {
+//   padding-bottom: 17px;
+// }
 
 .btn + .btn {
   margin-top: 1em;
