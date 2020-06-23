@@ -11,12 +11,13 @@
   border-bottom: 0;
   transition: box-shadow .25s ease;
 
-  @include set-dark-color((background-color: $dark-bg-color));
+  @include set-dark-color((background-color: $dark-bg-color, border: 2px solid darken($dark-reverse, 10%)));
 
   &:hover,
-  &:focus {
-    border-bottom: 0;
-    box-shadow: 0 2px 40px 0 hsla(232, 8%, 63%, .3);
+  &:focus,
+  &:focus-within {
+    // border-bottom: 0;
+    box-shadow: 0 2px 20px 0 hsla(232, 8%, 63%, .3);
   }
 
   @include breakpoint($md) {
