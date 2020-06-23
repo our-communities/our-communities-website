@@ -17,7 +17,9 @@
   &:focus,
   &:focus-within {
     // border-bottom: 0;
-    box-shadow: 0 2px 20px 0 hsla(232, 8%, 63%, .3);
+    box-shadow: 0 2px 30px 0 hsla(232, 8%, 63%, .3);
+
+    @include set-dark-color((box-shadow: 0 2px 30px 0 rgba(181, 183, 196, 0.3), border: 2px solid $dark-reverse));
   }
 
   @include breakpoint($md) {
@@ -62,6 +64,7 @@
     @include set-dark-color((color: $dark-grey));
 
     &:focus,
+    &:focus-within,
     &:hover {
       color: $grey;
       border-bottom: 0;

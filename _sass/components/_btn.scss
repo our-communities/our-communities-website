@@ -29,6 +29,7 @@ input[type="button"] {
 
   &:hover,
   &:focus,
+  &:focus-within
   &:active {
     color: $bg-color;
     transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1);
@@ -38,6 +39,13 @@ input[type="button"] {
 
     @include set-dark-color((color: darken($dark-bg-color, 20%), background-color: darken($dark-button-dark, 20%)));
   }
+}
+
+#mc_embed_signup .btn,
+#mc_embed_signup input[type="submit"],
+#mc_embed_signup input[type="reset"],
+#mc_embed_signup input[type="button"] {
+  padding-bottom: 18px;
 }
 
 .btn {
@@ -60,7 +68,8 @@ button:disabled {
   transition: background-color .2s ease;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     background-color: $button-dark;
 
     @include set-dark-color((background-color: $dark-button-dark));
@@ -73,6 +82,7 @@ a.share {
 
   &:hover,
   &:focus,
+  &:focus-within,
   &:active {
     color: white;
     background-color: lighten(#00aced, 14%);

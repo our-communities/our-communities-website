@@ -61,12 +61,14 @@ a {
   @include set-dark-color((color: $dark-link-color));
 
   &:active,
-  &:focus {
+  &:focus,
+  &:focus-within {
     outline: 0;
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     color: $primary-light;
     transition: border-bottom .2s linear;
     border-bottom: 1px solid $primary-light;

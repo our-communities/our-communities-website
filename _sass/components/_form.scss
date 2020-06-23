@@ -11,7 +11,8 @@ textarea {
 
   @include set-dark-color((border-bottom: 2px solid $dark-border));
 
-  &:focus {
+  &:focus,
+  &:focus-within{
     border-color: $primary;
     transition: border-color .25s;
 

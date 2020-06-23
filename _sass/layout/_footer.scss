@@ -14,7 +14,8 @@ footer {
     @include set-dark-color((color: $dark-grey));
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:focus-within {
       color: $primary;
       border-bottom: 0;
 
@@ -48,6 +49,24 @@ footer {
 .social__icon--youtube path,
 .social__icon--youtube polygon {
   transform: scale(0.12);
+}
+
+// a.social__link::hover svg,
+// a.social__link::focus svg,
+// a.social__link::focus-within svg {
+//   fill: $primary;
+// }
+
+.social__icon--youtube path {
+  fill: #282828;
+
+  @include set-dark-color((fill: #FFFFFF));
+}
+
+.social__icon--youtube polygon {
+  fill: #FFFFFF;
+
+  @include set-dark-color((fill: #282828));
 }
 
 .social__icon--youtube {

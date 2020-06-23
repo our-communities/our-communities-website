@@ -14,11 +14,11 @@
         <div class="dark-bg"></div>
       </figure>
     {% endif %}
-  </a>
-  <a class="post-card__inner" href="{{ item.link | relative_url }}" title="{{ item.title }}.">
+  <span class="post-card__inner">
     <div class="post-card__header">
       <h2>{{ item.name | strip_html | truncate: 50 }}</h2>
     </div>
     <p>{{ item.description | truncatewords:20 }}</p>
+  </span>
   </a>
 </div>

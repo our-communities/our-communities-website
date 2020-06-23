@@ -14,7 +14,8 @@
   border-radius: 3px;
 }
 
-#mc_embed_signup input:focus {
+#mc_embed_signup input:focus,
+#mc_embed_signup input:focus-within {
   border-color: #333;
 }
 
