@@ -48,18 +48,17 @@ newsletter: false
         {% assign thismonth = month.name | date: "%B %Y" %}
         {% assign todaymonth = 'now' | date: "%B %Y" %}
 
-        {% assign today_month = 'now' | date: '%m' %}
-        {% assign event_month = month.name | date: '%m' %}
+        {% assign today_month = 'now' | date: '%s' %}
+        {% assign event_month = month.name | date: '%s' %}
 
         {% if event_month >= today_month %}
           {% if thismonth != lastmonth %}
             <h2 class="resource-header">{{thismonth}}</h2>
-            {% assign shortMonth = thismonth | size %}
 
             {% assign count = 0 %}
             {% for event in month.items %}
-              {% assign today_date = 'now' | date: '%D' %}
-              {% assign event_date = event.start | date: '%D' %}
+              {% assign today_date = 'now' | date: '%F' %}
+              {% assign event_date = event.start | date: '%F' %}
               {% if event_date >= today_date %}
                 {% assign count = count | plus: 1 %}
               {% endif%}  
@@ -77,8 +76,8 @@ newsletter: false
               data-month="{{lastmonth | replace: " ", "-"}}">
 
             {% for event in month.items %}
-              {% assign today_date = 'now' | date: '%D' %}
-              {% assign event_date = event.start | date: '%D' %}
+              {% assign today_date = 'now' | date: '%F' %}
+              {% assign event_date = event.start | date: '%F' %}
 
               {% if event_date >= today_date %}
                 {% assign organiser = site.communities | where: 'dataID', event.organiserid %}

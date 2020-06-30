@@ -31,8 +31,8 @@ newsletter: true
             {% assign count = 0 %}
 
             {% for event in sorted-events %}
-              {% assign today_date = 'now' | date: '%F' %}
-              {% assign start_date = event.start | date: '%F' %}
+              {% assign today_date = 'now' | date: '%s' %}
+              {% assign start_date = event.start | date: '%s' %}
               {% if start_date >= today_date %}
                 {% if count < 6 %}
                   {% assign count = count | plus: 1 %}
