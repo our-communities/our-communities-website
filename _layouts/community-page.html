@@ -49,15 +49,49 @@ layout: compress
               <h2 class="resource-header">No Upcoming Events</h2>
               <p>&nbsp;</p>
             {% else %}
-              <h2 class="resource-header">{{ sorted-events.size }} Upcoming Event{% if sorted-events.size > 1 %}s{% endif %}</h2>
+              {% assign count_ongoing = 0 %}
+              {% assign count_upcoming = 0 %}
+              {% for event in sorted-events %}
+                {% assign today_date = 'now' | date: '%F' %}
+                {% assign event_date = event.start | date: '%F' %}
+
+                {% if event_date >= today_date %}
+                  {% assign count_upcoming = count_upcoming | plus: 1 %}
+                {% else %}
+                  {% assign count_ongoing = count_ongoing | plus: 1 %}
+                {% endif%}  
+              {% endfor %}
+
+              {% if count_ongoing > 0 %}
+                <h2 class="resource-header">{{ count_ongoing }} Ongoing Event{% if count_ongoing > 1 %}s{% endif %}</h2>
+                <div class="post-list resource-list">
+                  {% for event in sorted-events %}
+                    {% assign today_date = 'now' | date: '%F' %}
+                    {% assign event_date = event.start | date: '%F' %}
+                    {% if event_date < today_date %}
+                      {% assign organiser = page %}
+                      {% include event-card.html picture='false' %}
+                    {% endif%}
+                  {% endfor %}
+                </div>
+              {% endif%}
+
+              {% if count_upcoming > 0 %}
+                <h2 class="resource-header">{{ count_upcoming }} Upcoming Event{% if count_upcoming > 1 %}s{% endif %}</h2>
+                <div class="post-list resource-list">
+                {% for event in sorted-events %}
+                  {% assign today_date = 'now' | date: '%F' %}
+                  {% assign event_date = event.start | date: '%F' %}
+                  {% if event_date >= today_date %}
+                    {% assign organiser = page %}
+                    {% include event-card.html picture='false' %}
+                  {% endif%}
+                {% endfor %}
+                </div>
+              {% endif%}
+
             {% endif %}
           {% endif %}
-          <div class="post-list resource-list" id="eventContainer">
-            {% for event in sorted-events %}
-              {% assign organiser = page %}
-              {% include event-card.html picture='false' %}
-            {% endfor %}
-          </div>
         </div>
       </section>
     </div>
