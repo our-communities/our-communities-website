@@ -28,10 +28,18 @@ newsletter: true
           <div class="post-list resource-list" itemscope="" itemtype="http://schema.org/Blog">
 
             {% assign sorted-events = site.events | sort: 'start' %}
-            {% for i in (0..5) %}
-              {% assign event = sorted-events[i] %}
-              {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
-              {% include event-card.html picture='true' %}
+            {% assign count = 0 %}
+
+            {% for event in sorted-events %}
+              {% assign today_date = 'now' | date: '%F' %}
+              {% assign start_date = event.start | date: '%F' %}
+              {% if start_date >= today_date %}
+                {% if count < 6 %}
+                  {% assign count = count | plus: 1 %}
+                  {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
+                  {% include event-card.html picture='true' %}
+                {% endif %}
+              {% endif %}
             {% endfor %}
 
             <p>
