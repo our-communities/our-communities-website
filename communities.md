@@ -2,7 +2,7 @@
 layout: content-feed
 title: Communities
 description: A list of communities whose events are included in our calendar.
-image: /assets/img/posts/communities-og_sm.jpeg
+image: /assets/img/posts/communities-og_thumb.jpeg
 permalink: /communities/
 newsletter: false
 ---

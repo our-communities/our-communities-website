@@ -2,7 +2,7 @@
 layout: content-feed
 title: Newsletter
 description: Get South West event updates straight to your inbox
-image: /assets/img/posts/newsletter-og_sm.jpeg
+image: /assets/img/posts/newsletter-og_thumb.jpeg
 permalink: /newsletter/
 newsletter: true
 ---
