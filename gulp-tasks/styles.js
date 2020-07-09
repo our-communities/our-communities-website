@@ -20,7 +20,6 @@ gulp.task('sass', function() {
       onError: browserSync.notify
     }).on('error', sass.logError))
     .pipe(prefix({
-      browsers: autoprefixBrowsers,
       flexbox: true
     }))
     //.pipe(cleanCSS({
