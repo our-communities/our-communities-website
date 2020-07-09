@@ -1,7 +1,7 @@
 ---
 layout: community-page
-name: West County Computing Hub
-dataID: 33294856
+name: West Country Computing Hub
+dataID: 30624169030
 summary: West Country Computing Hub
 featured-img: 'west-country-computing-hub'
 image: /assets/img/communities/west-country-computing-hub_thumb.jpeg
