@@ -1,8 +1,8 @@
 'use strict';
 const dotenv = require('dotenv').config();
 
-// Are we in a production environment?
 const isProduction = process.env.CONTEXT ? true : false;
+const locale = process.env.LOCATION;
 console.log('-----IS PRODUCTION-----' + isProduction);
 
 // Gulp and node
@@ -37,7 +37,7 @@ gulp.task('default', function(cb) {
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build','--config', `_config.yml,_config-${locale}.yml`], {stdio: 'inherit'})
         .on('close', done);
 });
 

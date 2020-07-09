@@ -1,0 +1,23 @@
+# SITE CONFIGURATION
+title: South West Communities
+url: "https://southwestcommunities.co.uk"
+description: >
+  Shared events calendar for grassroots digital & tech communities in
+  the South West. Built with the support of meetups across Cornwall,
+  Devon, Somerset & Dorset.
+tagline: >
+  A shared events calendar for digital and tech communities across the South West.
+
+# SEO PLUGIN
+social:
+  name: South West Communities
+  links:
+    - https://twitter.com/SWCommunities
+    - https://instagram.com/SWCommunities
+    - https://www.facebook.com/SWCommunities
+    - https://www.youtube.com/channel/UCqw-wsWwZ_0NO5wUsIiq27Q
+
+twitter_username: SWCommunities
+facebook_username: SWCommunities
+instagram_username: SWCommunities
+youtube_username: UCqw-wsWwZ_0NO5wUsIiq27Q

@@ -1,33 +1,13 @@
-# SITE CONFIGURATION
-title: South West Communities
-description: >
-  Shared events calendar for grassroots digital & tech communities in
-  the South West. Built with the support of meetups across Cornwall,
-  Devon, Somerset & Dorset.
 author: Tony Edwards
 baseurl: "" # the subpath of the site, e.g. /blog
-url: "https://southwestcommunities.co.uk" # the base hostname & protocol for the site, e.g. http://example.com
-
-# SEO PLUGIN
-social:
-  name: South West Communities
-  links:
-    - https://twitter.com/SWCommunities
-    - https://instagram.com/SWCommunities
-    - https://www.facebook.com/SWCommunities
-    - https://www.youtube.com/channel/UCqw-wsWwZ_0NO5wUsIiq27Q
 
 # THEME SETTINGS
 navigation:
   - {name: 'Home', link: '/'}
   - {name: 'Communities', link: '/communities/', description: 'A list of community led organisations hosting events in the region.', featured-img: 'communities', title: View our list of communities }
-  - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the South West.', featured-img: 'calendar', title: View upcoming events }
+  - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the region.', featured-img: 'calendar', title: View upcoming events }
   - {name: 'Newsletter', link: '/newsletter/', description: 'Regular event newsletter.', featured-img: 'proposals', title: South West Communities Newsletter. }
   - {name: 'About Us', link: '/about-us/', description: 'About us.', featured-img: 'proposals', title: About us }
-
-
-tagline: >
-  A shared events calendar for digital and tech communities across the South West.
 
 hero_img: posts/header_lg # Main background image: use the path from /assets/img/
 
@@ -36,11 +16,6 @@ lang: en-GB
 webmaster_verifications:
   google: c7eA3kWQqI-zwFH_W9efNAqGsmiRlgRDjz3SYXkpw3Q
   bing: 8957716371BB285A2445EAFE5013939C
-
-twitter_username: SWCommunities
-facebook_username: SWCommunities
-instagram_username: SWCommunities
-youtube_username: UCqw-wsWwZ_0NO5wUsIiq27Q
 
 google_tag_manager: UA-92339313-2
 facebook_pixel: 796127733884814
