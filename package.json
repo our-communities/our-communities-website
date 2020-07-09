@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "ajv": "^5.5.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "run-sequence": "^2.2.1",
     "velocity-animate": "^1.5.0"
   },
@@ -34,6 +34,7 @@
     "gulp-responsive": "^2.8.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "gulp4-run-sequence": "^1.0.1",
     "jshit": "0.0.1",
     "require-dir": "^1.2.0",
     "vinyl-buffer": "^1.0.1",

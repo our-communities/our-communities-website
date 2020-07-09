@@ -9,7 +9,7 @@ console.log('-----IS PRODUCTION-----' + isProduction);
 const gulp = require('gulp');
 const cp = require('child_process');
 const browserSync = require('browser-sync');
-const runSequence = require('run-sequence');
+const runSequence = require('gulp4-run-sequence');
 
 // Helpers
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -53,25 +53,18 @@ gulp.task('jekyll-serve', function (done) {
       .on('close', done);
 });
 
-gulp.task('deploy', ['jekyll-build'], function () {
+gulp.task('deploy', gulp.series('jekyll-build', function () {
     return gulp.src('./_site/**/*')
         .pipe(deploy());
-});
+}));
 
 // Rebuild Jekyll & do page reload
-gulp.task('rebuild', ['jekyll-build-incremental'], function (done) {
+gulp.task('rebuild', gulp.series('jekyll-build-incremental', function (done) {
     browserSync.reload();
     done();
-});
+}));
 
-// Serve after jekyll-build
-gulp.task('browser-sync', ['build-site'], function() {
-    browserSync({
-        server: {
-            baseDir: '_site'
-        }
-    });
-});
+
 
 gulp.task('build-site', function(cb) {
   runSequence(
@@ -84,7 +77,7 @@ gulp.task('build-site', function(cb) {
     cb);
 });
 
-gulp.task('deploy', ['create-files']);
+gulp.task('deploy', gulp.series('create-files'));
 
 gulp.task('serve', function() {
   browserSync({
@@ -94,4 +87,13 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('build', ['sass', 'js', 'create-files', 'jekyll-build', 'img']);
+// Serve after jekyll-build
+gulp.task('browser-sync', gulp.series('build-site', function() {
+  browserSync({
+      server: {
+          baseDir: '_site'
+      }
+  });
+}));
+
+gulp.task('build', gulp.series('sass', 'js', 'create-files', 'jekyll-build', 'img'));
