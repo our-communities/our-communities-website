@@ -37,7 +37,7 @@ newsletter: false
               {% assign start_date = event.start | date: '%F' %}
               {% if today_date > start_date %}
                 {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
-                {% include event-card.html picture='true' %}
+                {% include event-card.html picture='true' ongoing='true' %}
               {% endif %}
             {% endfor %}
           {% endfor %}
@@ -51,14 +51,15 @@ newsletter: false
         {% assign today_month = 'now' | date: '%s' %}
         {% assign event_month = month.name | date: '%s' %}
 
-        {% if event_month >= today_month %}
-          {% if thismonth != lastmonth %}
+        {% if event_month > today_month or thismonth == todaymonth%}
+
             <h2 class="resource-header">{{thismonth}}</h2>
 
             {% assign count = 0 %}
             {% for event in month.items %}
               {% assign today_date = 'now' | date: '%F' %}
               {% assign event_date = event.start | date: '%F' %}
+
               {% if event_date >= today_date %}
                 {% assign count = count | plus: 1 %}
               {% endif%}  
@@ -69,8 +70,8 @@ newsletter: false
             {% else %}
               <p>There <span class="are-is-{{thismonth | replace: " ", "-"}}">are</span> <span class="num-remaining-{{thismonth | replace: " ", "-"}}">{{ count }}</span> event<span class="num-remaining-plural-{{thismonth | replace: " ", "-"}}">s</span> listed during {{month.name | date: "%B"}}<span class="num-remaining-location-{{thismonth | replace: " ", "-"}}"></span><span class="type-text-{{thismonth | replace: " ", "-"}}"></span>.</p>
             {% endif %}
-          {% endif%}
-          {% assign lastmonth = thismonth %}
+
+
 
           <div class="post-list resource-list month-block"
               data-month="{{lastmonth | replace: " ", "-"}}">
@@ -81,7 +82,7 @@ newsletter: false
 
               {% if event_date >= today_date %}
                 {% assign organiser = site.communities | where: 'dataID', event.organiserid %}
-                {% include event-card.html picture='true' %}
+                {% include event-card.html picture='true' ongoing='false' %}
               {% endif%}  
             {% endfor %}
           </div>
