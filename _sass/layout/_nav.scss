@@ -41,7 +41,7 @@
   &:hover {
     color: $text-color;
 
-    @include set-dark-color((color: $text-color));
+    @include set-dark-color((color: $dark-text-color));
   }
 }
 
