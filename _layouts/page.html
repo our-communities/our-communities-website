@@ -28,7 +28,7 @@ layout: compress
           {{ content }}
           
           {% if page.collection == 'events' %}
-            {% if page.venue != 'Online event' %}
+            {% if page.venue != 'Online event' and page.venue != 'undefined'%}
               <hr />
               <div class="map-container" id="map-container">
                 <a href="" id="show-map" data-lat="{{page.lat}}"
