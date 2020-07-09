@@ -27,7 +27,7 @@
     {% endif %}
 
     {% assign sorted-events = site.events | where: 'organiserid', community.dataID %}
-    {% if sorted-events.size > 0 %}
+    {% if include.showactive == 'true' %}
       <p><span class="btn pill">Active Events</span></p>
     {% endif %}
   </a>
