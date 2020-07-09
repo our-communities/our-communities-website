@@ -8,5 +8,6 @@ image: /assets/img/communities/west-country-computing-hub_thumb.jpeg
 type: community
 
 twitter: ComputingHubDev
+website: https://www.exetermathematicsschool.ac.uk/for-teachers/teachers-computer-science/
 ---
 West Country Computing Hub offers tailored support and specialist training to teachers in Devon & East Dorset across all Key Stages.
