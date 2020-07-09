@@ -70,7 +70,7 @@ newsletter: false
             {% else %}
               <p>There <span class="are-is-{{thismonth | replace: " ", "-"}}">are</span> <span class="num-remaining-{{thismonth | replace: " ", "-"}}">{{ count }}</span> event<span class="num-remaining-plural-{{thismonth | replace: " ", "-"}}">s</span> listed during {{month.name | date: "%B"}}<span class="num-remaining-location-{{thismonth | replace: " ", "-"}}"></span><span class="type-text-{{thismonth | replace: " ", "-"}}"></span>.</p>
             {% endif %}
-
+            {% assign lastmonth = thismonth %}
 
 
           <div class="post-list resource-list month-block"
