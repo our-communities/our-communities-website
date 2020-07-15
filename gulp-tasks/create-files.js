@@ -13,6 +13,11 @@ gulp.task('create-files', function() {
 
     let data = JSON.parse(body);
 
+    // Filter out just this regions events
+    data.events =  data.events.filter(function( obj ) {
+      return obj.region === process.env.LOCATION;
+    });
+
     console.log('LOG: Building Markdown');
     // Choose the path wisely and empty it
     let dirPath = process.env.CONTEXT ? '/opt/build/repo/_events' : '_events';
