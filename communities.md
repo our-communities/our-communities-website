@@ -10,7 +10,7 @@ newsletter: false
   <div class="container">
     <div class="filters">
       <div class="type-wrap">
-        <a href="https://southwestcommunities.typeform.com/to/m1ApTyxR?utm_source=website&utm_medium=link&utm_campaign=add-new-organiser"
+        <a href="{{ site.suggest_organiser_link }}"
           class="type-button btn">Suggest a new organiser</a>
       </div>
     </div>
