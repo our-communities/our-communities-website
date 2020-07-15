@@ -21,3 +21,13 @@ twitter_username: SWCommunities
 facebook_username: SWCommunities
 instagram_username: SWCommunities
 youtube_username: UCqw-wsWwZ_0NO5wUsIiq27Q
+
+ # HOMEPAGE TEXT
+what_we_do: >
+  <p>Meetups and events are a key part of the digital and tech sector. They facilitate the coming together of people for conversation and shared learnings, often in an informal environment.</p>
+
+  <p>The <a href="https://technation.io/insights/tech-nation-2017/" title="Tech Nations report 2017">Tech Nation</a> report highlighted the importance of the local ecosystem, with "the health and performance of each business dependent upon the health and performance of the whole."</p>
+
+  <p>By increasing attendance amongst the regions events through increased exposure, it's hoped that partnerships, friendships and business relationships will be encouraged with the end result being a higher performing digital/tech economy.</p>
+
+  <p>This app pulls community events directly from Meetup and Eventbrite, saving you the effort of hunting around for your next event.</p>
