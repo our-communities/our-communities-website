@@ -6,7 +6,7 @@ navigation:
   - {name: 'Home', link: '/'}
   - {name: 'Communities', link: '/communities/', description: 'A list of community led organisations hosting events in the region.', featured-img: 'communities', title: View our list of communities }
   - {name: 'Calendar', link: '/calendar/', description: 'A constantly updated calendar of events by communities around the region.', featured-img: 'calendar', title: View upcoming events }
-  - {name: 'Newsletter', link: '/newsletter/', description: 'Regular event newsletter.', featured-img: 'proposals', title: South West Communities Newsletter. }
+  - {name: 'Newsletter', link: '/newsletter/', description: 'Regular event newsletter.', featured-img: 'proposals', title: Bristol and Bath Communities Newsletter. }
   - {name: 'About Us', link: '/about-us/', description: 'About us.', featured-img: 'proposals', title: About us }
 
 hero_img: posts/header_lg # Main background image: use the path from /assets/img/
@@ -27,6 +27,10 @@ twitter:
 
 facebook:
   app_id: 2725356861082849
+
+github_link: https://github.com/south-west-communities/website
+beta_tester_signup_link: https://mailchi.mp/f66e8e30ef80/south-west-communities-beta-tester-signup
+suggest_organiser_link: https://southwestcommunities.typeform.com/to/m1ApTyxR?utm_source=website&utm_medium=link&utm_campaign=add-new-organiser
 
 # BUILD SETTINGS
 

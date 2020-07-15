@@ -8,6 +8,10 @@ description: >
 tagline: >
   A shared events calendar for digital and tech communities across the South West.
 
+region: South West
+region_list: Devon, Cornwall, Somerset and Dorset
+
+
 # SEO PLUGIN
 social:
   name: South West Communities
