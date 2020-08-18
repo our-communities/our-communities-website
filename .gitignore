@@ -104,3 +104,4 @@ sw.js
 _locations
 /_includes/critical.css
 .jekyll-cache
+/_communities/*.md
