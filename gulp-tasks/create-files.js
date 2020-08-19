@@ -23,9 +23,9 @@ gulp.task('create-files', function() {
     let dirPath = process.env.CONTEXT ? '/opt/build/repo/_events' : '_events';
     emptyDirectory(dirPath);
 
-    // Generate the markdown for each event
+    // Generate a markdown file for each event
     data.events.forEach(evt => {
-      createMarkdownFile(evt, dirPath, evt.fileTitle);
+      createEventMarkdownFile(evt, dirPath, evt.fileTitle);
     });
 
     console.log('LOG: Building API');
@@ -48,6 +48,7 @@ gulp.task('create-files', function() {
     logger.write('{}');
     logger.write('],');
 
+    // Generate location data for the API file
     let locArray = `[`;
     data.locations.forEach((loc, key, arr) => {
       locArray += '"' + loc + '"';
@@ -57,6 +58,7 @@ gulp.task('create-files', function() {
     });
     logger.write(`"locations" : ${locArray}`);
 
+    // Wrap up the API file
     logger.write(']');
     logger.write('}]');
     logger.end();
@@ -74,10 +76,18 @@ gulp.task('create-files', function() {
       logger.end();
     });
 
+    // Generate Community Files
+    dirPath = process.env.CONTEXT ? '/opt/build/repo/_communities' : '_communities';
+    emptyDirectory(dirPath);
+
+    // Generate a markdown file for each event
+    data.organisers.forEach(community => {
+      createCommunityMarkdownFile(community, dirPath);
+    });
   });
 });
 
-const createMarkdownFile = (evt, path) => {
+const createEventMarkdownFile = (evt, path) => {
   let logger = fs.createWriteStream(`${path}/${evt.fileTitle}.md`);
 
   logger.write(`---\n`);
@@ -137,6 +147,49 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`    "gCalURL": "${evt.gCalURL}"\n`);
   logger.write(`  },`);
 };
+
+const createCommunityMarkdownFile = (community, path) => {
+  let logger = fs.createWriteStream(`${path}/${community.altName}.md`);
+
+  logger.write(`---\n`);
+  logger.write(`layout: community-page\n`);
+  logger.write(`name: ${community.name}\n`);
+  logger.write(`dataID: '${community.id}'\n`);
+  logger.write(`summary: '${community.summary}'\n`);
+  logger.write(`type: ${community.archetype}\n`);
+  logger.write(`region: ${community.region}\n`);
+  logger.write(`source: ${community.source}\n`);
+  logger.write(`altName: ${community.altName}\n\n`);
+
+  if(community.twitter) {
+    logger.write(`twitter: ${community.twitter}\n`);
+  }
+  if(community.facebook) {
+    logger.write(`facebook: ${community.facebook}\n`);
+  }
+  if(community.linkedin) {
+    logger.write(`linkedin: ${community.linkedin}\n`);
+  }
+  if(community.youtube) {
+    logger.write(`youtube: ${community.youtube}\n`);
+  }
+  if(community.website) {
+    logger.write(`website: ${community.website}\n`);
+  }
+  if(community.instagram) {
+    logger.write(`instagram: ${community.instagram}\n`);
+  }
+  if(community.slack) {
+    logger.write(`slack: ${community.slack}\n`);
+  }
+
+  // Open Graph / SEO Stuff
+  logger.write(`image: /assets/img/communities/${community.altName}_thumb.jpeg\n`);
+
+  logger.write(`---\n`);
+  logger.write(`${community.description}\n`);
+  logger.end();
+}
 
 const emptyDirectory = (path) => {
   var files;

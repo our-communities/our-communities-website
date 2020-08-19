@@ -12,9 +12,8 @@ const browserSync = require('browser-sync');
 const runSequence = require('gulp4-run-sequence');
 
 // Helpers
-const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 const messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+    jekyllBuild: '<span style="color: green">Running:</span> $ jekyll build'
 };
 
 // Get any external tasks
@@ -37,7 +36,7 @@ gulp.task('default', function(cb) {
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build','--config', `_config.yml,_config-${locale}.yml`], {stdio: 'inherit'})
+    return cp.spawn( 'bundle' , ['exec', 'jekyll', 'build','--config', `_config.yml,_config-${locale}.yml`, '--verbose'], {stdio: 'inherit'})
         .on('close', done);
 });
 
