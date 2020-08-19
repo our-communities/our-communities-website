@@ -1,9 +1,9 @@
 <div class="post-card">
   <a class="post-card__inner" href="{{ community.url | relative_url }}" title="Visit the {{ community.name }} page.">
-    {% if community.featured-img %}
+    {% if community.altName %}
       <figure class="post-card__thumb">
         <img 
-          src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{community.featured-img}}_thumb.jpeg"
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{community.altName}}_thumb.jpeg"
           height="301px" width="535px"
           loading="lazy"
           alt="{{community.name}} logo."

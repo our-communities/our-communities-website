@@ -5,7 +5,7 @@
                 <a class="post-card__inner" href="{{ event.url }}" title="More info about {{event.title}}">
                     {% if include.picture == 'true' %}
                         <figure class="post-card__thumb">
-                            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.featured-img}}_thumb.jpeg"
+                            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/communities/{{organiser.first.altName}}_thumb.jpeg"
                                  alt="{{event.title}}." height="301px" width="535px" loading="lazy" />
                         </figure>
                     {% endif %}
