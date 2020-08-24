@@ -28,6 +28,27 @@ gulp.task('create-files', function() {
       createEventMarkdownFile(evt, dirPath, evt.fileTitle);
     });
 
+    // Generate a markdown file for each location
+    dirPath = process.env.CONTEXT ? '/opt/build/repo/_locations' : '_locations';
+    emptyDirectory(dirPath);
+
+    data.locations.forEach(loc => {
+      let logger = fs.createWriteStream(`${dirPath}/${loc}.md`);
+      logger.write('---\n');
+      logger.write(`name: ${loc}\n`);
+      logger.write('---');
+      logger.end();
+    });
+
+    // Generate a markdown file for each community
+    dirPath = process.env.CONTEXT ? '/opt/build/repo/_communities' : '_communities';
+    emptyDirectory(dirPath);
+
+    // Generate a markdown file for each organiser
+    data.organisers.forEach(org => {
+      createOrganiserMarkdownFile(org, dirPath);
+    });
+
     console.log('LOG: Building API');
 
     dirPath = process.env.CONTEXT ? '/opt/build/repo/_api/v1' : '_api/v1';
@@ -58,32 +79,14 @@ gulp.task('create-files', function() {
     });
     logger.write(`"locations" : ${locArray}`);
 
+    logger.write('],');
+
+    // Add organisers to API file 
+    logger.write(`"organisers": ${JSON.stringify(data.organisers)}`);
+
     // Wrap up the API file
-    logger.write(']');
-    logger.write('}]');
+    logger.write(']}]');
     logger.end();
-
-    // Generate locations files
-    console.log('LOG: Building location files');
-    dirPath = process.env.CONTEXT ? '/opt/build/repo/_locations' : '_locations';
-    emptyDirectory(dirPath);
-
-    data.locations.forEach(loc => {
-      logger = fs.createWriteStream(`${dirPath}/${loc}.md`);
-      logger.write('---\n');
-      logger.write(`name: ${loc}\n`);
-      logger.write('---');
-      logger.end();
-    });
-
-    // Generate Community Files
-    dirPath = process.env.CONTEXT ? '/opt/build/repo/_communities' : '_communities';
-    emptyDirectory(dirPath);
-
-    // Generate a markdown file for each event
-    data.organisers.forEach(community => {
-      createCommunityMarkdownFile(community, dirPath);
-    });
   });
 });
 
@@ -148,7 +151,7 @@ const createEventAPIEntry = (logger, evt) => {
   logger.write(`  },`);
 };
 
-const createCommunityMarkdownFile = (community, path) => {
+const createOrganiserMarkdownFile = (community, path) => {
   let logger = fs.createWriteStream(`${path}/${community.altName}.md`);
 
   logger.write(`---\n`);
