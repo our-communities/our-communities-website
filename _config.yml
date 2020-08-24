@@ -75,6 +75,6 @@ collections:
   proposals:
     output: true
   api:
-    output: false
+    output: true
   locations:
     output: false
