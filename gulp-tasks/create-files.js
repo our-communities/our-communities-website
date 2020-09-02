@@ -85,7 +85,7 @@ gulp.task('create-files', function() {
     logger.write(`"organisers": ${JSON.stringify(data.organisers)}`);
 
     // Wrap up the API file
-    logger.write(']}]');
+    logger.write('}]');
     logger.end();
   });
 });
